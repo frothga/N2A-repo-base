@@ -17,4 +17,4 @@ Gmax=2uS
 W=1
  $metadata
   backend.stpu.param
-event=:$event(A.V>=A.Vpeak)
+event=:event(A.V>=A.Vpeak)
