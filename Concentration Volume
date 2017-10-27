@@ -1,0 +1,26 @@
+N2A.schema=1
+$inherit="Concentration"
+ 0=166b5f185734ff3a
+$metadata
+ backend.neuroml.part=decayingPoolConcentrationModel
+ id=166b5f1857385682
+ notes=Tends toward a given resting value at a given rate. The ion occupies a shell inside the membrane of a given thickness.
+F=96485.3(C/mol)
+effectiveRadius=:sqrt(surfaceArea/(4*pi))
+innerRadius=:effectiveRadius-shellThickness
+inside'=I/(2*F*shellVolume)-(inside-restingConcentration)/tau
+ $metadata
+  backend.neuroml.param=concentration'
+pi=3.14159
+restingConcentration=0(mol/m3)
+ $metadata
+  backend.neuroml.param=restingConc
+  public
+shellThickness=0m
+ $metadata
+  public
+shellVolume=:(effectiveRadius^3-innerRadius^3)*4*pi/3
+tau=0s
+ $metadata
+  backend.neuroml.param=decayConstant
+  public

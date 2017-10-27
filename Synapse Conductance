@@ -1,20 +1,22 @@
 N2A.schema=1
+$inherit="Synapse"
+ 0=166b5f185734f41a
 $metadata
+ backend.neuroml.part=baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
  id=166b015ccdaa5a31
- lock
-A=$connect("Neuron")
-B=$connect("Neuron")
-B.I=+G*(E-B.V)
 E=0mV
  $metadata
-  backend.stpu.param
-  note=Excitatory synapses have values near 0. Inhibitory synapses have values near B.Vrest
+  backend.neuroml.param=erev
+  note=Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
   public
-Gmax=2uS
+G=0@$init
  $metadata
-  backend.stpu.param
+  backend.neuroml.param=g
+Gmax=0uS
+ $metadata
+  backend.neuroml.param=gbase
   public
-W=1
+I=:G*(E-V)
+V=:B.V
  $metadata
-  backend.stpu.param
-event=:event(A.V>=A.Vpeak)
+  backend.neuroml.param=v

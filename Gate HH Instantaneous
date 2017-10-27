@@ -1,0 +1,12 @@
+N2A.schema=1
+$inherit="Gate"
+ 0=166b5f185734fa2c
+$metadata
+ backend.neuroml.part=gateHHInstantaneous
+ id=166b5f185738bd8c
+q=:steadyState.x
+ $metadata
+  backend.neuroml.param=inf
+steadyState
+ $inherit="HHVariable"
+  0=166b5f185735064a

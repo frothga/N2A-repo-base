@@ -1,0 +1,17 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=voltageConcDepBlockMechanism
+ id=166b5f18573aa9b6
+ notes=Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses
+$up.blockFactor=*1/(1+blockConcentration/scalingConc*exp(-V/scalingVolt))
+ $metadata
+  backend.neuroml.param=blockFactor
+blockConcentration=0(mol/m3)
+ $metadata
+  public
+scalingConc=0(mol/m3)
+ $metadata
+  public
+scalingVolt=0V
+ $metadata
+  public

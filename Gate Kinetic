@@ -1,0 +1,10 @@
+N2A.schema=1
+$inherit="Gate"
+ 0=166b5f185734fa2c
+$metadata
+ backend.lems.children.states=KSState
+ backend.lems.children.transitions=KSTransition
+ backend.neuroml.part=gateKS
+ id=166b5f1857352764
+ notes=Consists of multiple states and the rates of transition between them. Each state can be open or closed. Open states contribute some amount to the overall conductance.
+q=+

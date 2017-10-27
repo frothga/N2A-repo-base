@@ -1,0 +1,14 @@
+N2A.schema=1
+$inherit="Plasticity Mechanism Depression"
+ 0=166b5f18573a95b3
+$metadata
+ backend.neuroml.part=tsodyksMarkramDepFacMechanism
+ id=166b5f18573a90b2
+ notes=Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
+U
+ @$init=initReleaseProb
+ @in=U+initReleaseProb*(1-U)
+U'=(initReleaseProb-U)/tauFac
+tauFac=0s
+ $metadata
+  public

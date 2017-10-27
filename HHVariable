@@ -1,0 +1,22 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
+ id=166b5f185735064a
+ notes=A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism.
+a=:(V-midpoint)/scale
+midpoint=0mV
+ $metadata
+  public
+rate=0
+ $metadata
+  public
+scale=0mV
+ $metadata
+  public
+x=:rate
+ $metadata
+  backend.neuroml.param=tau,r,t
+  notes=|
+    The output value, with dimension determined by rate. Marked temporary so we can supply a value to Gate immediately during init. Strictly speaking, the temporary combiner should be ignored because this is a separate part. However, it will usually get flattened into Gate first.
+    
+    The NeuroML binding tau is for import. The bindings r and t are for export.

@@ -1,14 +1,22 @@
 N2A.schema=1
-$inherit=Cell
- 0=166b015ccda620cb
+$inherit="Compartment"
+ 0=166b5f39bd266700
 $metadata
- backend.stpu.component=lif
+ backend.neuroml.part=baseIaf.baseIafCapCell,iafCell
+ backend.stpu.part=lif
  id=166b015ccda9c699
- lock
-G=0.1mS
-V
- @$init=Vrest
- @V>=Vpeak=Vrest
-Vpeak=35mV
+E=Vreset
  $metadata
-  backend.stpu.param=peak
+  backend.neuroml.param=leakReversal
+  public
+G=100uS
+ $metadata
+  backend.neuroml.param=leakConductance
+  public
+I=+G*(E-V)
+V
+ @$init=E
+ @V>Vpeak=Vreset
+Vreset=0V
+ $metadata
+  backend.neuroml.param=reset

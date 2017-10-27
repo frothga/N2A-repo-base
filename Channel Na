@@ -1,33 +1,42 @@
 N2A.schema=1
 $inherit="Channel"
- 0=166b015ccda2fd5e
+ 0=166b5f185735013e
 $metadata
- id=166b015ccda4fa7c
- lock
-E=115mV +Voffset
- $metadata
-  backend.xyce.param=eNa
-G=120mS
- $metadata
-  backend.xyce.param=gNa
-I=G*m^3*h*(E-V)
-alpha_h=:0.07*exp(-u/20)
- $metadata
-  backend.xyce.ignore
-alpha_m=:(2.5-0.1*u)/(exp(2.5-0.1*u)-1)
- $metadata
-  backend.xyce.ignore
-beta_h=:1/(exp(3-0.1*u)+1)
- $metadata
-  backend.xyce.ignore
-beta_m=:4*exp(-u/18)
- $metadata
-  backend.xyce.ignore
-h=0.31@$init
-h'=(alpha_h*(1-h)-beta_h*h)/1ms
- $metadata
-  backend.xyce.internalVar=h
-m=0.05@$init
-m'=(alpha_m*(1-m)-beta_m*m)/1ms
- $metadata
-  backend.xyce.internalVar=m
+ id=166b5f54635c5200
+ notes=Explicit sodium channel based on the values given in Hodgkin and Huxley's paper.
+ species=na
+E=50mV
+Gall=:Gdensity*surfaceArea
+Gdensity=120(mS/cm2)
+h
+ $inherit="Gate HH Rates"
+  0=166b5f185738c18d
+ forwardRate
+  $inherit="HHVariable Exponential"
+   0=166b5f185735ca67
+  midpoint=-65mV
+  rate=0.07Hz
+  scale=-20mV
+ instances=1
+ reverseRate
+  $inherit="HHVariable Sigmoid"
+   0=166b5f185735ce69
+  midpoint=-35mV
+  rate=1Hz
+  scale=10mV
+m
+ $inherit="Gate HH Rates"
+  0=166b5f185738c18d
+ forwardRate
+  $inherit="HHVariable Exponential Linear"
+   0=166b5f185735c265
+  midpoint=-40mV
+  rate=1Hz
+  scale=10mV
+ instances=3
+ reverseRate
+  $inherit="HHVariable Exponential"
+   0=166b5f185735ca67
+  midpoint=-65mV
+  rate=4Hz
+  scale=-18mV

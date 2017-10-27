@@ -1,0 +1,16 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=gapJunction,linearGradedSynapse
+ id=166b5f185734fb2e
+ notes=Half of a gap junction, for use in split synapse.
+G=0S
+ $metadata
+  backend.neuroml.param=conductance
+  public
+I=:G*(Vpeer-V)
+V=:0V
+ $metadata
+  backend.neuroml.param=v
+Vpeer=:0V
+ $metadata
+  backend.neuroml.param=vpeer

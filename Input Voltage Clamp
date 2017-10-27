@@ -1,0 +1,27 @@
+N2A.schema=1
+$inherit="Input"
+ 0=166b5f185734f319
+$metadata
+ backend.neuroml.part=voltageClamp
+ id=166b5f18573a9eb5
+ notes=Applies a variable current to try to keep parent at targetVoltage.
+I=:
+ @=0
+ @t>=0&&t<duration=(targetVoltage-B.V)/simpleSeriesResistance
+delay=0s
+ $metadata
+  description=Delay before change in current. Current is zero  prior to this.
+  public
+duration=0s
+ $metadata
+  description=Duration for attempting to keep parent at targetVoltage. Current is zero after delay + duration.
+  public
+simpleSeriesResistance=0Ohm
+ $metadata
+  description=Current will be calculated by the difference in voltage between the target and parent, divided by this value
+  public
+t=:$t-delay
+targetVoltage=0V
+ $metadata
+  description=Current will be applied to try to get parent to this target voltage
+  public

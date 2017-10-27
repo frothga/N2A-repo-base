@@ -1,0 +1,18 @@
+N2A.schema=1
+$inherit="Gate"
+ 0=166b5f185734fa2c
+$metadata
+ backend.neuroml.part=gateHHrates
+ id=166b5f185738c18d
+alpha=:forwardRate.x
+beta=:reverseRate.x
+forwardRate
+ $inherit="HHVariable"
+  0=166b5f185735064a
+inf=:alpha/(alpha+beta)
+q=inf@$init
+q'=(inf-q)/tau
+reverseRate
+ $inherit="HHVariable"
+  0=166b5f185735064a
+tau=:1/((alpha+beta)*Q10Scaling)

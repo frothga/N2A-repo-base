@@ -1,0 +1,17 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=continuousConnection
+ id=166b5f23219cec07
+ notes=A synapse consisting of separate pre- and a post-synaptic parts. The parts are directly coupled by voltage. To use it, set preComponent and postComponent to inherit the appropriate parts. Our local equations under each of these will modify the inherited parts to make the necessary connections.
+A=$connect("Compartment")
+B=$connect("Compartment")
+postComponent
+ $inherit="Synapse Half"
+ B.I=+I
+ V=:B.V
+ Vpeer=:A.V
+preComponent
+ $inherit="Synapse Half"
+ A.I=+I
+ V=:A.V
+ Vpeer=:B.V

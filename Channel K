@@ -1,23 +1,28 @@
 N2A.schema=1
 $inherit="Channel"
- 0=166b015ccda2fd5e
+ 0=166b5f185735013e
 $metadata
- id=166b015ccda36adc
- lock
-E=-12mV +Voffset
+ id=166b5f54a764cf01
+ notes=Explicit potassium channel based on parameters given by Hodgkin and Huxley.
+ species=k
+E=-77mV
+Gall=:Gdensity*surfaceArea
+Gdensity=36(mS/cm2)
  $metadata
-  backend.xyce.param=eK
-G=36mS
- $metadata
-  backend.xyce.param=gK
-I=G*n^4*(E-V)
-alpha_n=:(0.1-0.01*u)/(exp(1-0.1*u)-1)
- $metadata
-  backend.xyce.ignore
-beta_n=:0.125*exp(-u/80)
- $metadata
-  backend.xyce.ignore
-n=0.6@$init
-n'=(alpha_n*(1-n)-beta_n*n)/1ms
- $metadata
-  backend.xyce.internalVar=n
+  notes=At 6.3Cel. Need Q10 parameters.
+n
+ $inherit="Gate HH Rates"
+  0=166b5f185738c18d
+ forwardRate
+  $inherit="HHVariable Exponential Linear"
+   0=166b5f185735c265
+  midpoint=-55mV
+  rate=0.1Hz
+  scale=10mV
+ instances=4
+ reverseRate
+  $inherit="HHVariable Exponential"
+   0=166b5f185735ca67
+  midpoint=-65mV
+  rate=0.125Hz
+  scale=-80mV

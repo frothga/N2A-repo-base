@@ -1,0 +1,29 @@
+N2A.schema=1
+$metadata
+ backend.lems.children.channelDensities=baseChannelDensity
+ backend.lems.children.concentrationModels=concentrationModel
+ backend.lems.children.populations=baseChannelPopulation
+ backend.lems.children.synapses=basePointCurrent
+ backend.neuroml.part=baseCell,baseSpikingCell,baseCellMembPot,baseCellMembPotCap,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
+ id=166b5f39bd266700
+C=100pF
+ $metadata
+  backend.xyce.param=cMem
+  public
+I=+
+ $metadata
+  backend.neuroml.param=iMemb,iSyn,iChannels
+V=0@$init
+ $metadata
+  backend.neuroml.param=v
+V'=I/C
+ $metadata
+  backend.neuroml.param=v'
+Vpeak=30mV
+ $metadata
+  backend.neuroml.param=thresh
+  public
+spike=V>Vpeak
+ $metadata
+  backend.lems.port=out
+  notes=In LEMS code, the equivalent part uses an auxilliary variable to limit spike to the leading edge of this condition. Edge detection is really the job of the event() function, so we don't add the aux variable here.

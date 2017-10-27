@@ -1,0 +1,15 @@
+N2A.schema=1
+$inherit="Cell LIF Tau"
+ 0=166b5f1857351a61
+$metadata
+ backend.neuroml.part=iafTauRefCell
+ id=166b5f1857391494
+ notes=Integrate and fire cell which returns to its leak reversal potential at a given rate. Has a refractory period after spiking
+V'
+ @=0
+ @$t>refractoryEnd&&V<=Vpeak=(E-V)/tau
+refractoryEnd=$t+refractoryPeriod@V>Vpeak
+refractoryPeriod=0s
+ $metadata
+  backend.neuroml.param=refract
+  public

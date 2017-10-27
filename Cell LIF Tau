@@ -1,0 +1,14 @@
+N2A.schema=1
+$inherit="Cell LIF"
+ 0=166b015ccda9c699
+$metadata
+ backend.neuroml.part=iafTauCell
+ id=166b5f1857351a61
+ notes=LIF model which expresses its decay constant tau directly, rather than using a leak conductance.
+C=$kill
+G=$kill
+I=$kill
+V'=(E-V)/tau
+tau=0s
+ $metadata
+  public

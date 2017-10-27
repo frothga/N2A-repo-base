@@ -1,0 +1,31 @@
+N2A.schema=1
+$inherit="Compartment"
+ 0=166b5f39bd266700
+$metadata
+ backend.neuroml.part=segment
+ id=166b5f185734f92a
+ notes=A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
+$xyz=[0;0;0]
+ $metadata
+  notes=The end point of this segment.
+C=Cspecific*surfaceArea
+ $metadata
+  backend.neuroml.param=totCap
+Cspecific=1(uF/cm2)
+ $metadata
+  backend.neuroml.param=totSpecCap
+diameter=20um
+ $metadata
+  notes=At the end point of this segment.
+diameter0=:diameter
+ $metadata
+  notes=At the beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.diameter
+length=:norm(2,$xyz-xyz0)
+pi=3.14159265
+r=:diameter/2
+surfaceArea=:
+ @=2*pi*r*length
+ @length==0=4*pi*r^2
+xyz0=:$xyz
+ $metadata
+  notes=The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz

@@ -1,0 +1,6 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=silentSynapse
+ id=166b5f2337372608
+ notes=A null part for split synapses.
+I=0

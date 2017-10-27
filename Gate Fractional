@@ -1,0 +1,9 @@
+N2A.schema=1
+$inherit="Gate"
+ 0=166b5f185734fa2c
+$metadata
+ backend.lems.children.subGate=subGate
+ backend.neuroml.part=gateFractional
+ id=166b5f185738b88b
+ notes=Gate composed of subgates contributing with fractional conductance
+q=+

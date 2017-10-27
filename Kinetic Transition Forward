@@ -1,0 +1,11 @@
+N2A.schema=1
+$inherit="Kinetic Transition"
+ 0=166b5f185734fe38
+$metadata
+ backend.neuroml.part=forwardTransition
+ id=166b5f185738a38a
+ notes=A forward only transition which specifies an HH rate.
+forward=:rate.x
+rate
+ $inherit="HHVariable"
+  0=166b5f185735064a

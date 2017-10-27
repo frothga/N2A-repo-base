@@ -2,15 +2,20 @@ N2A.schema=1
 $inherit="Synapse Conductance"
  0=166b015ccdaa5a31
 $metadata
+ backend.neuroml.part=alphaSynapse
  id=166b015ccdaa0f39
- lock
-G=0@$init
 G'=(exp(1)*a-G)/tau
+ $metadata
+  backend.neuroml.param=g'
 a
+ $metadata
+  backend.neuroml.param=A
  @$init=0
- @event=a+Gmax*W
+ @in=a+Gmax*weight
 a'=-a/tau
-tau=1ms
+ $metadata
+  backend.neuroml.param=A'
+tau=0ms
  $metadata
   backend.stpu.param=tauRise,tauDecay
   public

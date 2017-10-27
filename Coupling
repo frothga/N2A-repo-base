@@ -1,0 +1,12 @@
+N2A.schema=1
+$metadata
+ id=166b015ccda56f33
+ notes=Enables  current flow between two adjacent compartments, based on voltage difference. Also implements gap junction.
+A=$connect("Compartment")
+A.I'=+-I
+B=$connect("Compartment")
+B.I'=+I
+G=100uS
+ $metadata
+  public
+I=:G*(A.V-B.V)

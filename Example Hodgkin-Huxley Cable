@@ -4,7 +4,7 @@ $metadata
 $p=$t<100ms
 $t'=0.01ms
 C
- $inherit="Coupling Voltage"
+ $inherit="Coupling"
   0=166b015ccda56f33
  $p=A.$index==B.$index-1
  A=HH

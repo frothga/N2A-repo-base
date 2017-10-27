@@ -1,0 +1,20 @@
+N2A.schema=1
+$inherit="Spike Generator Poisson"
+ 0=166b5f18573a49ac
+$metadata
+ backend.neuroml.part=transientPoissonFiringSynapse
+ id=166b5f18573a7db1
+ notes=Poisson spike generator with delay and duration.
+LONG_TIME=1000000000h
+delay=0s
+ $metadata
+  public
+duration=0s
+ $metadata
+  public
+isi
+ @$init=nextIsi
+ @tsince>isi=nextIsi+H(($t+nextIsi-(delay+duration))/duration)*LONG_TIME
+nextIsi
+ @$init=-averageIsi*log(1-uniform())+delay
+ @tsince>isi=-averageIsi*log(1-uniform())

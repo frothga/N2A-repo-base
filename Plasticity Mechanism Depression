@@ -1,0 +1,22 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=tsodyksMarkramDepMechanism
+ id=166b5f18573a95b3
+ notes=Depression-only Tsodyks-Markram model, as in Tsodyks and Markram 1997.
+$up.plasticityFactor=*R*U
+ $metadata
+  backend.neuroml.param=plasticityFactor
+R
+ @$init=1
+ @in=R*(1-U)
+R'=(1-R)/tauRec
+U=:initReleaseProb
+in=:A.out
+ $metadata
+  backend.lems.port=in
+initReleaseProb=0
+ $metadata
+  public
+tauRec=0s
+ $metadata
+  public

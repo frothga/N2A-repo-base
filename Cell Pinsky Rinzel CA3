@@ -1,0 +1,126 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=pinskyRinzelCA3Cell
+ id=166b5f1857398e9b
+ notes=|
+   This does not really belong in a set of base models, but is included for compatibility with the NeuroML specification.
+   
+   Comment from LEMS definition: Reduced CA3 cell model from Pinsky and Rinzel 1994. See https://github.com/OpenSourceBrain/PinskyRinzelModel
+Cad=0
+Cad'=(-0.13*ICad/UAMP_PER_CM2-0.075*Cad)/MSEC
+ICad=gCa*sd*sd*(Vd-eCa)
+Iampa=:gAmpa*Wi*(Vd-Vsyn)
+Inmda=:gNmda*Sisat*(Vd-Vsyn)/(1+0.28*exp(-0.062*(Vd/MVOLT-60)))
+Isyn=:Iampa+Inmda
+MSEC=1ms
+MVOLT=1mV
+Minfs_Vs=:alphams_Vs/(alphams_Vs+betams_Vs)
+Si=0
+Si'=-Si/150
+Sisat=:
+ @=Si
+ @Si>Smax=Smax
+Smax=125
+UAMP_PER_CM2=1(uA/cm2)
+V=Vs
+Vd=eL@$init
+Vd'=(iDend/(1-pp)-Isyn/(1-pp)-gLd*(Vd-eL)-ICad-gKahp*qd*(Vd-eK)-gKC*cd*chid*(Vd-eK)+gc*(Vs-Vd)/(1-pp))/cm
+Vs=eL@$init
+Vs'=(-gLs*(Vs-eL)-gNa*Minfs_Vs^2*hs*(Vs-eNa)-gKdr*ns*(Vs-eK)+gc/pp*(Vd-Vs)+iSoma/pp)/cm
+Vsyn=60mV
+Wi=0
+Wi'=-Wi/2
+alphac=0
+ $metadata
+  public
+alphacd_Vd=:
+ @=2*exp((-53.5-Vd/MVOLT)/27)
+ @Vd<-10*MVOLT=exp((Vd/MVOLT+50)/11-(Vd/MVOLT+53.5)/27)/18.975
+alphahs_Vs=:0.128*exp((-43-Vs/MVOLT)/18)
+alphams_Vs=:0.32*(-46.9-Vs/MVOLT)/(exp((-46.9-Vs/MVOLT)/4)-1)
+alphans_Vs=:0.016*(-24.9-Vs/MVOLT)/(exp((-24.9-Vs/MVOLT)/5)-1)
+alphaqd=:
+ @=2e-5*Cad
+ @2e-5*Cad>0.01=0.01
+alphasd_Vd=:1.6/(1+exp(-0.072*(Vd/MVOLT-5)))
+betac=0
+ $metadata
+  public
+betacd_Vd=:
+ @=0
+ @Vd<-10*MVOLT=2*exp((-53.5-Vd/MVOLT)/27)-alphacd_Vd
+betahs_Vs=:4/(1+exp((-20-Vs/MVOLT)/5))
+betams_Vs=:0.28*(Vs/MVOLT+19.9)/(exp((Vs/MVOLT+19.9)/5)-1)
+betans_Vs=:0.25*exp(-1-0.025*Vs/MVOLT)
+betaqd=0.001
+betasd_Vd=:0.02*(Vd/MVOLT+8.9)/(exp((Vd/MVOLT+8.9)/5)-1)
+cd=0
+cd'=(alphacd_Vd-(alphacd_Vd+betacd_Vd)*cd)/MSEC
+chid=:
+ @=Cad/250
+ @Cad/250>1=1
+cm=0(A2.s4/kg/m4)
+ $metadata
+  public
+eCa=0V
+ $metadata
+  public
+eK=0V
+ $metadata
+  public
+eL=0V
+ $metadata
+  public
+eNa=0V
+ $metadata
+  public
+gAmpa=0(A2.s3/kg/m4)
+ $metadata
+  public
+gCa=0(A2.s3/kg/m4)
+ $metadata
+  public
+gKC=0(A2.s3/kg/m4)
+ $metadata
+  public
+gKahp=0(A2.s3/kg/m4)
+ $metadata
+  public
+gKdr=0(A2.s3/kg/m4)
+ $metadata
+  public
+gLd=0(A2.s3/kg/m4)
+ $metadata
+  public
+gLs=0(A2.s3/kg/m4)
+ $metadata
+  public
+gNa=0(A2.s3/kg/m4)
+ $metadata
+  public
+gNmda=0(A2.s3/kg/m4)
+ $metadata
+  public
+gc=0(A2.s3/kg/m4)
+ $metadata
+  public
+hs=0
+hs'=(alphahs_Vs-(alphahs_Vs+betahs_Vs)*hs)/MSEC
+iDend=0(A/m2)
+ $metadata
+  public
+iSoma=0(A/m2)
+ $metadata
+  public
+ns=0
+ns'=(alphans_Vs-(alphans_Vs+betans_Vs)*ns)/MSEC
+pp=0
+ $metadata
+  public
+qd=qd0@$init
+qd'=(alphaqd-(alphaqd+betaqd)*qd)/MSEC
+qd0=0
+ $metadata
+  public
+sd=0
+sd'=(alphasd_Vd-(alphasd_Vd+betasd_Vd)*sd)/MSEC

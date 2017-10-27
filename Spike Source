@@ -1,0 +1,11 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=baseSpikeSource,baseVoltageDepPointCurrentSpiking
+ id=166b5f185735074b
+spike=0
+ $metadata
+  backend.lems.port=out
+  description=Port on which spikes are emitted
+tsince=0s
+ $metadata
+  description=Time since the last spike was emitted

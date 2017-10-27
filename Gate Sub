@@ -1,0 +1,22 @@
+N2A.schema=1
+$metadata
+ backend.neuroml.part=subGate
+ id=166b5f1857350240
+ notes=Contributes fractional conductance to containing gate.
+$up.q=+q*fractionalConductance
+ $metadata
+  backend.neuroml.param=qfrac
+Q10Scaling=*
+fractionalConductance=0
+ $metadata
+  public
+inf=:steadyState.x
+q=inf@$init
+q'=(inf-q)/tau
+steadyState
+ $inherit="HHVariable"
+  0=166b5f185735064a
+tau=:timeCourse.x/Q10Scaling
+timeCourse
+ $inherit="HHVariable"
+  0=166b5f185735064a
