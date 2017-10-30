@@ -6,14 +6,12 @@ $metadata
    This does not really belong in a set of base models, but is included for compatibility with the NeuroML specification.
    
    Comment from LEMS definition: Reduced CA3 cell model from Pinsky and Rinzel 1994. See https://github.com/OpenSourceBrain/PinskyRinzelModel
-Cad=0
 Cad'=(-0.13*ICad/1(uA/cm2)-0.075*Cad)/1ms
 ICad=gCa*sd*sd*(Vd-eCa)
 Iampa=:gAmpa*Wi*(Vd-Vsyn)
 Inmda=:gNmda*Sisat*(Vd-Vsyn)/(1+0.28*exp(-0.062*(Vd/1mV-60)))
 Isyn=:Iampa+Inmda
 Minfs_Vs=:alphams_Vs/(alphams_Vs+betams_Vs)
-Si=0
 Si'=-Si/150
 Sisat=:
  @=Si
@@ -25,7 +23,6 @@ Vd'=(iDend/(1-pp)-Isyn/(1-pp)-gLd*(Vd-eL)-ICad-gKahp*qd*(Vd-eK)-gKC*cd*chid*(Vd-
 Vs=eL@$init
 Vs'=(-gLs*(Vs-eL)-gNa*Minfs_Vs^2*hs*(Vs-eNa)-gKdr*ns*(Vs-eK)+gc/pp*(Vd-Vs)+iSoma/pp)/cm
 Vsyn=60mV
-Wi=0
 Wi'=-Wi/2
 alphac=0
  $metadata
@@ -51,7 +48,6 @@ betams_Vs=:0.28*(Vs/1mV+19.9)/(exp((Vs/1mV+19.9)/5)-1)
 betans_Vs=:0.25*exp(-1-0.025*Vs/1mV)
 betaqd=0.001
 betasd_Vd=:0.02*(Vd/1mV+8.9)/(exp((Vd/1mV+8.9)/5)-1)
-cd=0
 cd'=(alphacd_Vd-(alphacd_Vd+betacd_Vd)*cd)/1ms
 chid=:
  @=Cad/250
@@ -101,7 +97,6 @@ gNmda=0(mS/cm2)
 gc=0(mS/cm2)
  $metadata
   public
-hs=0
 hs'=(alphahs_Vs-(alphahs_Vs+betahs_Vs)*hs)/1ms
 iDend=0(A/m2)
  $metadata
@@ -109,7 +104,6 @@ iDend=0(A/m2)
 iSoma=0(A/m2)
  $metadata
   public
-ns=0
 ns'=(alphans_Vs-(alphans_Vs+betans_Vs)*ns)/1ms
 pp=0
  $metadata
@@ -119,5 +113,4 @@ qd'=(alphaqd-(alphaqd+betaqd)*qd)/1ms
 qd0=0
  $metadata
   public
-sd=0
 sd'=(alphasd_Vd-(alphasd_Vd+betasd_Vd)*sd)/1ms

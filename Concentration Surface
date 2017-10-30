@@ -5,7 +5,9 @@ $metadata
  backend.neuroml.part=fixedFactorConcentrationModel
  id=166b5f1857389787
  notes=Decays toward a resting value with a given time constant. The current-driven component of concentration change is scaled by surface area rather than shell volume. The "fixed factor" refers to a scaling factor rho applied to the surface are.
-concentration'=I/surfaceArea*rho-(inside-restingConcentration)/tau
+inside'=I/surfaceArea*rho-(inside-restingConcentration)/tau
+ $metadata
+  backend.neuroml.param=concentration'
 restingConcentration=0(mol/m3)
  $metadata
   backend.neuroml.param=restingConc
