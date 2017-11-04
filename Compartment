@@ -19,11 +19,14 @@ V=0@$init
 V'=I/C
  $metadata
   backend.neuroml.param=v'
-Vpeak=30mV
+Vspike=30mV
  $metadata
   backend.neuroml.param=thresh
   public
-spike=V>Vpeak
+fire=:V>Vspike
+ $metadata
+  notes=This temporary variable carries the same information as spike, but the condition V>Vspike is often tested in multiple places. Using a temporary saves a cycle and makes the model easier to read.
+spike=fire
  $metadata
   backend.lems.port=out
   notes=In LEMS code, the equivalent part uses an auxilliary variable to limit spike to the leading edge of this condition. Edge detection is really the job of the event() function, so we don't add the aux variable here.

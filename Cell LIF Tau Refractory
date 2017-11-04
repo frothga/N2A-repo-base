@@ -7,8 +7,8 @@ $metadata
  notes=Integrate and fire cell which returns to its leak reversal potential at a given rate. Has a refractory period after spiking
 V'
  @=0
- @$t>refractoryEnd&&V<=Vpeak=(E-V)/tau
-refractoryEnd=$t+refractoryPeriod@V>Vpeak
+ @$t>refractoryEnd&&!fire=(E-V)/tau
+refractoryEnd=$t+refractoryPeriod@fire
 refractoryPeriod=0s
  $metadata
   backend.neuroml.param=refract

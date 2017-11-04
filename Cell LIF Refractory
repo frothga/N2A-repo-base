@@ -6,8 +6,8 @@ $metadata
  id=166b5f185738fc93
 V'
  @=0
- @$t>refractoryEnd&&V<=Vpeak=I/C
-refractoryEnd=$t+refractoryPeriod@V>Vpeak
+ @$t>refractoryEnd&&!fire=I/C
+refractoryEnd=$t+refractoryPeriod@fire
 refractoryPeriod=0s
  $metadata
   backend.neuroml.param=refract

@@ -16,7 +16,7 @@ G=100uS
 I=+G*(E-V)
 V
  @$init=E
- @V>Vpeak=Vreset
+ @fire=Vreset
 Vreset=0V
  $metadata
   backend.neuroml.param=reset

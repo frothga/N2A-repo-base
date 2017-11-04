@@ -19,12 +19,15 @@ I=+140pA
   notes=Must add 140pA to input current for simple Izhikevich model.
 V
  @$init=V0
- @V>Vpeak=c
+ @fire=c
 V'=(k*(V-vr)*(V-vt)-u+I)/C
 V0=c
  $metadata
   backend.neuroml.param=v0
   public
+Vspike=30mV
+ $metadata
+  backend.neuroml.param=thresh,vpeak
 a=0.02kHz
  $metadata
   public
@@ -43,7 +46,7 @@ k=0.04(nS/mV)
   public
 u
  @$init=b*V0
- @V>Vpeak=u+d
+ @fire=u+d
 u'=a*(b*(V-vr)-u)
 vr=0mV
  $metadata

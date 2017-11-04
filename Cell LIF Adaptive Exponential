@@ -24,8 +24,9 @@ b=0A
 delT=0V
  $metadata
   public
+refractoryEnd=$t+refractoryPeriod@fire
 tauw=0s
  $metadata
   public
-w=w+b@V>Vpeak
+w=w+b@fire
 w'=(a*(V-E)-w)/tauw
