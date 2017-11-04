@@ -7,14 +7,14 @@ $metadata
  notes=Generates spikes with a random interspike interval of at least minISI and at most maxISI
 isi=minISI+uniform(maxISI-minISI)@$init||tsince>isi
  $metadata
-  description=The interval until the next spike
+  notes=The interval until the next spike
 maxISI=0s
  $metadata
-  description=Maximum interspike interval
+  notes=Maximum interspike interval
   public
 minISI=0s
  $metadata
-  description=Minimum interspike interval
+  notes=Minimum interspike interval
   public
 spike
  @=0

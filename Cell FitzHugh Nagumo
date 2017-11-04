@@ -9,18 +9,18 @@ C=100pF
   notes=While not technically part of the model, this allows currents dimensioned in Amps to be injected. Effectively, V and W take on a dimension of Volts, even though they are not scaled in a way that is compatible with other parts. (The alternate approach, taken by NeuroML, is to create an extra set of parts that are dimensionless.)
 I=0
  $metadata
-  description=plays the role of an external injected current
+  notes=plays the role of an external injected current
   public
 V=V0@$init
  $metadata
-  description=V plays the role of the membrane potential
+  notes=V plays the role of the membrane potential
 V'=(V-V^3/3-W)/1ms+I/C
 V0=0
  $metadata
   public
 W=W0@$init
  $metadata
-  description=W plays the role of a recovery variable
+  notes=W plays the role of a recovery variable
 W'=phi*(V+a-b*W)/1ms
 W0=0
  $metadata

@@ -10,18 +10,18 @@ I=:
  @t>=0&&t<duration=(targetVoltage-B.V)/simpleSeriesResistance
 delay=0s
  $metadata
-  description=Delay before change in current. Current is zero  prior to this.
+  notes=Time until we begin to apply current to target.
   public
 duration=0s
  $metadata
-  description=Duration for attempting to keep parent at targetVoltage. Current is zero after delay + duration.
+  notes=Only apply current for this long.
   public
 simpleSeriesResistance=0Ohm
  $metadata
-  description=Current will be calculated by the difference in voltage between the target and parent, divided by this value
+  notes=Current will be calculated by the difference in voltage between the target and parent, divided by this value
   public
 t=:$t-delay
 targetVoltage=0V
  $metadata
-  description=Current will be applied to try to get parent to this target voltage
+  notes=Current will be applied to try to get parent to this target voltage
   public

@@ -6,7 +6,7 @@ $metadata
  id=166b5f18573a45ab
 period=0s
  $metadata
-  description=Time between spikes. First spike will be emitted after this time.
+  notes=Time between spikes. First spike will be emitted after this time.
   public
 spike
  @=0

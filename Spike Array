@@ -1,0 +1,15 @@
+N2A.schema=1
+$inherit="Spike Source"
+ 0=166b5f185735074b
+$metadata
+ backend.neuroml.part=spikeArray
+ id=166b5f7fcf84a900
+fire=:$t>=times(index)
+index
+ @$init=0
+ @fire=index+1
+spike=fire
+times=[.inf]
+ $metadata
+  notes=Vector of spike times. Should be in strictly ascending order. Last entry should be .inf in order to stop spiking.
+  public

@@ -5,7 +5,3 @@ $metadata
 spike=0
  $metadata
   backend.lems.port=out
-  description=Port on which spikes are emitted
-tsince=0s
- $metadata
-  description=Time since the last spike was emitted

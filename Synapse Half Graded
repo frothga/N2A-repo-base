@@ -6,7 +6,7 @@ $metadata
 E=0V
  $metadata
   backend.neuroml.param=erev
-  description=The reversal potential of the synapse
+  notes=The reversal potential of the synapse
   public
 G=0S
  $metadata
@@ -23,16 +23,16 @@ Vpeer=:0V
   backend.neuroml.param=vpeer
 Vth=0V
  $metadata
-  description=The half-activation voltage of the synapse
+  notes=The half-activation voltage of the synapse
   public
 delta=0V
  $metadata
-  description=Slope of the activation curve
+  notes=Slope of the activation curve
   public
 inf=1/(1+exp((Vth-Vpeer)/delta))
 k=0Hz
  $metadata
-  description=Rate constant for transmitter-receptor dissociation rate
+  notes=Rate constant for transmitter-receptor dissociation rate
   public
 s=inf@1-inf<1e-4
 s'=s_rate
