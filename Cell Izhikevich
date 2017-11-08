@@ -2,6 +2,7 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
+ backend.neuroml.DL
  backend.neuroml.part=izhikevich2007Cell,izhikevichCell
  backend.xyce.device=neuron7
  id=166b5f1857395797

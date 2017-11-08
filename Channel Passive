@@ -1,0 +1,9 @@
+N2A.schema=1
+$inherit="Channel"
+ 0=166b5f185735013e
+$metadata
+ backend.neuroml.part=ionChannelPassive
+ id=166b5f89512f2b02
+E=-54.3mV
+Gall=:Gdensity*surfaceArea
+Gdensity=3(S/m2)

@@ -7,13 +7,12 @@ $up.plasticityFactor=*R*U
  $metadata
   backend.neuroml.param=plasticityFactor
 R
+ $metadata
+  notes=The spike event flag "in" comes from the containing synapse.
  @$init=1
  @in=R*(1-U)
 R'=(1-R)/tauRec
 U=:initReleaseProb
-in=:A.out
- $metadata
-  backend.lems.port=in
 initReleaseProb=0
  $metadata
   public

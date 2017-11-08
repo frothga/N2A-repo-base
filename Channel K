@@ -7,7 +7,7 @@ $metadata
  species=k
 E=-77mV
 Gall=:Gdensity*surfaceArea
-Gdensity=36(mS/cm2)
+Gdensity=360(S/m2)
  $metadata
   notes=At 6.3Cel. Need Q10 parameters.
 n
@@ -17,12 +17,12 @@ n
   $inherit="HHVariable Exponential Linear"
    0=166b5f185735c265
   midpoint=-55mV
-  rate=0.1Hz
+  rate=0.1kHz
   scale=10mV
  instances=4
  reverseRate
   $inherit="HHVariable Exponential"
    0=166b5f185735ca67
   midpoint=-65mV
-  rate=0.125Hz
+  rate=0.125kHz
   scale=-80mV

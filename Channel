@@ -2,8 +2,7 @@ N2A.schema=1
 $metadata
  backend.lems.children.conductanceScaling=baseConductanceScaling
  backend.lems.children.gates=gate
- backend.lems.requirement.v=(V)
- backend.neuroml.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelPassive,ionChannelKS
+ backend.neuroml.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelKS
  id=166b5f185735013e
 $up.I=+G*(E-V)
  $metadata

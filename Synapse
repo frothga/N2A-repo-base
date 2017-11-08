@@ -6,7 +6,7 @@ $metadata
  id=166b5f185734f41a
  notes=An connection which injects current into its target and listens for events from its source.
 A=$connect("Compartment")
-in=:A.out
+in=:event(A.spike)
  $metadata
   backend.lems.port=in
 weight=1

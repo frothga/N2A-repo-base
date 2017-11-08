@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Spike Source"
  0=166b5f185735074b
 $metadata
- backend.neuroml.part=spikeArray
+ backend.neuroml.part=spikeArray,timedSynapticInput
  id=166b5f7fcf84a900
 fire=:$t>=times(index)
 index

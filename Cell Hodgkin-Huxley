@@ -12,7 +12,5 @@ Na
  $inherit="Channel Na"
   0=166b5f54635c5200
 leak
- $inherit="Channel"
-  0=166b5f185735013e
- E=-54.3mV
- Gdensity=0.3(mS/cm2)
+ $inherit="Channel Passive"
+  0=166b5f89512f2b02
