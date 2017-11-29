@@ -1,13 +1,12 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=channelDensityGHK2
  gui.mixin
  id=166b5f185737d177
  notes=Modified version of Jaffe et al. 1994 (used also in Lawrence et al. 2006). See https://github.com/OpenSourceBrain/ghk-nernst.
 Gall
  @=Gdensity*pOpen
  @c.outside<=0=0
-c=$connect("Concentration Model")
+c=$connect("Concentration")
 pOpen=:
  @=tmp*0.001*(1-c.inside/c.outside*exp(tmp))*(tmp/(exp(tmp)-1))
  @tmp==0=tmp*0.001*(1-c.inside/c.outside)

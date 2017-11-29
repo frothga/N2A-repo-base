@@ -1,4 +1,6 @@
 N2A.schema=1
+$inherit="Synapse Half Gap"
+ 0=166b5f185734fb2e
 $metadata
  backend.neuroml.part=gradedSynapse
  id=166b5f185738e492
@@ -8,19 +10,7 @@ E=0V
   backend.neuroml.param=erev
   notes=The reversal potential of the synapse
   public
-G=0S
- $metadata
-  backend.neuroml.param=conductance
-  public
 I=:G*s*(E-V)
- $metadata
-  backend.neuroml.param=i
-V=:0V
- $metadata
-  backend.neuroml.param=v
-Vpeer=:0V
- $metadata
-  backend.neuroml.param=vpeer
 Vth=0V
  $metadata
   notes=The half-activation voltage of the synapse

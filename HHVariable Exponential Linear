@@ -5,7 +5,6 @@ $metadata
  backend.neuroml.part=HHExpLinearRate,HHExpLinearVariable
  id=166b5f185735c265
  notes=Linear for large positive V. Exponentially decays for large negative V.
-a=:(V-midpoint)/scale
 x=:
  @=rate
  @a=rate*a/(1-exp(-a))

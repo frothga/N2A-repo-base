@@ -2,16 +2,16 @@ N2A.schema=1
 $inherit="Gate"
  0=166b5f185734fa2c
 $metadata
- backend.neuroml.part=gateHHtauInf,gateHHratesTauInf
+ backend.neuroml.part=gateHHtauInf
  id=166b5f185738da91
-Q10Scaling=*
-inf=:steadyState.x
-q=inf@$init
-q'=(inf-q)/tau
+ notes=Hodgkin-Huxley gate with explicit time constant (tau) and explicit steady-state value (inf).
+q=inf@q==0
+q'=(inf-q)/tau@tau
 steadyState
  $inherit="HHVariable"
   0=166b5f185735064a
-tau=:timeCourse.x/Q10Scaling
+ $up.inf=x
 timeCourse
  $inherit="HHVariable"
   0=166b5f185735064a
+ $up.tau=x/Q10Scaling

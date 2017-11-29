@@ -2,8 +2,8 @@ N2A.schema=1
 $inherit="Synapse Exponential Double"
  0=166b015ccdaab9e9
 $metadata
- backend.lems.children.blockMechanisms=baseBlockMechanism
- backend.lems.children.plasticityMechanisms=basePlasticityMechanism
+ backend.lems.children.blockMechanisms=Blocking Mechanism
+ backend.lems.children.plasticityMechanisms=Plasticity Mechanism
  backend.neuroml.part=blockingPlasticSynapse
  id=166b5f1857378473
  notes=Exponential synapse that allows for optional block and plasticity mechanisms.

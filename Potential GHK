@@ -1,19 +1,12 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=channelDensityGHK
  gui.mixin
  id=166b5f185737c476
  notes=Set current density based on the Goldman-Hodgkin-Katz equation.
-F=96485.3(C/mol)
- $metadata
-  notes=Faraday constant
 Gall=:
- @=permeability*c.z*F*K*(c.inside-c.outside*expKV)/(1-expKV)
+ @=permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
  @c.outside<=0=0
-K=:c.z*F/(R*temperature)
-R=8.3144621(J/K/mol)
- $metadata
-  notes=Ideal gas constant
+K=:c.z*Faraday/(IdealGas*temperature)
 c=$connect("Concentration")
 expKV=:exp(-K*V)
 permeability=0(m/s)

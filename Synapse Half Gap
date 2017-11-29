@@ -1,4 +1,6 @@
 N2A.schema=1
+$inherit="Synapse Half"
+ 0=166b5f2337372608
 $metadata
  backend.neuroml.part=gapJunction,linearGradedSynapse
  id=166b5f185734fb2e
@@ -8,9 +10,3 @@ G=0S
   backend.neuroml.param=conductance
   public
 I=:G*(Vpeer-V)
-V=:0V
- $metadata
-  backend.neuroml.param=v
-Vpeer=:0V
- $metadata
-  backend.neuroml.param=vpeer

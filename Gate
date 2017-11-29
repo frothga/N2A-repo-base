@@ -1,10 +1,12 @@
 N2A.schema=1
 $metadata
- backend.lems.children.q10Settings=baseQ10Settings
+ backend.lems.children.q10Settings=Q10
  backend.neuroml.part=baseGate,gate
  id=166b5f185734fa2c
 $up.fopen=*q^instances
 Q10Scaling=*
+ $metadata
+  backend.neuroml.param=rateScale
 instances=1
  $metadata
   public

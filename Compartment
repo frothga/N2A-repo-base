@@ -1,9 +1,10 @@
 N2A.schema=1
+$inherit="Spike Source"
+ 0=166b5f185735074b
 $metadata
- backend.lems.children.channelDensities=baseChannelDensity
- backend.lems.children.concentrationModels=concentrationModel
- backend.lems.children.populations=baseChannelPopulation
- backend.lems.children.synapses=basePointCurrent
+ backend.lems.children.channelDensities=Channel
+ backend.lems.children.concentrationModels=Concentration
+ backend.lems.children.populations=Channel
  backend.neuroml.part=baseCell,baseSpikingCell,baseCellMembPot,baseCellMembPotCap,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
  id=166b5f39bd266700
 C=100pF
@@ -29,4 +30,3 @@ fire=:V>Vspike
 spike=fire
  $metadata
   backend.lems.port=out
-  notes=In LEMS code, the equivalent part uses an auxilliary variable to limit spike to the leading edge of this condition. Edge detection is really the job of the event() function, so we don't add the aux variable here.

@@ -4,6 +4,6 @@ $inherit="Channel"
 $metadata
  backend.neuroml.part=ionChannelPassive
  id=166b5f89512f2b02
-E=-54.3mV
+E=-54.4mV
 Gall=:Gdensity*surfaceArea
-Gdensity=3(S/m2)
+Gdensity=0.3(mS/cm2)

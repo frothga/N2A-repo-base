@@ -1,12 +1,10 @@
 N2A.schema=1
 $metadata
- backend.lems.children.conductanceScaling=baseConductanceScaling
- backend.lems.children.gates=gate
+ backend.lems.children.conductanceScaling=Q10
+ backend.lems.children.gates=Gate
  backend.neuroml.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelKS
  id=166b5f185735013e
-$up.I=+G*(E-V)
- $metadata
-  backend.neuroml.param=i
+$up.I=+I
 E=0mV
  $metadata
   backend.neuroml.param=erev
@@ -26,6 +24,9 @@ Gall=:G1
     	G1*population -- where population is the count of individual ion channels
     	Gdensity*surfaceArea -- where Gdensity is the conductane per unit area
     The default form given here is simply a population of 1.
+I=:G*(E-V)
+ $metadata
+  backend.neuroml.param=i
 Q10Scaling=*
  $metadata
   backend.neuroml.param=conductanceScale

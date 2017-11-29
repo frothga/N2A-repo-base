@@ -4,9 +4,9 @@ $inherit="Gate"
 $metadata
  backend.neuroml.part=gateHHInstantaneous
  id=166b5f185738bd8c
-q=:steadyState.x
- $metadata
-  backend.neuroml.param=inf
+ notes=Hodgkin-Huxley gate with explicit steady-state value and a time constant of zero.
+q=:inf
 steadyState
  $inherit="HHVariable"
   0=166b5f185735064a
+ $up.inf=x

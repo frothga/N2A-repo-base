@@ -2,12 +2,13 @@ N2A.schema=1
 $metadata
  backend.neuroml.part=baseConductanceScaling,baseQ10Settings,q10Fixed,q10ExpTemp,q10ConductanceScaling
  id=166b5f5b9cbabe00
-$up.Q10Scaling=*coefficent^((temperature-temperature0)/10K)
- $metadata
-  backend.neuroml.param=factor
+$up.Q10Scaling=*scaling
 coefficient=1
  $metadata
   backend.neuroml.param=q10Factor
+scaling=:coefficent^((temperature-temperature0)/10K)
+ $metadata
+  backend.neuroml.param=factor
 temperature0=20Cel
  $metadata
   backend.neuroml.param=experimentalTemp

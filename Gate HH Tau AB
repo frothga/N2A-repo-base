@@ -4,19 +4,19 @@ $inherit="Gate"
 $metadata
  backend.neuroml.part=gateHHratesTau
  id=166b5f185738cd8f
-Q10Scaling=*
-alpha=:forwardRate.x
-beta=:reverseRate.x
+ notes=Hodgkin-Huxley gate with explicit time constant (tau), while steady-state value is implied by alpha and beta parameters.
 forwardRate
  $inherit="HHVariable"
   0=166b5f185735064a
-inf=:alpha/(alpha+beta)
-q=inf@$init
-q'=(inf-q)/tau
+ $up.alpha=x
+inf=:alpha/(alpha+beta)@alpha+beta
+q=inf@q==0
+q'=(inf-q)/tau@tau
 reverseRate
  $inherit="HHVariable"
   0=166b5f185735064a
-tau=:timeCourse.x/Q10Scaling
+ $up.beta=x
 timeCourse
  $inherit="HHVariable"
   0=166b5f185735064a
+ $up.tau=x/Q10Scaling
