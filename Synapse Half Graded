@@ -2,12 +2,12 @@ N2A.schema=1
 $inherit="Synapse Half Gap"
  0=166b5f185734fb2e
 $metadata
- backend.neuroml.part=gradedSynapse
+ backend.lems.part=gradedSynapse
  id=166b5f185738e492
  notes=Analog synapse based on methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html
 E=0V
  $metadata
-  backend.neuroml.param=erev
+  backend.lems.param=erev
   notes=The reversal potential of the synapse
   public
 I=:G*s*(E-V)

@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Plasticity Mechanism"
  0=166b5f18573a90b2
 $metadata
- backend.neuroml.part=tsodyksMarkramDepMechanism
+ backend.lems.part=tsodyksMarkramDepMechanism
  id=166b5f18573a95b3
  notes=Depression-only Tsodyks-Markram model, as in Tsodyks and Markram 1997.
 U

@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Synapse Conductance"
  0=166b015ccdaa5a31
 $metadata
- backend.neuroml.part=expTwoSynapse
+ backend.lems.part=expTwoSynapse
  id=166b015ccdaab9e9
 E=0
  $metadata
@@ -10,25 +10,25 @@ E=0
 G=:Gmax*(b-a)
 Tpeak=log(tauDecay/tauRise)*(tauDecay*tauRise)/(tauDecay-tauRise)
  $metadata
-  backend.neuroml.param=peakTime
+  backend.lems.param=peakTime
 a
  $metadata
-  backend.neuroml.param=A
+  backend.lems.param=A
  @$init=0
  @in=a+weight*f
 a'=-a/tauRise
  $metadata
-  backend.neuroml.param=A'
+  backend.lems.param=A'
 b
  $metadata
-  backend.neuroml.param=B
+  backend.lems.param=B
  @$init=0
  @in=b+weight*f
 b'=-b/tauDecay
  $metadata
-  backend.neuroml.param=B'
+  backend.lems.param=B'
 f=1/(exp(-Tpeak/tauDecay)-exp(-Tpeak/tauRise))
  $metadata
-  backend.neuroml.param=waveformFactor
+  backend.lems.param=waveformFactor
 tauDecay=0ms
 tauRise=0ms

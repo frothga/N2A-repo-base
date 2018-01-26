@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Spike Source"
  0=166b5f185735074b
 $metadata
- backend.neuroml.part=spikeGeneratorRandom
+ backend.lems.part=spikeGeneratorRandom
  id=166b5f18573a4dad
  notes=Generates spikes with a random interspike interval of at least minISI and at most maxISI
 isi=minISI+uniform(maxISI-minISI)@$init||tsince>isi

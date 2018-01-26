@@ -2,11 +2,11 @@ N2A.schema=1
 $inherit="Kinetic Transition"
  0=166b5f185734fe38
 $metadata
- backend.neuroml.part=vHalfTransition
+ backend.lems.part=vHalfTransition
  id=166b5f18573a99b4
 f=:exp(z*gamma*(v-vHalf)/kte)/tau
  $metadata
-  backend.neuroml.param=rf0
+  backend.lems.param=rf0
 forward=:1/(1/f+tauMin)
 gamma=0
  $metadata
@@ -14,7 +14,7 @@ gamma=0
 kte=25.3mV
 r=:exp(-z*(1-gamma)*(v-vHalf)/kte)/tau
  $metadata
-  backend.neuroml.param=rr0
+  backend.lems.param=rr0
 reverse=:1/(1/r+tauMin)
 tau=0s
  $metadata

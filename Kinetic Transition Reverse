@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Kinetic Transition"
  0=166b5f185734fe38
 $metadata
- backend.neuroml.part=reverseTransition
+ backend.lems.part=reverseTransition
  id=166b5f18573a07a6
  notes=A reverse only transition which specifies an HH rate (HHVariable*).
 rate

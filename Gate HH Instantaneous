@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Gate"
  0=166b5f185734fa2c
 $metadata
- backend.neuroml.part=gateHHInstantaneous
+ backend.lems.part=gateHHInstantaneous
  id=166b5f185738bd8c
  notes=Hodgkin-Huxley gate with explicit steady-state value and a time constant of zero.
 q=:inf

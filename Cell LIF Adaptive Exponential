@@ -2,15 +2,15 @@ N2A.schema=1
 $inherit="Cell LIF Refractory"
  0=166b5f185738fc93
 $metadata
- backend.neuroml.part=adExIaFCell
+ backend.lems.part=adExIaFCell
  id=166b5f1857365e6b
  notes=Model based on Brette R and Gerstner W (2005) Adaptive Exponential Integrate-and-Fire Model as an Effective Description of Neuronal Activity. J Neurophysiol 94:3637-3642
 E=Vreset
  $metadata
-  backend.neuroml.param=EL
+  backend.lems.param=EL
 G=100uS
  $metadata
-  backend.neuroml.param=gL
+  backend.lems.param=gL
 I=G*(delT*exp((V-VT)/delT)-(V-E))-w
 VT=0V
  $metadata

@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
- backend.neuroml.part=segment
+ backend.lems.part=segment
  id=166b5f185734f92a
  notes=A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
 $xyz=[0;0;0]
@@ -10,10 +10,10 @@ $xyz=[0;0;0]
   notes=The end point of this segment.
 C=Cspecific*surfaceArea
  $metadata
-  backend.neuroml.param=totCap
+  backend.lems.param=totCap
 Cspecific=1(uF/cm2)
  $metadata
-  backend.neuroml.param=totSpecCap
+  backend.lems.param=totSpecCap
 R=ρ*length/(π*r^2)
 V'=I/C@C
 diameter=1um
@@ -32,5 +32,5 @@ xyz0=:$xyz
   notes=The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz
 ρ=30(Ohm.cm)
  $metadata
-  backend.neuroml.param=resistivity
+  backend.lems.param=resistivity
   notes=Axial resistivity. Default value is for giant squid axon.

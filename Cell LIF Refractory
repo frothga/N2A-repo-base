@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Cell LIF"
  0=166b015ccda9c699
 $metadata
- backend.neuroml.part=iafRefCell
+ backend.lems.part=iafRefCell
  id=166b5f185738fc93
 V'
  @=0
@@ -10,5 +10,5 @@ V'
 refractoryEnd=$t+refractoryPeriod@fire
 refractoryPeriod=0s
  $metadata
-  backend.neuroml.param=refract
+  backend.lems.param=refract
   public

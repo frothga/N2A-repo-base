@@ -2,16 +2,16 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
- backend.neuroml.part=baseIaf.baseIafCapCell,iafCell
+ backend.lems.part=baseIaf.baseIafCapCell,iafCell
  backend.stpu.part=lif
  id=166b015ccda9c699
 E=Vreset
  $metadata
-  backend.neuroml.param=leakReversal
+  backend.lems.param=leakReversal
   public
 G=100uS
  $metadata
-  backend.neuroml.param=leakConductance
+  backend.lems.param=leakConductance
   public
 I=+G*(E-V)
 V
@@ -19,4 +19,4 @@ V
  @fire=Vreset
 Vreset=0V
  $metadata
-  backend.neuroml.param=reset
+  backend.lems.param=reset

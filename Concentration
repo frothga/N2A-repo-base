@@ -1,22 +1,22 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=concentrationModel,species
+ backend.lems.part=concentrationModel,species
  id=166b5f185734ff3a
  notes=Concentrations of a given ion, inside and outside of a compartment. These can vary over time.
 inside
  $metadata
-  backend.neuroml.param=concentration
+  backend.lems.param=concentration
  @$init=inside0
  @inside<0=0
 inside0=0(mol/m3)
  $metadata
-  backend.neuroml.param=initialConcentration
+  backend.lems.param=initialConcentration
 outside=outside0@$init
  $metadata
-  backend.neuroml.param=extConcentration
+  backend.lems.param=extConcentration
 outside0=0(mol/m3)
  $metadata
-  backend.neuroml.param=initialExtConcentration
+  backend.lems.param=initialExtConcentration
 z=1
  $metadata
   notes=Charge per ion, expressed as number of protons (positive) or electrons (negative).

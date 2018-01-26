@@ -2,21 +2,21 @@ N2A.schema=1
 $inherit="Synapse"
  0=166b5f185734f41a
 $metadata
- backend.neuroml.part=baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
+ backend.lems.part=baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
  id=166b015ccdaa5a31
 E=0mV
  $metadata
-  backend.neuroml.param=erev
+  backend.lems.param=erev
   note=Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
   public
 G=0@$init
  $metadata
-  backend.neuroml.param=g
+  backend.lems.param=g
 Gmax=0uS
  $metadata
-  backend.neuroml.param=gbase
+  backend.lems.param=gbase
   public
 I=:G*(E-V)
 V=:B.V
  $metadata
-  backend.neuroml.param=v
+  backend.lems.param=v

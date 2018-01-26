@@ -2,6 +2,6 @@ N2A.schema=1
 $inherit="HHVariable"
  0=166b5f185735064a
 $metadata
- backend.neuroml.part=HHExpRate,HHExpVariable
+ backend.lems.part=HHExpRate,HHExpVariable
  id=166b5f185735ca67
 x=:rate*exp(a)

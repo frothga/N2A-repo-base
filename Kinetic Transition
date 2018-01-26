@@ -1,15 +1,15 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=KSTransition
+ backend.lems.part=KSTransition
  id=166b5f185734fe38
  notes=Specifies the rates of transition between two KS states.
 forward=:0Hz
  $metadata
-  backend.neuroml.param=rf
+  backend.lems.param=rf
 from=$connect("KS State")
 from.occupancy'=+-reverse
 reverse=:0Hz
  $metadata
-  backend.neuroml.param=rr
+  backend.lems.param=rr
 to=$connect("KS State")
 to.occupancy'=+forward

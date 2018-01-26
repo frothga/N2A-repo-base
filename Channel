@@ -2,19 +2,19 @@ N2A.schema=1
 $metadata
  backend.lems.children.conductanceScaling=Q10
  backend.lems.children.gates=Gate
- backend.neuroml.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelKS
+ backend.lems.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelKS
  id=166b5f185735013e
 $up.I=+I
 E=0mV
  $metadata
-  backend.neuroml.param=erev
+  backend.lems.param=erev
   public
 G=:Gall*fopen*Q10Scaling
  $metadata
-  backend.neuroml.param=g
+  backend.lems.param=g
 G1=10pS
  $metadata
-  backend.neuroml.param=conductance
+  backend.lems.param=conductance
   notes=The conductance of a single channel instance.
   public
 Gall=:G1
@@ -26,8 +26,8 @@ Gall=:G1
     The default form given here is simply a population of 1.
 I=:G*(E-V)
  $metadata
-  backend.neuroml.param=i
+  backend.lems.param=i
 Q10Scaling=*
  $metadata
-  backend.neuroml.param=conductanceScale
+  backend.lems.param=conductanceScale
 fopen=*

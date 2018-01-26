@@ -2,11 +2,11 @@ N2A.schema=1
 $inherit="Synapse Half"
  0=166b5f2337372608
 $metadata
- backend.neuroml.part=gapJunction,linearGradedSynapse
+ backend.lems.part=gapJunction,linearGradedSynapse
  id=166b5f185734fb2e
  notes=Half of a gap junction, for use in split synapse.
 G=0S
  $metadata
-  backend.neuroml.param=conductance
+  backend.lems.param=conductance
   public
 I=:G*(Vpeer-V)

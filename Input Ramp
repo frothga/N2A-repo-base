@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Input"
  0=166b5f185734f319
 $metadata
- backend.neuroml.part=rampGenerator,pulseGenerator
+ backend.lems.part=rampGenerator,pulseGenerator
  id=166b5f185739f3a4
  notes=A generalization of ramp and pulse functions from several different simulation languages. Generates a piecewise-linear waveform with four segments. Each segment is specified by an injection current value and the duration until the start of the next segment. There is also an overall time offset and a repeat period. Details about the effects of these values are documented on the individual parameters.
 I=:
@@ -20,15 +20,15 @@ fall=0s
   public
 high1=0A
  $metadata
-  backend.neuroml.param=startAmplitude,amplitude
+  backend.lems.param=startAmplitude,amplitude
   public
 high2=high1
  $metadata
-  backend.neuroml.param=finishAmplitude
+  backend.lems.param=finishAmplitude
   public
 low=0A
  $metadata
-  backend.neuroml.param=baselineAmplitude
+  backend.lems.param=baselineAmplitude
   public
 period=0s
  $metadata
@@ -46,5 +46,5 @@ t2=:rise+width
 t3=:rise+width+fall
 width=0s
  $metadata
-  backend.neuroml.param=duration
+  backend.lems.param=duration
   public

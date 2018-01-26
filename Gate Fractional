@@ -3,7 +3,7 @@ $inherit="Gate"
  0=166b5f185734fa2c
 $metadata
  backend.lems.children.subGate=Gate Sub
- backend.neuroml.part=gateFractional
+ backend.lems.part=gateFractional
  id=166b5f185738b88b
  notes=Gate composed of subgates contributing with fractional conductance
 q=+

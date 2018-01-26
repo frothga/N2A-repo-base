@@ -4,7 +4,7 @@ $inherit="Gate"
 $metadata
  backend.lems.children.states=Kinetic State
  backend.lems.children.transitions=Kinetic Transition
- backend.neuroml.part=gateKS
+ backend.lems.part=gateKS
  id=166b5f1857352764
  notes=Consists of multiple states and the rates of transition between them. Each state can be open or closed. Open states contribute some amount to the overall conductance.
 q=+

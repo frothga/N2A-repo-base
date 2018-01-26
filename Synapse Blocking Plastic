@@ -4,7 +4,7 @@ $inherit="Synapse Exponential Double"
 $metadata
  backend.lems.children.blockMechanisms=Blocking Mechanism
  backend.lems.children.plasticityMechanisms=Plasticity Mechanism
- backend.neuroml.part=blockingPlasticSynapse
+ backend.lems.part=blockingPlasticSynapse
  id=166b5f1857378473
  notes=Exponential synapse that allows for optional block and plasticity mechanisms.
 G=:blockFactor*Gmax*(b-a)

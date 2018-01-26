@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Gate"
  0=166b5f185734fa2c
 $metadata
- backend.neuroml.part=gateHHrates
+ backend.lems.part=gateHHrates
  id=166b5f185738c18d
  notes=Hodgkin-Huxley gate in which alpha and beta parameters imply both the time constant and steady-state value.
 forwardRate

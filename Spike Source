@@ -1,6 +1,6 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=baseSpikeSource,baseVoltageDepPointCurrentSpiking
+ backend.lems.part=baseSpikeSource,baseVoltageDepPointCurrentSpiking
  id=166b5f185735074b
 spike=0
  $metadata

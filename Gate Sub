@@ -1,6 +1,6 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=subGate
+ backend.lems.part=subGate
  id=166b5f1857350240
  notes=Contributes fractional conductance to containing gate.
 $up.q=+qfrac

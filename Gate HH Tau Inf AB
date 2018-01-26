@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Gate"
  0=166b5f185734fa2c
 $metadata
- backend.neuroml.part=gateHHratesTauInf
+ backend.lems.part=gateHHratesTauInf
  id=166b5fa14464df02
  notes=Hodgkin-Huxley gate with explicit time constant (tau) and explicit steady-state value (inf), but also has alpha and beta parameters. Alpha and beta do not directly influence the dynamics. Instead, they support an awkward use-case in NeuroML/LEMS where the modeler creates extensions of HHVariable to modify how tau and inf are computed from alpha and beta. A cleaner approach would be to modify the tau and inf equations directly.
 forwardRate

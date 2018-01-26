@@ -1,6 +1,6 @@
 N2A.schema=1
 $metadata
- backend.neuroml.part=tsodyksMarkramDepFacMechanism
+ backend.lems.part=tsodyksMarkramDepFacMechanism
  id=166b5f18573a90b2
  notes=Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
 $up.plasticityFactor=*plasticityFactor

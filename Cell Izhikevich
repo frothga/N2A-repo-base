@@ -2,8 +2,8 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
- backend.neuroml.DL
- backend.neuroml.part=izhikevich2007Cell,izhikevichCell
+ backend.lems.DL
+ backend.lems.part=izhikevich2007Cell,izhikevichCell
  backend.xyce.device=neuron7
  id=166b5f1857395797
  notes=|
@@ -24,11 +24,11 @@ V
 V'=(k*(V-vr)*(V-vt)-u+I)/C
 V0=c
  $metadata
-  backend.neuroml.param=v0
+  backend.lems.param=v0
   public
 Vspike=30mV
  $metadata
-  backend.neuroml.param=thresh,vpeak
+  backend.lems.param=thresh,vpeak
 a=0.02kHz
  $metadata
   public
