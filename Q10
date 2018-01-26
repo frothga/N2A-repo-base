@@ -6,7 +6,7 @@ $up.Q10Scaling=*scaling
 coefficient=1
  $metadata
   backend.neuroml.param=q10Factor
-scaling=:coefficent^((temperature-temperature0)/10K)
+scaling=:coefficient^((temperature-temperature0)/10K)
  $metadata
   backend.neuroml.param=factor
 temperature0=20Cel
