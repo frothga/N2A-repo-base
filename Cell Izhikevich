@@ -14,7 +14,7 @@ $metadata
    The other core parameters (a, b, c, d) have the default values suggested in "Simple Model of Spiking Neurons".
 C=1pF
  $metadata
-  notes=Must be 1pA for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.
+  notes=Must be 1pF for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.
 I=+140pA
  $metadata
   notes=Must add 140pA to input current for simple Izhikevich model.

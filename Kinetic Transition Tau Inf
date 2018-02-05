@@ -6,12 +6,12 @@ $metadata
  id=166b5f18573a66af
  notes=Specified in terms of time constant tau and steady state inf
 forward=:inf/tau
-inf=:steadyState.x
 reverse=:(1-inf)/tau
 steadyState
  $inherit="HHVariable"
   0=166b5f185735064a
-tau=:timeCourse.x
+ $up.inf=x
 timeCourse
  $inherit="HHVariable"
   0=166b5f185735064a
+ $up.tau=x
