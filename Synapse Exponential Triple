@@ -12,10 +12,10 @@ Gmax2=0uS
  $metadata
   backend.lems.param=gbase2
   public
-Tpeak1=log(tauDecay1/tauRise)*(tauDecay1*tauRise)/(tauDecay1-tauRise)
+Tpeak1=log(τDecay1/τRise)*(τDecay1*τRise)/(τDecay1-τRise)
  $metadata
   backend.lems.param=peakTime1
-Tpeak2=log(tauDecay2/tauRise)*(tauDecay2*tauRise)/(tauDecay2-tauRise)
+Tpeak2=log(τDecay2/τRise)*(τDecay2*τRise)/(τDecay2-τRise)
  $metadata
   backend.lems.param=peakTime2
 a
@@ -23,7 +23,7 @@ a
   backend.lems.param=A
  @$init=0
  @in=a+weight*(Gmax*f1+Gmax2*f2)/(Gmax+Gmax2)
-a'=-a/tauRise
+a'=-a/τRise
  $metadata
   backend.lems.param=A'
 b
@@ -31,7 +31,7 @@ b
   backend.lems.param=B
  @$init=0
  @in=b+weight*f1
-b'=-b/tauDecay1
+b'=-b/τDecay1
  $metadata
   backend.lems.param=B'
 c
@@ -39,22 +39,25 @@ c
   backend.lems.param=C
  @$init=0
  @in=c+weight*f2
-c'=-c/tauDecay2
+c'=-c/τDecay2
  $metadata
   backend.lems.param=C'
-f1=1/(exp(-Tpeak1/tauDecay1)-exp(-Tpeak1/tauRise))
+f1=1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
  $metadata
   backend.lems.param=waveformFactor1
-f2=1/(exp(-Tpeak2/tauDecay2)-exp(-Tpeak2/tauRise))
+f2=1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
  $metadata
   backend.lems.param=waveformFactor2
-tauDecay1=0s
- $metadata
-  public
-tauDecay2=0s
- $metadata
-  public
-tauRise=0s
- $metadata
-  public
 weight=1
+τDecay1=0s
+ $metadata
+  backend.lems.param=tauDecay1
+  public
+τDecay2=0s
+ $metadata
+  backend.lems.param=tauDecay2
+  public
+τRise=0s
+ $metadata
+  backend.lems.param=tauRise
+  public

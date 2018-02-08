@@ -1,6 +1,6 @@
 N2A.schema=1
 $metadata
- backend.lems.part=tsodyksMarkramDepFacMechanism
+ backend.lems.part=tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
  id=166b5f18573a90b2
  notes=Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
 $up.plasticityFactor=*plasticityFactor
@@ -9,18 +9,20 @@ R
   notes=The spike event flag "in" comes from the containing synapse.
  @$init=1
  @in=R*(1-U)
-R'=(1-R)/tauRec
+R'=(1-R)/τRec
 U
  @$init=initReleaseProb
  @in=U+initReleaseProb*(1-U)
-U'=(initReleaseProb-U)/tauFac
+U'=(initReleaseProb-U)/τFac
 initReleaseProb=0
  $metadata
   public
 plasticityFactor=:R*U
-tauFac=0s
+τFac=0s
  $metadata
+  backend.lems.param=tauFac
   public
-tauRec=0s
+τRec=0s
  $metadata
+  backend.lems.param=tauRec
   public

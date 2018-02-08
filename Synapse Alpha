@@ -4,7 +4,7 @@ $inherit="Synapse Conductance"
 $metadata
  backend.lems.part=alphaSynapse
  id=166b015ccdaa0f39
-G'=(exp(1)*a-G)/tau
+G'=(exp(1)*a-G)/τ
  $metadata
   backend.lems.param=g'
 a
@@ -12,10 +12,10 @@ a
   backend.lems.param=A
  @$init=0
  @in=a+Gmax*weight
-a'=-a/tau
+a'=-a/τ
  $metadata
   backend.lems.param=A'
-tau=0ms
+τ=0ms
  $metadata
   backend.stpu.param=tauRise,tauDecay
   public

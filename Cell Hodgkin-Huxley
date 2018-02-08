@@ -8,6 +8,8 @@ $metadata
 K
  $inherit="Channel K"
   0=166b5f54a764cf01
+ n
+  $inherit="Gate"
 Na
  $inherit="Channel Na"
   0=166b5f54635c5200

@@ -1,21 +1,13 @@
 N2A.schema=1
+$inherit="Gate"
+ 0=166b5f185734fa2c
 $metadata
  backend.lems.part=subGate
  id=166b5f1857350240
  notes=Contributes fractional conductance to containing gate.
+$up.fopen=$kill
 $up.q=+qfrac
-Q10Scaling=*
 fractionalConductance=0
  $metadata
   public
-q=inf@q==0
-q'=(inf-q)/tau@tau
 qfrac=:q*fractionalConductance
-steadyState
- $inherit="HHVariable"
-  0=166b5f185735064a
- $up.inf=x
-timeCourse
- $inherit="HHVariable"
-  0=166b5f185735064a
- $up.tau=x/Q10Scaling

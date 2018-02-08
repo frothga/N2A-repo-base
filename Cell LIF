@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
- backend.lems.part=baseIaf.baseIafCapCell,iafCell
+ backend.lems.part=baseIaf.baseIafCapCell,iafCell,iafRefCell
  backend.stpu.part=lif
  id=166b015ccda9c699
 E=Vreset
@@ -17,6 +17,14 @@ I=+G*(E-V)
 V
  @$init=E
  @fire=Vreset
+V'
+ @=0
+ @$t>refractoryEnd&&!fire||refractoryPeriod==0=I/C
 Vreset=0V
  $metadata
   backend.lems.param=reset
+refractoryEnd=$t+refractoryPeriod@fire
+refractoryPeriod=0s
+ $metadata
+  backend.lems.param=refract
+  public

@@ -28,5 +28,7 @@ s=inf@1-inf<1e-4
 s'=s_rate
 s_rate=:
  @=0
- @1-inf>1e-4=(inf-s)/tau
-tau=(1-inf)/k
+ @1-inf>1e-4=(inf-s)/τ
+τ=(1-inf)/k
+ $metadata
+  backend.lems.param=tau

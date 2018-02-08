@@ -7,9 +7,10 @@ $metadata
 G
  @$init=0
  @in=G+Gmax*weight
-G'=-G/tauDecay
+G'=-G/τDecay
  $metadata
   backend.lems.param=g'
-tauDecay=0ms
+τDecay=0ms
  $metadata
+  backend.lems.param=tauDecay
   public

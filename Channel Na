@@ -9,11 +9,12 @@ E=50mV
 Gall=:Gdensity*surfaceArea
 Gdensity=120(mS/cm2)
 h
- $inherit="Gate HH Alpha Beta"
-  0=166b5f185738c18d
+ $inherit="Gate"
+  0=166b5f185734fa2c
  forwardRate
   $inherit="HHVariable Exponential"
    0=166b5f185735ca67
+  $up.alpha=x
   midpoint=-65mV
   rate=0.07kHz
   scale=-20mV
@@ -21,15 +22,17 @@ h
  reverseRate
   $inherit="HHVariable Sigmoid"
    0=166b5f185735ce69
+  $up.beta=x
   midpoint=-35mV
   rate=1kHz
   scale=10mV
 m
- $inherit="Gate HH Alpha Beta"
-  0=166b5f185738c18d
+ $inherit="Gate"
+  0=166b5f185734fa2c
  forwardRate
   $inherit="HHVariable Exponential Linear"
    0=166b5f185735c265
+  $up.alpha=x
   midpoint=-40mV
   rate=1kHz
   scale=10mV
@@ -37,6 +40,7 @@ m
  reverseRate
   $inherit="HHVariable Exponential"
    0=166b5f185735ca67
+  $up.beta=x
   midpoint=-65mV
   rate=4kHz
   scale=-18mV

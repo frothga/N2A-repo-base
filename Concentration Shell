@@ -7,18 +7,10 @@ $metadata
  notes=Tends toward a given resting value at a given rate. The ion occupies a shell inside the membrane of a given thickness.
 effectiveRadius=:sqrt(surfaceArea/(4*π))
 innerRadius=:effectiveRadius-shellThickness
-inside'=I/(2*Faraday*shellVolume)-(inside-restingConcentration)/tau
+inside'=I/(2*Faraday*shellVolume)-(inside-restingConcentration)/τ
  $metadata
   backend.lems.param=concentration'
-restingConcentration=0(mol/m3)
- $metadata
-  backend.lems.param=restingConc
-  public
 shellThickness=0m
  $metadata
   public
 shellVolume=:(effectiveRadius^3-innerRadius^3)*4*π/3
-tau=0s
- $metadata
-  backend.lems.param=decayConstant
-  public

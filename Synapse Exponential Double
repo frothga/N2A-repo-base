@@ -8,7 +8,7 @@ E=0
  $metadata
   backend.xyce.param=eRev
 G=:Gmax*(b-a)
-Tpeak=log(tauDecay/tauRise)*(tauDecay*tauRise)/(tauDecay-tauRise)
+Tpeak=log(τDecay/τRise)*(τDecay*τRise)/(τDecay-τRise)
  $metadata
   backend.lems.param=peakTime
 a
@@ -16,7 +16,7 @@ a
   backend.lems.param=A
  @$init=0
  @in=a+weight*f
-a'=-a/tauRise
+a'=-a/τRise
  $metadata
   backend.lems.param=A'
 b
@@ -24,11 +24,17 @@ b
   backend.lems.param=B
  @$init=0
  @in=b+weight*f
-b'=-b/tauDecay
+b'=-b/τDecay
  $metadata
   backend.lems.param=B'
-f=1/(exp(-Tpeak/tauDecay)-exp(-Tpeak/tauRise))
+f=1/(exp(-Tpeak/τDecay)-exp(-Tpeak/τRise))
  $metadata
   backend.lems.param=waveformFactor
-tauDecay=0ms
-tauRise=0ms
+τDecay=0ms
+ $metadata
+  backend.lems.param=tauDecay
+  public
+τRise=0ms
+ $metadata
+  backend.lems.param=tauRise
+  public

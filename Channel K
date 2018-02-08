@@ -11,11 +11,12 @@ Gdensity=36(mS/cm2)
  $metadata
   notes=At 6.3Cel. Need Q10 parameters.
 n
- $inherit="Gate HH Alpha Beta"
-  0=166b5f185738c18d
+ $inherit="Gate"
+  0=166b5f185734fa2c
  forwardRate
   $inherit="HHVariable Exponential Linear"
    0=166b5f185735c265
+  $up.alpha=x
   midpoint=-55mV
   rate=0.1kHz
   scale=10mV
@@ -23,6 +24,7 @@ n
  reverseRate
   $inherit="HHVariable Exponential"
    0=166b5f185735ca67
+  $up.beta=x
   midpoint=-65mV
   rate=0.125kHz
   scale=-80mV
