@@ -12,18 +12,18 @@ E=0mV
 G=:Gall*fopen*Q10Scaling
  $metadata
   backend.lems.param=g
-G1=10pS
+G1=0pS
  $metadata
   backend.lems.param=conductance
   notes=The conductance of a single channel instance.
   public
-Gall=:G1
+Gall=:Gdensity*surfaceArea
  $metadata
-  notes=|
-    The conductance for an entire ensemble of channels. Can take several forms:
-    	G1*population -- where population is the count of individual ion channels
-    	Gdensity*surfaceArea -- where Gdensity is the conductane per unit area
-    The default form given here is simply a population of 1.
+  notes=The conductance for an entire ensemble of channels. For population-based value, use: G1*population
+Gdensity=0(mS/cm2)
+ $metadata
+  backend.lems.param=condDensity
+  public
 I=:G*(E-V)
  $metadata
   backend.lems.param=i
@@ -31,3 +31,7 @@ Q10Scaling=*
  $metadata
   backend.lems.param=conductanceScale
 fopen=*
+population=1
+ $metadata
+  backend.lems.param=number
+  public

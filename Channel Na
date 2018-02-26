@@ -6,7 +6,6 @@ $metadata
  notes=Sodium channel with default values for giant squid axon.
  species=na
 E=50mV
-Gall=:Gdensity*surfaceArea
 Gdensity=120(mS/cm2)
 h
  $inherit="Gate"

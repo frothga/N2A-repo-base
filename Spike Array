@@ -9,7 +9,7 @@ index
  @$init=0
  @fire=index+1
 spike=fire
-times=[.inf]
+times=[∞]
  $metadata
-  notes=Vector of spike times. Should be in strictly ascending order. Last entry should be .inf in order to stop spiking.
+  notes=Vector of spike times. Should be in strictly ascending order. Last entry should be ∞ to stop spiking.
   public

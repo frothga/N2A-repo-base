@@ -2,20 +2,17 @@ N2A.schema=1
 $inherit="Synapse Conductance"
  0=166b015ccdaa5a31
 $metadata
- backend.lems.part=expTwoSynapse
+ backend.lems.part=expTwoSynapse,blockingPlasticSynapse
  id=166b015ccdaab9e9
 E=0
  $metadata
   backend.xyce.param=eRev
-G=:Gmax*(b-a)
-Tpeak=log(τDecay/τRise)*(τDecay*τRise)/(τDecay-τRise)
- $metadata
-  backend.lems.param=peakTime
+G=:blockFactor*Gmax*(b-a)
 a
  $metadata
   backend.lems.param=A
  @$init=0
- @in=a+weight*f
+ @in=a+spikeValue
 a'=-a/τRise
  $metadata
   backend.lems.param=A'
@@ -23,13 +20,17 @@ b
  $metadata
   backend.lems.param=B
  @$init=0
- @in=b+weight*f
+ @in=b+spikeValue
 b'=-b/τDecay
  $metadata
   backend.lems.param=B'
-f=1/(exp(-Tpeak/τDecay)-exp(-Tpeak/τRise))
+blockFactor=*
+peak=1/(exp(-peakTime/τDecay)-exp(-peakTime/τRise))
  $metadata
   backend.lems.param=waveformFactor
+peakTime=log(τDecay/τRise)*(τDecay*τRise)/(τDecay-τRise)
+plasticityFactor=*
+spikeValue=:weight*plasticityFactor*peak
 τDecay=0ms
  $metadata
   backend.lems.param=tauDecay

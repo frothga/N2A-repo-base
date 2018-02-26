@@ -11,12 +11,14 @@ inside
 inside0=0(mol/m3)
  $metadata
   backend.lems.param=initialConcentration
+  public
 outside=outside0@$init
  $metadata
   backend.lems.param=extConcentration
 outside0=0(mol/m3)
  $metadata
   backend.lems.param=initialExtConcentration
+  public
 restingConcentration=0(mol/m3)
  $metadata
   backend.lems.param=restingConc

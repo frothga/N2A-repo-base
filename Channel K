@@ -6,7 +6,6 @@ $metadata
  notes=Potassium channel with default values for giant squid axon.
  species=k
 E=-77mV
-Gall=:Gdensity*surfaceArea
 Gdensity=36(mS/cm2)
  $metadata
   notes=At 6.3Cel. Need Q10 parameters.

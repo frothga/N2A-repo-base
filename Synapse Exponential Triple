@@ -22,7 +22,7 @@ a
  $metadata
   backend.lems.param=A
  @$init=0
- @in=a+weight*(Gmax*f1+Gmax2*f2)/(Gmax+Gmax2)
+ @in=a+weight*(Gmax*peak1+Gmax2*peak2)/(Gmax+Gmax2)
 a'=-a/τRise
  $metadata
   backend.lems.param=A'
@@ -30,7 +30,7 @@ b
  $metadata
   backend.lems.param=B
  @$init=0
- @in=b+weight*f1
+ @in=b+weight*peak1
 b'=-b/τDecay1
  $metadata
   backend.lems.param=B'
@@ -38,14 +38,14 @@ c
  $metadata
   backend.lems.param=C
  @$init=0
- @in=c+weight*f2
+ @in=c+weight*peak2
 c'=-c/τDecay2
  $metadata
   backend.lems.param=C'
-f1=1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
+peak1=1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
  $metadata
   backend.lems.param=waveformFactor1
-f2=1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
+peak2=1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
  $metadata
   backend.lems.param=waveformFactor2
 weight=1

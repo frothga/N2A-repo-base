@@ -11,24 +11,25 @@ E=0V
   notes=The reversal potential of the synapse
   public
 I=:G*s*(E-V)
-Vth=0V
+Vhalf=0V
  $metadata
+  backend.lems.param=Vth
   notes=The half-activation voltage of the synapse
   public
-delta=0V
- $metadata
-  notes=Slope of the activation curve
-  public
-inf=1/(1+exp((Vth-Vpeer)/delta))
+inf=1/(1+exp((Vhalf-Vpeer)/δ))
 k=0Hz
  $metadata
   notes=Rate constant for transmitter-receptor dissociation rate
   public
 s=inf@1-inf<1e-4
-s'=s_rate
-s_rate=:
+s'
  @=0
  @1-inf>1e-4=(inf-s)/τ
+δ=0V
+ $metadata
+  backend.lems.param=delta
+  notes=Slope of the activation curve
+  public
 τ=(1-inf)/k
  $metadata
   backend.lems.param=tau

@@ -12,8 +12,8 @@ R
 R'=(1-R)/τRec
 U
  @$init=initReleaseProb
- @in=U+initReleaseProb*(1-U)
-U'=(initReleaseProb-U)/τFac
+ @in&&τFac=U+initReleaseProb*(1-U)
+U'=(initReleaseProb-U)/τFac@τFac
 initReleaseProb=0
  $metadata
   public

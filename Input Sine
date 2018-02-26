@@ -7,7 +7,7 @@ $metadata
  notes=Generates a sinusoidally varying current after a time delay, for a fixed duration. The period and maximum amplitude of the current can be set as well as the phase at which to start.
 I=:
  @=0
- @t>=0&&t<duration=amplitude*sin(phase+2*3.14159265*t/period)
+ @t>=0&&t<duration=amplitude*sin(phase+2*π*t/period)
 amplitude=0A
  $metadata
   public
