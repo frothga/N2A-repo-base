@@ -15,7 +15,7 @@ n
  forwardRate
   $inherit="HHVariable Exponential Linear"
    0=166b5f185735c265
-  $up.alpha=x
+  $up.α=x
   midpoint=-55mV
   rate=0.1kHz
   scale=10mV
@@ -23,7 +23,7 @@ n
  reverseRate
   $inherit="HHVariable Exponential"
    0=166b5f185735ca67
-  $up.beta=x
+  $up.β=x
   midpoint=-65mV
   rate=0.125kHz
   scale=-80mV
