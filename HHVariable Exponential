@@ -4,4 +4,4 @@ $inherit="HHVariable"
 $metadata
  backend.lems.part=HHExpRate,HHExpVariable
  id=166b5f185735ca67
-x=:rate*exp(a)
+x=:rate*exp(a,"median=1")

@@ -4,4 +4,4 @@ $inherit="HHVariable"
 $metadata
  backend.lems.part=HHSigmoidRate,HHSigmoidVariable
  id=166b5f185735ce69
-x=:rate/(1+exp(-a))
+x=:rate/(1+exp(-a,"median=1"))

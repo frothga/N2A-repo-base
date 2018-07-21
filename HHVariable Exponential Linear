@@ -7,4 +7,4 @@ $metadata
  notes=Linear for large positive V. Exponentially decays for large negative V.
 x=:
  @=rate
- @a=rate*a/(1-exp(-a))
+ @a=rate*a/(1-exp(-a,"median=1"))

@@ -10,7 +10,7 @@ midpoint=0mV
 rate=0
  $metadata
   public
-scale=0mV
+scale=100mV
  $metadata
   public
 x=:rate

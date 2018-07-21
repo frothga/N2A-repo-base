@@ -1,5 +1,6 @@
 N2A.schema=1
 $metadata
+ backend.lems.children.HHVariables=HHVariable
  backend.lems.children.q10Settings=Q10
  backend.lems.children.states=Kinetic State
  backend.lems.children.subGate=Gate Sub
@@ -7,7 +8,7 @@ $metadata
  backend.lems.part=gate,baseGate,gateFractional,gateKS,gateHHrates,gateHHInstantaneous,gateHHratesTauInf,gateHHtauInf,gateHHratesTau,gateHHratesInf
  id=166b5f185734fa2c
  notes=|
-   This is the base model for 3 types of gates:
+   This is the base model for 3 types of gate:
    Hodgkin-Huxley -- Rates expressed in the HH formalism.
    Kinetic -- A Markov model with state superposition, where each state allows or disallows current to flow.
    Fractional -- Combines several subgates which each contribute a portion of the total current.
@@ -20,6 +21,8 @@ instances=1
  $metadata
   public
 q=inf@q==0
+ $metadata
+  median=1
 q'=(inf-q)/τ@τ
 α=0Hz
  $metadata

@@ -17,6 +17,7 @@ I=+
 V=0@$init
  $metadata
   backend.lems.param=v
+  median=50mV
 V'=I/C
  $metadata
   backend.lems.param=v'
