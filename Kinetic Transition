@@ -8,11 +8,12 @@ forward=:inf/τ@τ
   backend.lems.param=rf
 from=$connect("Kinetic State")
 from.occupancy'=+-reverse
+inf=:0
 reverse=:(1-inf)/τ@τ
  $metadata
   backend.lems.param=rr
 to=$connect("Kinetic State")
 to.occupancy'=+forward
-τ=0Hz
+τ=:0s
  $metadata
   backend.lems.param=tau
