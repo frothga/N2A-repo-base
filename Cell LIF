@@ -18,8 +18,8 @@ V
  @$init=E
  @fire=Vreset
 V'
- @=0
- @$t>refractoryEnd&&!fire||refractoryPeriod==0=I/C
+ @=I/C
+ @(fire||$t<refractoryEnd)&&refractoryPeriod=0
 Vreset=0V
  $metadata
   backend.lems.param=reset

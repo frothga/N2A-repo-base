@@ -24,10 +24,10 @@ q=inf@q==0
  $metadata
   median=1
 q'=(inf-q)/τ@τ
-α=0Hz
+α=:0Hz
  $metadata
   backend.lems.param=alpha
-β=0Hz
+β=:0Hz
  $metadata
   backend.lems.param=beta
 τ=:τUnscaled/Q10Scaling

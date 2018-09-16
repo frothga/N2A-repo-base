@@ -22,7 +22,7 @@ diameter=1um
 diameter0=diameter
  $metadata
   notes=At the beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.diameter
-length=:norm(2,$xyz-xyz0)
+length=:norm($xyz-xyz0,2)
 r=:(diameter+diameter0)/4
 surfaceArea=:
  @=2*π*r*length
