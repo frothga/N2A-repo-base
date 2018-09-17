@@ -2,8 +2,8 @@ N2A.schema=1
 $metadata
  id=166b015ccdaafc99
  notes=This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models targeted to the STPU.
-A=$connect("Neuron")
-B=$connect("Neuron")
+A=connect("Neuron")
+B=connect("Neuron")
 B.V=+Vstep@event(A.spike,0)
 Vstep=10mV
  $metadata

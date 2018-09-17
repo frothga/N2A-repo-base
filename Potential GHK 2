@@ -6,7 +6,7 @@ $metadata
 Gall
  @=Gdensity*pOpen
  @c.outside<=0=0
-c=$connect("Concentration")
+c=connect("Concentration")
 pOpen=:
  @=tmp*0.001*(1-c.inside/c.outside*exp(tmp))*(tmp/(exp(tmp)-1))
  @tmp==0=tmp*0.001*(1-c.inside/c.outside)
