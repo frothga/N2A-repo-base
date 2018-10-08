@@ -11,7 +11,7 @@ Gmax=0uS
 Gmax2=0uS
  $metadata
   backend.lems.param=gbase2
-  public
+  param
 Tpeak1=log(τDecay1/τRise)*(τDecay1*τRise)/(τDecay1-τRise)
  $metadata
   backend.lems.param=peakTime1
@@ -48,16 +48,15 @@ peak1=1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
 peak2=1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
  $metadata
   backend.lems.param=waveformFactor2
-weight=1
 τDecay1=0s
  $metadata
   backend.lems.param=tauDecay1
-  public
+  param
 τDecay2=0s
  $metadata
   backend.lems.param=tauDecay2
-  public
+  param
 τRise=0s
  $metadata
   backend.lems.param=tauRise
-  public
+  param

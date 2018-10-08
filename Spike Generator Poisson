@@ -9,7 +9,7 @@ $metadata
 averageIsi=1/averageRate
 averageRate=0Hz
  $metadata
-  public
+  param
 isi=-averageIsi*log(1-uniform())@$init||tsince>isi
 spike
  @=0

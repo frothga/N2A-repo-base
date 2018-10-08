@@ -11,17 +11,17 @@ I=:
 delay=0s
  $metadata
   notes=Time until we begin to apply current to target.
-  public
+  param
 duration=0s
  $metadata
   notes=Only apply current for this long.
-  public
+  param
 simpleSeriesResistance=0Ohm
  $metadata
   notes=Current will be calculated by the difference in voltage between the target and parent, divided by this value
-  public
+  param
 t=:$t-delay
 targetVoltage=0V
  $metadata
   notes=Current will be applied to try to get parent to this target voltage
-  public
+  param

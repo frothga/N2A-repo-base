@@ -6,13 +6,13 @@ $metadata
 a=:(V-midpoint)/scale
 midpoint=0mV
  $metadata
-  public
+  param
 rate=0
  $metadata
-  public
+  param
 scale=100mV
  $metadata
-  public
+  param
 x=:rate
  $metadata
   backend.lems.param=tau,r,t

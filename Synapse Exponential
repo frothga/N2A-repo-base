@@ -13,4 +13,4 @@ G'=-G/τDecay
 τDecay=0ms
  $metadata
   backend.lems.param=tauDecay
-  public
+  param

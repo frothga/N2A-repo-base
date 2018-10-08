@@ -11,22 +11,23 @@ inside
 inside0=0(mol/m3)
  $metadata
   backend.lems.param=initialConcentration
-  public
+  param
 outside=outside0@$init
  $metadata
   backend.lems.param=extConcentration
 outside0=0(mol/m3)
  $metadata
   backend.lems.param=initialExtConcentration
-  public
+  param
 restingConcentration=0(mol/m3)
  $metadata
   backend.lems.param=restingConc
-  public
+  param
 z=1
  $metadata
-  notes=Charge per ion, expressed as number of protons (positive) or electrons (negative).
+  notes=Charge per ion, expressed as an integer number of protons (positive) or electrons (negative).
+  param
 τ=0s
  $metadata
   backend.lems.param=decayConstant
-  public
+  param

@@ -19,7 +19,7 @@ Q10Scaling=*
 inf=:α/(α+β)@α+β
 instances=1
  $metadata
-  public
+  param
 q=inf@q==0
  $metadata
   median=1

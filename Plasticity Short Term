@@ -16,13 +16,13 @@ U
 U'=(initReleaseProb-U)/τFac@τFac
 initReleaseProb=0
  $metadata
-  public
+  param
 plasticityFactor=:R*U
 τFac=0s
  $metadata
   backend.lems.param=tauFac
-  public
+  param
 τRec=0s
  $metadata
   backend.lems.param=tauRec
-  public
+  param

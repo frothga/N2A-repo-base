@@ -9,5 +9,5 @@ $up.fopen=$kill
 $up.q=+qfrac
 fractionalConductance=0
  $metadata
-  public
+  param
 qfrac=:q*fractionalConductance

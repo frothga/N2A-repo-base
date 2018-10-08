@@ -8,11 +8,11 @@ $metadata
 E=Vreset
  $metadata
   backend.lems.param=leakReversal
-  public
+  param
 G=100uS
  $metadata
   backend.lems.param=leakConductance
-  public
+  param
 I=+G*(E-V)
 V
  @$init=E
@@ -23,8 +23,9 @@ V'
 Vreset=0V
  $metadata
   backend.lems.param=reset
+  param
 refractoryEnd=$t+refractoryPeriod@fire
 refractoryPeriod=0s
  $metadata
   backend.lems.param=refract
-  public
+  param

@@ -34,8 +34,8 @@ spikeValue=:weight*plasticityFactor*peak
 τDecay=0ms
  $metadata
   backend.lems.param=tauDecay
-  public
+  param
 τRise=0ms
  $metadata
   backend.lems.param=tauRise
-  public
+  param

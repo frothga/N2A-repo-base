@@ -8,10 +8,10 @@ $metadata
 LONG_TIME=1000000000h
 delay=0s
  $metadata
-  public
+  param
 duration=0s
  $metadata
-  public
+  param
 isi
  @$init=nextIsi
  @tsince>isi=nextIsi+H(($t+nextIsi-(delay+duration))/duration)*LONG_TIME

@@ -11,4 +11,4 @@ inside'=ρ*I/surfaceArea-(inside-restingConcentration)/τ
 ρ=0(mol/A/s/m)
  $metadata
   backend.lems.param=rho
-  public
+  param

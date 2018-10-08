@@ -11,11 +11,11 @@ isi=minISI+uniform(maxISI-minISI)@$init||tsince>isi
 maxISI=0s
  $metadata
   notes=Maximum interspike interval
-  public
+  param
 minISI=0s
  $metadata
   notes=Minimum interspike interval
-  public
+  param
 spike
  @=0
  @tsince>isi=1

@@ -11,4 +11,4 @@ c=connect("Concentration")
 expKV=:exp(-K*V)
 permeability=0(m/s)
  $metadata
-  public
+  param

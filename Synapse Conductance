@@ -8,14 +8,14 @@ E=0mV
  $metadata
   backend.lems.param=erev
   note=Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
-  public
+  param
 G=0@$init
  $metadata
   backend.lems.param=g
 Gmax=0uS
  $metadata
   backend.lems.param=gbase
-  public
+  param
 I=:G*(E-V)
 V=:B.V
  $metadata

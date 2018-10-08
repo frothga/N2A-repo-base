@@ -16,19 +16,19 @@ r=:exp(-z*(1-γ)*(v-vHalf)/kte)/τ
 reverse=:1/(1/r+τMin)
 vHalf=0V
  $metadata
-  public
+  param
 z=0
  $metadata
-  public
+  param
 γ=0
  $metadata
   backend.lems.param=gamma
-  public
+  param
 τ=0s
  $metadata
   backend.lems.param=tau
-  public
+  param
 τMin=0s
  $metadata
   backend.lems.param=tauMin
-  public
+  param

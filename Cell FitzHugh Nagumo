@@ -9,7 +9,7 @@ C=100pF
 I=0
  $metadata
   notes=plays the role of an external injected current
-  public
+  param
 TS=1ms
 V=V0@$init
  $metadata
@@ -17,20 +17,20 @@ V=V0@$init
 V'=(V-V^3/3-W)/TS+I/C
 V0=0
  $metadata
-  public
+  param
 W=W0@$init
  $metadata
   notes=W plays the role of a recovery variable
 W'=phi*(V+a-b*W)/TS
 W0=0
  $metadata
-  public
+  param
 a=0.7
  $metadata
-  public
+  param
 b=0.8
  $metadata
-  public
+  param
 phi=0.08
  $metadata
-  public
+  param

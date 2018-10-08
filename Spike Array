@@ -12,4 +12,4 @@ spike=fire
 times=[∞]
  $metadata
   notes=Vector of spike times. Should be in strictly ascending order. Last entry should be ∞ to stop spiking.
-  public
+  param

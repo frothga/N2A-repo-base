@@ -6,11 +6,11 @@ $metadata
 $up.blockFactor=*blockFactor
 blockConcentration=0(mol/m3)
  $metadata
-  public
+  param
 blockFactor=:1/(1+blockConcentration/scalingConc*exp(-V/scalingVolt))
 scalingConc=0(mol/m3)
  $metadata
-  public
+  param
 scalingVolt=0V
  $metadata
-  public
+  param

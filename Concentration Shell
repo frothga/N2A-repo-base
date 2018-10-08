@@ -12,5 +12,5 @@ inside'=I/(2*Faraday*shellVolume)-(inside-restingConcentration)/τ
   backend.lems.param=concentration'
 shellThickness=0m
  $metadata
-  public
+  param
 shellVolume=:(effectiveRadius^3-innerRadius^3)*4*π/3

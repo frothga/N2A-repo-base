@@ -18,4 +18,4 @@ a'=-a/τ
 τ=0ms
  $metadata
   backend.stpu.param=tauRise,tauDecay
-  public
+  param

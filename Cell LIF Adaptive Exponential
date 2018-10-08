@@ -14,19 +14,19 @@ G=100uS
 I=+G*(delT*exp((V-VT)/delT)-(V-E))-w
 VT=0V
  $metadata
-  public
+  param
 a=0S
  $metadata
-  public
+  param
 b=0A
  $metadata
-  public
+  param
 delT=0V
  $metadata
-  public
+  param
 w=w+b@fire
 w'=(a*(V-E)-w)/τw
 τw=0s
  $metadata
   backend.lems.param=tauw
-  public
+  param

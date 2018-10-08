@@ -10,17 +10,17 @@ I=:
  @t>=0&&t<duration=amplitude*sin(phase+2*π*t/period)
 amplitude=0A
  $metadata
-  public
+  param
 delay=0s
  $metadata
-  public
+  param
 duration=0s
  $metadata
-  public
+  param
 period=0s
  $metadata
-  public
+  param
 phase=0
  $metadata
-  public
+  param
 t=:$t-delay

@@ -9,4 +9,4 @@ Vstep=10mV
  $metadata
   backend.stpu.param=weight
   notes=The desired change in postsynaptic voltage. This does not account for dynamics of the postsynaptic neuron, such as leakage current and voltage resets due to spiking.
-  public
+  param

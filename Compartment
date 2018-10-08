@@ -10,7 +10,7 @@ $metadata
 C=100pF
  $metadata
   backend.xyce.param=cMem
-  public
+  param
 I=+
  $metadata
   backend.lems.param=iMemb,iSyn,iChannels
@@ -24,7 +24,7 @@ V'=I/C
 Vspike=30mV
  $metadata
   backend.lems.param=thresh
-  public
+  param
 fire=:V>Vspike
  $metadata
   notes=This temporary variable carries the same information as spike, but the condition V>Vspike is often tested in multiple places. Using a temporary saves a cycle and makes the model easier to read.

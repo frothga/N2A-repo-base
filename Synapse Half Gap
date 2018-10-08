@@ -8,5 +8,5 @@ $metadata
 G=0S
  $metadata
   backend.lems.param=conductance
-  public
+  param
 I=:G*(Vpeer-V)

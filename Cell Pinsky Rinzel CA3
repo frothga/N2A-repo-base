@@ -26,7 +26,7 @@ Vsyn=60mV
 Wi'=-Wi/2
 alphac=0
  $metadata
-  public
+  param
 alphacd_Vd=:
  @=2*exp((-53.5-Vd/1mV)/27)
  @Vd<-10mV=exp((Vd/1mV+50)/11-(Vd/1mV+53.5)/27)/18.975
@@ -39,7 +39,7 @@ alphaqd=:
 alphasd_Vd=:1.6/(1+exp(-0.072*(Vd/1mV-5)))
 betac=0
  $metadata
-  public
+  param
 betacd_Vd=:
  @=0
  @Vd<-10mV=2*exp((-53.5-Vd/1mV)/27)-alphacd_Vd
@@ -54,63 +54,63 @@ chid=:
  @Cad/250>1=1
 cm=0(uF/cm2)
  $metadata
-  public
+  param
 eCa=0V
  $metadata
-  public
+  param
 eK=0V
  $metadata
-  public
+  param
 eL=0V
  $metadata
-  public
+  param
 eNa=0V
  $metadata
-  public
+  param
 gAmpa=0(mS/cm2)
  $metadata
-  public
+  param
 gCa=0(mS/cm2)
  $metadata
-  public
+  param
 gKC=0(mS/cm2)
  $metadata
-  public
+  param
 gKahp=0(mS/cm2)
  $metadata
-  public
+  param
 gKdr=0(mS/cm2)
  $metadata
-  public
+  param
 gLd=0(mS/cm2)
  $metadata
-  public
+  param
 gLs=0(mS/cm2)
  $metadata
-  public
+  param
 gNa=0(mS/cm2)
  $metadata
-  public
+  param
 gNmda=0(mS/cm2)
  $metadata
-  public
+  param
 gc=0(mS/cm2)
  $metadata
-  public
+  param
 hs'=(alphahs_Vs-(alphahs_Vs+betahs_Vs)*hs)/1ms
 iDend=0(A/m2)
  $metadata
-  public
+  param
 iSoma=0(A/m2)
  $metadata
-  public
+  param
 ns'=(alphans_Vs-(alphans_Vs+betans_Vs)*ns)/1ms
 pp=0
  $metadata
-  public
+  param
 qd=qd0@$init
 qd'=(alphaqd-(alphaqd+betaqd)*qd)/1ms
 qd0=0
  $metadata
-  public
+  param
 sd'=(alphasd_Vd-(alphasd_Vd+betasd_Vd)*sd)/1ms

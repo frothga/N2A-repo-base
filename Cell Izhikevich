@@ -25,26 +25,26 @@ V'=(k*(V-vr)*(V-vt)-u+I)/C
 V0=c
  $metadata
   backend.lems.param=v0
-  public
+  param
 Vspike=30mV
  $metadata
   backend.lems.param=thresh,vpeak
 a=0.02kHz
  $metadata
-  public
+  param
 b=0.2nS
  $metadata
-  public
+  param
 c=-65mV
  $metadata
-  public
+  param
 d=2pA
  $metadata
-  public
+  param
 k=0.04(nS/mV)
  $metadata
   notes=Must be 0.04(nS/mV) for simple Izhikevich model.
-  public
+  param
 u
  @$init=b*V0
  @fire=u+d
@@ -52,8 +52,8 @@ u'=a*(b*(V-vr)-u)
 vr=0mV
  $metadata
   notes=Must be zero for simple Izhikevich model.
-  public
+  param
 vt=-125mV
  $metadata
   notes=Must be -125mV for simple Izhikevich model.
-  public
+  param

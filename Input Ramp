@@ -13,31 +13,31 @@ I=:
 delay=0s
  $metadata
   notes=Offset relative to start of simulation. A positive number makes the waveform start later. A negative number makes it start earlier, but any portion of the waveform that occurs before the start of simulation will be cut off.
-  public
+  param
 fall=0s
  $metadata
   notes=Time to go from high2 to low. Used to create sawtooth or triangle waveforms.
-  public
+  param
 high1=0A
  $metadata
   backend.lems.param=startAmplitude,amplitude
-  public
+  param
 high2=high1
  $metadata
   backend.lems.param=finishAmplitude
-  public
+  param
 low=0A
  $metadata
   backend.lems.param=baselineAmplitude
-  public
+  param
 period=0s
  $metadata
   notes=Repeat time. If zero, then waveform does not repeat.
-  public
+  param
 rise=0s
  $metadata
   notes=Time to go from low to high1. Used to create sawtooth or triangle waveforms.
-  public
+  param
 t=:
  @=$t-delay
  @period=($t-delay)%period
@@ -47,4 +47,4 @@ t3=:rise+width+fall
 width=0s
  $metadata
   backend.lems.param=duration
-  public
+  param
