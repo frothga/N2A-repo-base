@@ -3,7 +3,7 @@ $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
  backend.lems.DL
- backend.lems.part=izhikevich2007Cell,izhikevichCell
+ backend.lems.part=izhikevichCell,izhikevich2007Cell
  backend.xyce.device=neuron7
  id=166b5f1857395797
  notes=|

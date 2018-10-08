@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Compartment"
  0=166b5f39bd266700
 $metadata
- backend.lems.part=baseIaf.baseIafCapCell,iafCell,iafRefCell
+ backend.lems.part=iafCell,baseIaf,baseIafCapCell,iafRefCell
  backend.stpu.part=lif
  id=166b015ccda9c699
 E=Vreset

@@ -2,7 +2,7 @@ N2A.schema=1
 $metadata
  backend.lems.children.conductanceScaling=Q10
  backend.lems.children.gates=Gate
- backend.lems.part=baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensity,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
+ backend.lems.part=channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
  id=166b5f185735013e
 $up.I=+I
 E=0mV
@@ -11,7 +11,7 @@ E=0mV
   public
 G=:Gall*fopen*Q10Scaling
  $metadata
-  backend.lems.param=g
+  backend.lems.param=g,geff
 G1=0pS
  $metadata
   backend.lems.param=conductance

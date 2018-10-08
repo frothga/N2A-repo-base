@@ -5,7 +5,7 @@ $metadata
  backend.lems.children.channelDensities=Channel
  backend.lems.children.concentrationModels=Concentration
  backend.lems.children.populations=Channel
- backend.lems.part=baseCell,baseSpikingCell,baseCellMembPot,baseCellMembPotCap,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
+ backend.lems.part=baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
  id=166b5f39bd266700
 C=100pF
  $metadata

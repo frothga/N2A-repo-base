@@ -4,12 +4,12 @@ $inherit="Cell LIF"
 $metadata
  backend.lems.part=iafTauCell,iafTauRefCell
  id=166b5f1857391494
- notes=Integrate and fire cell which returns to its leak reversal potential at a given rate. Since τ=G/C, neither conductance G nor capacitance C is specified. Without C, it is impossible to compute the contribution of current to voltage. Thus, this simple model is not able to process inputs.
+ notes=Please use "Cell LIF" instead. This model exists only for compatibility with NeuroML. Since τ=C/G, neither conductance G nor capacitance C is specified. Without C, it is impossible to compute the contribution of current to voltage. Thus, this simple model is not able to process inputs.
 C=$kill
 G=$kill
 I=$kill
 V'
- @$t>refractoryEnd&&!fire||refractoryPeriod==0=(E-V)/τ
+ @=(E-V)/τ
 τ=0s
  $metadata
   backend.lems.param=tau
