@@ -1,6 +1,6 @@
 N2A.schema=1
 $metadata
- backend.lems.children.conductanceScaling=Q10
+ backend.lems.children.conductanceScaling=Q10,baseConductanceScaling
  backend.lems.children.gates=Gate
  backend.lems.part=channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
  id=166b5f185735013e

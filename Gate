@@ -1,7 +1,7 @@
 N2A.schema=1
 $metadata
  backend.lems.children.HHVariables=HHVariable
- backend.lems.children.q10Settings=Q10
+ backend.lems.children.q10Settings=Q10,baseQ10Settings
  backend.lems.children.states=Kinetic State
  backend.lems.children.subGate=Gate Sub
  backend.lems.children.transitions=Kinetic Transition

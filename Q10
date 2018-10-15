@@ -1,14 +1,18 @@
 N2A.schema=1
 $metadata
- backend.lems.part=baseConductanceScaling,baseQ10Settings,q10Fixed,q10ExpTemp,q10ConductanceScaling
+ backend.lems.part=q10ExpTemp,baseConductanceScaling,baseQ10Settings,q10Fixed,q10ConductanceScaling
  id=166b5f5b9cbabe00
 $up.Q10Scaling=*scaling
+ $metadata
+  backend.lems.param=fixedQ10
 coefficient=1
  $metadata
   backend.lems.param=q10Factor
+  param
 scaling=:coefficient^((temperature-temperature0)/10K)
  $metadata
   backend.lems.param=factor
 temperature0=20Cel
  $metadata
   backend.lems.param=experimentalTemp
+  param
