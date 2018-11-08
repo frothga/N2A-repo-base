@@ -2,7 +2,7 @@ N2A.schema=1
 $inherit="Input"
  0=166b5f185734f319
 $metadata
- backend.lems.part=rampGenerator,pulseGenerator
+ backend.lems.part=rampGenerator,pulseGenerator,rampGeneratorDL,pulseGeneratorDL
  id=166b5f185739f3a4
  notes=A generalization of ramp and pulse functions from several different simulation languages. Generates a piecewise-linear waveform with four segments. Each segment is specified by an injection current value and the duration until the start of the next segment. There is also an overall time offset and a repeat period. Details about the effects of these values are documented on the individual parameters.
 I=:
@@ -18,16 +18,19 @@ fall=0s
  $metadata
   notes=Time to go from high2 to low. Used to create sawtooth or triangle waveforms.
   param
-high1=0A
+high1=0pA
  $metadata
+  backend.lems.DL
   backend.lems.param=startAmplitude,amplitude
   param
 high2=high1
  $metadata
+  backend.lems.DL=pA
   backend.lems.param=finishAmplitude
   param
-low=0A
+low=0pA
  $metadata
+  backend.lems.DL
   backend.lems.param=baselineAmplitude
   param
 period=0s

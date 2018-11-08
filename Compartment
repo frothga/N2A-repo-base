@@ -2,6 +2,7 @@ N2A.schema=1
 $inherit="Spike Source"
  0=166b5f185735074b
 $metadata
+ backend.lems.attachments.synapses=Input,basePointCurrent
  backend.lems.children.channelDensities=Channel
  backend.lems.children.concentrationModels=Concentration
  backend.lems.children.populations=Channel

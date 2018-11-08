@@ -2,14 +2,15 @@ N2A.schema=1
 $inherit="Input"
  0=166b5f185734f319
 $metadata
- backend.lems.part=sineGenerator
+ backend.lems.part=sineGenerator,sineGeneratorDL
  id=166b5f18573a26a8
  notes=Generates a sinusoidally varying current after a time delay, for a fixed duration. The period and maximum amplitude of the current can be set as well as the phase at which to start.
 I=:
  @=0
  @t>=0&&t<duration=amplitude*sin(phase+2*π*t/period)
-amplitude=0A
+amplitude=0pA
  $metadata
+  backend.lems.DL
   param
 delay=0s
  $metadata
