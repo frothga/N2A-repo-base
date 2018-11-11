@@ -7,7 +7,7 @@ Gall=:
  @=permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
  @c.outside<=0=0
 K=:c.z*Faraday/(IdealGas*temperature)
-c=connect("Concentration")
+c=connect(Concentration)
 expKV=:exp(-K*V)
 permeability=0(m/s)
  $metadata

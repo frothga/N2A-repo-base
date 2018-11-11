@@ -4,13 +4,13 @@ $metadata
 $p=$t<100ms
 $t'=0.01ms
 C
- $inherit="Coupling"
+ $inherit=Coupling
   0=166b015ccda56f33
  $p=A.$index==B.$index-1
  A=HH
  B=HH
 HH
- $inherit="Cell Hodgkin-Huxley"
+ $inherit=Cell Hodgkin-Huxley
   0=166b015ccda6e28b
  $n=3
  $xyz=[($index+1)*length;0;0]

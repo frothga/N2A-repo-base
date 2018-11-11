@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Spike Source"
+$inherit=Spike Source
  0=166b5f185735074b
 $metadata
  backend.lems.part=spikeArray,timedSynapticInput

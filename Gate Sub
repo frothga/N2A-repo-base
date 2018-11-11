@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Gate"
+$inherit=Gate
  0=166b5f185734fa2c
 $metadata
  backend.lems.part=subGate

@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Synapse"
+$inherit=Synapse
  0=166b5f185734f41a
 $metadata
  backend.lems.part=baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo

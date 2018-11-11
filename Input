@@ -3,7 +3,7 @@ $metadata
  backend.lems.part=basePointCurrent,baseVoltageDepPointCurrent,basePointCurrentDL,baseVoltageDepPointCurrentDL
  id=166b5f185734f319
  notes=A connector which injects current into its target.
-B=connect("Compartment")
+B=connect(Compartment)
 B.I=+I
 I=:0pA
  $metadata

@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Channel"
+$inherit=Channel
  0=166b5f185735013e
 $metadata
  backend.lems.part=ionChannelPassive

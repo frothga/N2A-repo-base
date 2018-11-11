@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Spike Generator Poisson"
+$inherit=Spike Generator Poisson
  0=166b5f18573a49ac
 $metadata
  backend.lems.part=transientPoissonFiringSynapse

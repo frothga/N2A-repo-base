@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Concentration"
+$inherit=Concentration
  0=166b5f185734ff3a
 $metadata
  backend.lems.part=fixedFactorConcentrationModel,fixedFactorConcentrationModelTraub

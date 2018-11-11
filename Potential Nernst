@@ -9,4 +9,4 @@ E=:
  @=IdealGas*temperature/(c.z*Faraday)*log(c.outside/c.inside)
  @c.inside<=0=100V
  @c.outside<=0=-100V
-c=connect("Concentration")
+c=connect(Concentration)

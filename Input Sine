@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Input"
+$inherit=Input
  0=166b5f185734f319
 $metadata
  backend.lems.part=sineGenerator,sineGeneratorDL

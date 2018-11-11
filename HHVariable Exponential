@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="HHVariable"
+$inherit=HHVariable
  0=166b5f185735064a
 $metadata
  backend.lems.part=HHExpRate,HHExpVariable

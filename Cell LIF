@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Compartment"
+$inherit=Compartment
  0=166b5f39bd266700
 $metadata
  backend.lems.part=iafCell,baseIaf,baseIafCapCell,iafRefCell

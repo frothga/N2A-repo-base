@@ -1,5 +1,5 @@
 N2A.schema=1
-$inherit="Synapse Half"
+$inherit=Synapse Half
  0=166b5f2337372608
 $metadata
  backend.lems.part=gapJunction,linearGradedSynapse
