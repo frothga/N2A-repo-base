@@ -1,27 +1,39 @@
 N2A.schema=1
 $metadata
- backend.lems.part=concentrationModel,species
+ backend
+  lems
+   part=concentrationModel,species
  id=166b5f185734ff3a
  notes=Concentrations of a given ion, inside and outside of a compartment. These can vary over time.
 inside
  $metadata
-  backend.lems.param=concentration
+  backend
+   lems
+    param=concentration
  @$init=inside0
  @inside<0=0
 inside0=0(mol/m3)
  $metadata
-  backend.lems.param=initialConcentration
+  backend
+   lems
+    param=initialConcentration
   param
 outside=outside0@$init
  $metadata
-  backend.lems.param=extConcentration
+  backend
+   lems
+    param=extConcentration
 outside0=0(mol/m3)
  $metadata
-  backend.lems.param=initialExtConcentration
+  backend
+   lems
+    param=initialExtConcentration
   param
 restingConcentration=0(mol/m3)
  $metadata
-  backend.lems.param=restingConc
+  backend
+   lems
+    param=restingConc
   param
 z=1
  $metadata
@@ -29,5 +41,7 @@ z=1
   param
 τ=0s
  $metadata
-  backend.lems.param=decayConstant
+  backend
+   lems
+    param=decayConstant
   param

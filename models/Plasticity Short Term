@@ -1,6 +1,8 @@
 N2A.schema=1
 $metadata
- backend.lems.part=tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
+ backend
+  lems
+   part=tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
  id=166b5f18573a90b2
  notes=Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
 $up.plasticityFactor=*plasticityFactor
@@ -20,9 +22,13 @@ initReleaseProb=0
 plasticityFactor=:R*U
 τFac=0s
  $metadata
-  backend.lems.param=tauFac
+  backend
+   lems
+    param=tauFac
   param
 τRec=0s
  $metadata
-  backend.lems.param=tauRec
+  backend
+   lems
+    param=tauRec
   param

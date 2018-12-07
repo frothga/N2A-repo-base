@@ -2,15 +2,21 @@ N2A.schema=1
 $inherit=Synapse Conductance
  0=166b015ccdaa5a31
 $metadata
- backend.lems.part=expOneSynapse
+ backend
+  lems
+   part=expOneSynapse
  id=166b015ccdaa8211
 G
  @$init=0
  @in=G+Gmax*weight
 G'=-G/τDecay
  $metadata
-  backend.lems.param=g'
+  backend
+   lems
+    param=g'
 τDecay=0ms
  $metadata
-  backend.lems.param=tauDecay
+  backend
+   lems
+    param=tauDecay
   param

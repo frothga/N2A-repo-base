@@ -2,6 +2,8 @@ N2A.schema=1
 $inherit=HHVariable
  0=166b5f185735064a
 $metadata
- backend.lems.part=HHSigmoidRate,HHSigmoidVariable
+ backend
+  lems
+   part=HHSigmoidRate,HHSigmoidVariable
  id=166b5f185735ce69
 x=:rate/(1+exp(-a,"median=1"))

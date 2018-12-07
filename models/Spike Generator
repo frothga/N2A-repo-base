@@ -2,7 +2,9 @@ N2A.schema=1
 $inherit=Spike Source
  0=166b5f185735074b
 $metadata
- backend.lems.part=spikeGenerator
+ backend
+  lems
+   part=spikeGenerator
  id=166b5f18573a45ab
 period=0s
  $metadata

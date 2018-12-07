@@ -2,7 +2,9 @@ N2A.schema=1
 $inherit=Input
  0=166b5f185734f319
 $metadata
- backend.lems.part=voltageClamp
+ backend
+  lems
+   part=voltageClamp
  id=166b5f18573a9eb5
  notes=Applies a variable current to try to keep parent at targetVoltage.
 I=:

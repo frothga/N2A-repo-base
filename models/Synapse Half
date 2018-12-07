@@ -1,14 +1,22 @@
 N2A.schema=1
 $metadata
- backend.lems.part=silentSynapse
+ backend
+  lems
+   part=silentSynapse
  id=166b5f2337372608
  notes=A null part for split synapses.
 I=0
  $metadata
-  backend.lems.param=i
+  backend
+   lems
+    param=i
 V=:0V
  $metadata
-  backend.lems.param=v
+  backend
+   lems
+    param=v
 Vpeer=:0V
  $metadata
-  backend.lems.param=vpeer
+  backend
+   lems
+    param=vpeer

@@ -2,14 +2,18 @@ N2A.schema=1
 $inherit=Synapse Alpha
  0=166b015ccdaa0f39
 $metadata
- backend.lems.part=alphaCurrentSynapse
+ backend
+  lems
+   part=alphaCurrentSynapse
  id=166b5f207289e400
  notes=This synapse is exactly the same as Alpha, except that it ignores the voltage in the target compartment.
 Gmax=Imax/Vconstant
 I=:G*Vconstant
 Imax=0A
  $metadata
-  backend.lems.param=ibase
+  backend
+   lems
+    param=ibase
 Vconstant=1V
  $metadata
   notes=Instead of using the target compartment voltage, we assume a constant. The value doesn't matter, but must be nonzero.

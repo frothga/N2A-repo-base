@@ -2,33 +2,49 @@ N2A.schema=1
 $inherit=Spike Source
  0=166b5f185735074b
 $metadata
- backend.lems.attachments.synapses=Input,basePointCurrent
- backend.lems.children.channelDensities=Channel
- backend.lems.children.concentrationModels=Concentration
- backend.lems.children.populations=Channel
- backend.lems.part=baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
+ backend
+  lems
+   attachments
+    synapses=Input,basePointCurrent
+   children
+    channelDensities=Channel
+    concentrationModels=Concentration
+    populations=Channel
+   part=baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
  id=166b5f39bd266700
 C=100pF
  $metadata
-  backend.xyce.param=cMem
+  backend
+   xyce
+    param=cMem
   param
 I=+
  $metadata
-  backend.lems.param=iMemb,iSyn,iChannels
+  backend
+   lems
+    param=iMemb,iSyn,iChannels
 V=0@$init
  $metadata
-  backend.lems.param=v
+  backend
+   lems
+    param=v
   median=50mV
 V'=I/C
  $metadata
-  backend.lems.param=v'
+  backend
+   lems
+    param=v'
 Vspike=30mV
  $metadata
-  backend.lems.param=thresh
+  backend
+   lems
+    param=thresh
   param
 fire=:V>Vspike
  $metadata
   notes=This temporary variable carries the same information as spike, but the condition V>Vspike is often tested in multiple places. Using a temporary saves a cycle and makes the model easier to read.
 spike=fire
  $metadata
-  backend.lems.port=out
+  backend
+   lems
+    port=out

@@ -1,6 +1,7 @@
 N2A.schema=1
 $metadata
- gui.mixin
+ gui
+  mixin
  id=166b5f3fdca4dc00
  notes=Mix-in that sets reversal potential E based on the Nernst equation. Works closely with a concentration model.
 E=:

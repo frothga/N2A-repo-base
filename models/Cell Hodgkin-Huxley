@@ -2,7 +2,9 @@ N2A.schema=1
 $inherit=Segment
  0=166b5f185734f92a
 $metadata
- backend.xyce.device=neuron1
+ backend
+  xyce
+   device=neuron1
  id=166b015ccda6e28b
  notes=Can function as either a point cell or part of an HH cable.
 K

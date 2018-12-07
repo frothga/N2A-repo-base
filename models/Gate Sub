@@ -2,7 +2,9 @@ N2A.schema=1
 $inherit=Gate
  0=166b5f185734fa2c
 $metadata
- backend.lems.part=subGate
+ backend
+  lems
+   part=subGate
  id=166b5f1857350240
  notes=Contributes fractional conductance to containing gate.
 $up.fopen=$kill

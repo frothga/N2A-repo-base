@@ -2,7 +2,9 @@ N2A.schema=1
 $inherit=Spike Generator Poisson
  0=166b5f18573a49ac
 $metadata
- backend.lems.part=transientPoissonFiringSynapse
+ backend
+  lems
+   part=transientPoissonFiringSynapse
  id=166b5f18573a7db1
  notes=Poisson spike generator with delay and duration.
 LONG_TIME=1000000000h

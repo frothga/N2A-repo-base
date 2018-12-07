@@ -1,6 +1,8 @@
 N2A.schema=1
 $metadata
- backend.lems.part=continuousProjection,electricalProjection
+ backend
+  lems
+   part=continuousProjection,electricalProjection
  id=166b5f23219cec07
  notes=A synapse consisting of separate pre- and a post-synaptic parts. The parts are directly coupled by voltage. To use it, set preComponent and postComponent to inherit the appropriate parts. Our local equations under each of these will modify the inherited parts to make the necessary connections.
 A=connect(Compartment)

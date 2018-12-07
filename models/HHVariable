@@ -1,7 +1,9 @@
 N2A.schema=1
 $metadata
- backend.lems.part=baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
- backend.lems.requirement.V=v(V)
+ backend
+  lems
+   part=baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
+   requirement.V=v(V)
  id=166b5f185735064a
  notes=A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism. To use, include as a sub-part of Gate and set the quation $up.X=x. Change X on left-hand side to reference the target variable in the containing Gate model (usually one of α, β, τ or inf).
 a=:(V-midpoint)/scale
@@ -16,8 +18,10 @@ scale=100mV
   param
 x=:rate
  $metadata
-  backend.lems.expose
-  backend.lems.param=tau,r,t
+  backend
+   lems
+    expose
+    param=tau,r,t
   notes=|
     The output value, with dimension determined by rate. Marked temporary so we can supply a value to Gate immediately during init. Strictly speaking, the temporary combiner should be ignored because this is a separate part. However, it will usually get flattened into Gate first.
     

@@ -1,20 +1,29 @@
 N2A.schema=1
 $metadata
- backend.lems.children.conductanceScaling=Q10,baseConductanceScaling
- backend.lems.children.gates=Gate
- backend.lems.part=channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
+ backend
+  lems
+   children
+    conductanceScaling=Q10,baseConductanceScaling
+    gates=Gate
+   part=channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
  id=166b5f185735013e
 $up.I=+I
 E=0mV
  $metadata
-  backend.lems.param=erev
+  backend
+   lems
+    param=erev
   param
 G=:Gall*fopen*Q10Scaling
  $metadata
-  backend.lems.param=g,geff
+  backend
+   lems
+    param=g,geff
 G1=0pS
  $metadata
-  backend.lems.param=conductance
+  backend
+   lems
+    param=conductance
   notes=The conductance of a single channel instance.
   param
 Gall=:Gdensity*surfaceArea
@@ -22,16 +31,24 @@ Gall=:Gdensity*surfaceArea
   notes=The conductance for an entire ensemble of channels. For population-based value, use: G1*population
 Gdensity=0(mS/cm2)
  $metadata
-  backend.lems.param=condDensity
+  backend
+   lems
+    param=condDensity
   param
 I=:G*(E-V)
  $metadata
-  backend.lems.param=i
+  backend
+   lems
+    param=i
 Q10Scaling=*
  $metadata
-  backend.lems.param=conductanceScale
+  backend
+   lems
+    param=conductanceScale
 fopen=*
 population=1
  $metadata
-  backend.lems.param=number
+  backend
+   lems
+    param=number
   param

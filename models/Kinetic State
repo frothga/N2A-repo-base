@@ -1,6 +1,8 @@
 N2A.schema=1
 $metadata
- backend.lems.part=KSState,openState,closedState
+ backend
+  lems
+   part=KSState,openState,closedState
  id=166b5f185734fe37
 $up.q=+q
 occupancy=0@$init
