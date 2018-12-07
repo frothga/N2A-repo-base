@@ -1,31 +1,31 @@
-N2A.schema=1
-$inherit=Synapse Conductance
- 0=166b015ccdaa5a31
+N2A.schema=2
+$inherit:Synapse Conductance
+ 0:166b015ccdaa5a31
 $metadata
  backend
   lems
-   part=alphaSynapse
- id=166b015ccdaa0f39
-G'=(exp(1)*a-G)/τ
+   part:alphaSynapse
+ id:166b015ccdaa0f39
+G':(exp(1)*a-G)/τ
  $metadata
   backend
    lems
-    param=g'
+    param:g'
 a
  $metadata
   backend
    lems
-    param=A
- @$init=0
- @in=a+Gmax*weight
-a'=-a/τ
+    param:A
+ @$init:0
+ @in:a+Gmax*weight
+a':-a/τ
  $metadata
   backend
    lems
-    param=A'
-τ=0ms
+    param:A'
+τ:0ms
  $metadata
   backend
    stpu
-    param=tauRise,tauDecay
+    param:tauRise,tauDecay
   param

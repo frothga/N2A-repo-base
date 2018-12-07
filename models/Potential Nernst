@@ -1,13 +1,13 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  gui
   mixin
- id=166b5f3fdca4dc00
- notes=Mix-in that sets reversal potential E based on the Nernst equation. Works closely with a concentration model.
-E=:
+ id:166b5f3fdca4dc00
+ notes:Mix-in that sets reversal potential E based on the Nernst equation. Works closely with a concentration model.
+E::
  $metadata
-  note=We pick some arbitrary bounds on the reversal voltage, rather than letting it go to infinity if outside or inside concentration goes to zero.
- @=IdealGas*temperature/(c.z*Faraday)*log(c.outside/c.inside)
- @c.inside<=0=100V
- @c.outside<=0=-100V
-c=connect(Concentration)
+  note:We pick some arbitrary bounds on the reversal voltage, rather than letting it go to infinity if outside or inside concentration goes to zero.
+ @:IdealGas*temperature/(c.z*Faraday)*log(c.outside/c.inside)
+ @c.inside<=0:100V
+ @c.outside<=0:-100V
+c:connect(Concentration)

@@ -1,13 +1,13 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=KSState,openState,closedState
- id=166b5f185734fe37
-$up.q=+q
-occupancy=0@$init
-q=:relativeConductance*occupancy
-relativeConductance=0
+   part:KSState,openState,closedState
+ id:166b5f185734fe37
+$up.q:+q
+occupancy:0@$init
+q::relativeConductance*occupancy
+relativeConductance:0
  $metadata
-  notes=Generally this value is 1 for open and 0 for closed.
+  notes:Generally this value is 1 for open and 0 for closed.
   param

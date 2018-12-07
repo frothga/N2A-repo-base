@@ -1,45 +1,45 @@
-N2A.schema=1
-$inherit=Synapse Half Gap
- 0=166b5f185734fb2e
+N2A.schema=2
+$inherit:Synapse Half Gap
+ 0:166b5f185734fb2e
 $metadata
  backend
   lems
-   part=gradedSynapse
- id=166b5f185738e492
- notes=Analog synapse based on methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html
-E=0V
+   part:gradedSynapse
+ id:166b5f185738e492
+ notes:Analog synapse based on methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html
+E:0V
  $metadata
   backend
    lems
-    param=erev
-  notes=The reversal potential of the synapse
+    param:erev
+  notes:The reversal potential of the synapse
   param
-I=:G*s*(E-V)
-Vhalf=0V
+I::G*s*(E-V)
+Vhalf:0V
  $metadata
   backend
    lems
-    param=Vth
-  notes=The half-activation voltage of the synapse
+    param:Vth
+  notes:The half-activation voltage of the synapse
   param
-inf=1/(1+exp((Vhalf-Vpeer)/δ))
-k=0Hz
+inf:1/(1+exp((Vhalf-Vpeer)/δ))
+k:0Hz
  $metadata
-  notes=Rate constant for transmitter-receptor dissociation rate
+  notes:Rate constant for transmitter-receptor dissociation rate
   param
-s=inf@1-inf<1e-4
+s:inf@1-inf<1e-4
 s'
- @=0
- @1-inf>1e-4=(inf-s)/τ
-δ=0V
+ @:0
+ @1-inf>1e-4:(inf-s)/τ
+δ:0V
  $metadata
   backend
    lems
-    param=delta
-  notes=Slope of the activation curve
+    param:delta
+  notes:Slope of the activation curve
   param
-τ=(1-inf)/k
+τ:(1-inf)/k
  $metadata
   backend
    lems
-    param=tau
+    param:tau

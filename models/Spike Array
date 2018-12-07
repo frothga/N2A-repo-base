@@ -1,17 +1,17 @@
-N2A.schema=1
-$inherit=Spike Source
- 0=166b5f185735074b
+N2A.schema=2
+$inherit:Spike Source
+ 0:166b5f185735074b
 $metadata
  backend
   lems
-   part=spikeArray,timedSynapticInput
- id=166b5f7fcf84a900
-fire=:$t>=times(index)
+   part:spikeArray,timedSynapticInput
+ id:166b5f7fcf84a900
+fire::$t>=times(index)
 index
- @$init=0
- @fire=index+1
-spike=fire
-times=[∞]
+ @$init:0
+ @fire:index+1
+spike:fire
+times:[∞]
  $metadata
-  notes=Vector of spike times. Should be in strictly ascending order. Last entry should be ∞ to stop spiking.
+  notes:Vector of spike times. Should be in strictly ascending order. Last entry should be ∞ to stop spiking.
   param

@@ -1,17 +1,17 @@
-N2A.schema=1
-$inherit=Spike Source
- 0=166b5f185735074b
+N2A.schema=2
+$inherit:Spike Source
+ 0:166b5f185735074b
 $metadata
  backend
   lems
-   part=spikeGenerator
- id=166b5f18573a45ab
-period=0s
+   part:spikeGenerator
+ id:166b5f18573a45ab
+period:0s
  $metadata
-  notes=Time between spikes. First spike will be emitted after this time.
+  notes:Time between spikes. First spike will be emitted after this time.
   param
 spike
- @=0
- @tsince>period=1
-tsince=0@$init||tsince>period
-tsince'=1
+ @:0
+ @tsince>period:1
+tsince:0@$init||tsince>period
+tsince':1

@@ -1,18 +1,18 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=voltageConcDepBlockMechanism
- id=166b5f18573aa9b6
- notes=Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses
-$up.blockFactor=*blockFactor
-blockConcentration=0(mol/m3)
+   part:voltageConcDepBlockMechanism
+ id:166b5f18573aa9b6
+ notes:Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses
+$up.blockFactor:*blockFactor
+blockConcentration:0(mol/m3)
  $metadata
   param
-blockFactor=:1/(1+blockConcentration/scalingConc*exp(-V/scalingVolt))
-scalingConc=0(mol/m3)
+blockFactor::1/(1+blockConcentration/scalingConc*exp(-V/scalingVolt))
+scalingConc:0(mol/m3)
  $metadata
   param
-scalingVolt=0V
+scalingVolt:0V
  $metadata
   param

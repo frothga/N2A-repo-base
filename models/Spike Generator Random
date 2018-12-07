@@ -1,25 +1,25 @@
-N2A.schema=1
-$inherit=Spike Source
- 0=166b5f185735074b
+N2A.schema=2
+$inherit:Spike Source
+ 0:166b5f185735074b
 $metadata
  backend
   lems
-   part=spikeGeneratorRandom
- id=166b5f18573a4dad
- notes=Generates spikes with a random interspike interval of at least minISI and at most maxISI
-isi=minISI+uniform(maxISI-minISI)@$init||tsince>isi
+   part:spikeGeneratorRandom
+ id:166b5f18573a4dad
+ notes:Generates spikes with a random interspike interval of at least minISI and at most maxISI
+isi:minISI+uniform(maxISI-minISI)@$init||tsince>isi
  $metadata
-  notes=The interval until the next spike
-maxISI=0s
+  notes:The interval until the next spike
+maxISI:0s
  $metadata
-  notes=Maximum interspike interval
+  notes:Maximum interspike interval
   param
-minISI=0s
+minISI:0s
  $metadata
-  notes=Minimum interspike interval
+  notes:Minimum interspike interval
   param
 spike
- @=0
- @tsince>isi=1
-tsince=0@$init||tsince>isi
-tsince'=1
+ @:0
+ @tsince>isi:1
+tsince:0@$init||tsince>isi
+tsince':1

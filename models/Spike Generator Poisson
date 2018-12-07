@@ -1,21 +1,21 @@
-N2A.schema=1
-$inherit=Spike Source
- 0=166b5f185735074b
+N2A.schema=2
+$inherit:Spike Source
+ 0:166b5f185735074b
 $metadata
  backend
   lems
-   part=spikeGeneratorPoisson,poissonFiringSynapse
+   part:spikeGeneratorPoisson,poissonFiringSynapse
  gui
   mixin
- id=166b5f18573a49ac
- notes=Generator of spikes with exponentially distributed ISI and scale 1/averageRate
-averageIsi=1/averageRate
-averageRate=0Hz
+ id:166b5f18573a49ac
+ notes:Generator of spikes with exponentially distributed ISI and scale 1/averageRate
+averageIsi:1/averageRate
+averageRate:0Hz
  $metadata
   param
-isi=-averageIsi*log(1-uniform())@$init||tsince>isi
+isi:-averageIsi*log(1-uniform())@$init||tsince>isi
 spike
- @=0
- @tsince>isi=1
-tsince=0@$init||tsince>isi
-tsince'=1
+ @:0
+ @tsince>isi:1
+tsince:0@$init||tsince>isi
+tsince':1

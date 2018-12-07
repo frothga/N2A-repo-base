@@ -1,11 +1,11 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=baseSpikeSource,baseVoltageDepPointCurrentSpiking
- id=166b5f185735074b
-spike=0
+   part:baseSpikeSource,baseVoltageDepPointCurrentSpiking
+ id:166b5f185735074b
+spike:0
  $metadata
   backend
    lems
-    port=out
+    port:out

@@ -1,51 +1,51 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
    children
-    HHVariables=HHVariable
-    q10Settings=Q10,baseQ10Settings
-    states=Kinetic State
-    subGate=Gate Sub
-    transitions=Kinetic Transition
-   part=gate,baseGate,gateFractional,gateKS,gateHHrates,gateHHInstantaneous,gateHHratesTauInf,gateHHtauInf,gateHHratesTau,gateHHratesInf
- id=166b5f185734fa2c
- notes=|
+    HHVariables:HHVariable
+    q10Settings:Q10,baseQ10Settings
+    states:Kinetic State
+    subGate:Gate Sub
+    transitions:Kinetic Transition
+   part:gate,baseGate,gateFractional,gateKS,gateHHrates,gateHHInstantaneous,gateHHratesTauInf,gateHHtauInf,gateHHratesTau,gateHHratesInf
+ id:166b5f185734fa2c
+ notes:|
    This is the base model for 3 types of gate:
    Hodgkin-Huxley -- Rates expressed in the HH formalism.
    Kinetic -- A Markov model with state superposition, where each state allows or disallows current to flow.
    Fractional -- Combines several subgates which each contribute a portion of the total current.
-$up.fopen=*q^instances
-Q10Scaling=*
+$up.fopen:*q^instances
+Q10Scaling:*
  $metadata
   backend
    lems
-    param=rateScale
-inf=:α/(α+β)@α+β
-instances=1
+    param:rateScale
+inf::α/(α+β)@α+β
+instances:1
  $metadata
   param
-q=inf@q==0
+q:inf@q==0
  $metadata
-  median=1
-q'=(inf-q)/τ@τ
-α=:0Hz
- $metadata
-  backend
-   lems
-    param=alpha
-β=:0Hz
+  median:1
+q':(inf-q)/τ@τ
+α::0Hz
  $metadata
   backend
    lems
-    param=beta
-τ=:τUnscaled/Q10Scaling
+    param:alpha
+β::0Hz
  $metadata
   backend
    lems
-    param=tau
-τUnscaled=:1/(α+β)
+    param:beta
+τ::τUnscaled/Q10Scaling
  $metadata
   backend
    lems
-    param=tauUnscaled
+    param:tau
+τUnscaled::1/(α+β)
+ $metadata
+  backend
+   lems
+    param:tauUnscaled

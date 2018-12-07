@@ -1,15 +1,15 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  gui
   mixin
- id=166b5f185737c476
- notes=Set current density based on the Goldman-Hodgkin-Katz equation.
-Gall=:
- @=permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
- @c.outside<=0=0
-K=:c.z*Faraday/(IdealGas*temperature)
-c=connect(Concentration)
-expKV=:exp(-K*V)
-permeability=0(m/s)
+ id:166b5f185737c476
+ notes:Set current density based on the Goldman-Hodgkin-Katz equation.
+Gall::
+ @:permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
+ @c.outside<=0:0
+K::c.z*Faraday/(IdealGas*temperature)
+c:connect(Concentration)
+expKV::exp(-K*V)
+permeability:0(m/s)
  $metadata
   param

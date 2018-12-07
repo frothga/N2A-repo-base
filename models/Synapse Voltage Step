@@ -1,14 +1,14 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
- id=166b015ccdaafc99
- notes=This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models targeted to the STPU.
-A=connect(Cell LIF)
-B=connect(Cell LIF)
-B.V=+Vstep@event(A.spike,0)
-Vstep=10mV
+ id:166b015ccdaafc99
+ notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models targeted to the STPU.
+A:connect(Cell LIF)
+B:connect(Cell LIF)
+B.V:+Vstep@event(A.spike,0)
+Vstep:10mV
  $metadata
   backend
    stpu
-    param=weight
-  notes=The desired change in postsynaptic voltage. This does not account for dynamics of the postsynaptic neuron, such as leakage current and voltage resets due to spiking.
+    param:weight
+  notes:The desired change in postsynaptic voltage. This does not account for dynamics of the postsynaptic neuron, such as leakage current and voltage resets due to spiking.
   param

@@ -1,63 +1,63 @@
-N2A.schema=1
-$inherit=Input
- 0=166b5f185734f319
+N2A.schema=2
+$inherit:Input
+ 0:166b5f185734f319
 $metadata
  backend
   lems
-   part=rampGenerator,pulseGenerator,rampGeneratorDL,pulseGeneratorDL
- id=166b5f185739f3a4
- notes=A generalization of ramp and pulse functions from several different simulation languages. Generates a piecewise-linear waveform with four segments. Each segment is specified by an injection current value and the duration until the start of the next segment. There is also an overall time offset and a repeat period. Details about the effects of these values are documented on the individual parameters.
-I=:
- @t<0||t>=t3=low
- @t>=0&&t<t1&&rise=low+(high1-low)*t/rise
- @t>=t1&&t<t2&&width=high1+(high2-high1)*(t-t1)/width
- @t>=t2&&t<t3&&fall=high2+(low-high2)*(t-t2)/fall
-delay=0s
+   part:rampGenerator,pulseGenerator,rampGeneratorDL,pulseGeneratorDL
+ id:166b5f185739f3a4
+ notes:A generalization of ramp and pulse functions from several different simulation languages. Generates a piecewise-linear waveform with four segments. Each segment is specified by an injection current value and the duration until the start of the next segment. There is also an overall time offset and a repeat period. Details about the effects of these values are documented on the individual parameters.
+I::
+ @t<0||t>=t3:low
+ @t>=0&&t<t1&&rise:low+(high1-low)*t/rise
+ @t>=t1&&t<t2&&width:high1+(high2-high1)*(t-t1)/width
+ @t>=t2&&t<t3&&fall:high2+(low-high2)*(t-t2)/fall
+delay:0s
  $metadata
-  notes=Offset relative to start of simulation. A positive number makes the waveform start later. A negative number makes it start earlier, but any portion of the waveform that occurs before the start of simulation will be cut off.
+  notes:Offset relative to start of simulation. A positive number makes the waveform start later. A negative number makes it start earlier, but any portion of the waveform that occurs before the start of simulation will be cut off.
   param
-fall=0s
+fall:0s
  $metadata
-  notes=Time to go from high2 to low. Used to create sawtooth or triangle waveforms.
+  notes:Time to go from high2 to low. Used to create sawtooth or triangle waveforms.
   param
-high1=0pA
+high1:0pA
  $metadata
   backend
    lems
     DL
-    param=startAmplitude,amplitude
+    param:startAmplitude,amplitude
   param
-high2=high1
+high2:high1
  $metadata
   backend
    lems
-    DL=pA
-    param=finishAmplitude
+    DL:pA
+    param:finishAmplitude
   param
-low=0pA
+low:0pA
  $metadata
   backend
    lems
     DL
-    param=baselineAmplitude
+    param:baselineAmplitude
   param
-period=0s
+period:0s
  $metadata
-  notes=Repeat time. If zero, then waveform does not repeat.
+  notes:Repeat time. If zero, then waveform does not repeat.
   param
-rise=0s
+rise:0s
  $metadata
-  notes=Time to go from low to high1. Used to create sawtooth or triangle waveforms.
+  notes:Time to go from low to high1. Used to create sawtooth or triangle waveforms.
   param
-t=:
- @=$t-delay
- @period=($t-delay)%period
-t1=:rise
-t2=:rise+width
-t3=:rise+width+fall
-width=0s
+t::
+ @:$t-delay
+ @period:($t-delay)%period
+t1::rise
+t2::rise+width
+t3::rise+width+fall
+width:0s
  $metadata
   backend
    lems
-    param=duration
+    param:duration
   param

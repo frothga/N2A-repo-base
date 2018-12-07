@@ -1,20 +1,20 @@
-N2A.schema=1
-$inherit=Concentration
- 0=166b5f185734ff3a
+N2A.schema=2
+$inherit:Concentration
+ 0:166b5f185734ff3a
 $metadata
  backend
   lems
-   part=fixedFactorConcentrationModel,fixedFactorConcentrationModelTraub
- id=166b5f1857389787
- notes=Decays toward a resting value with a given time constant. The current-driven component of concentration change is scaled by surface area rather than shell volume. The "fixed factor" refers to a scaling factor ρ applied to the surface are.
-inside'=ρ*I/surfaceArea-(inside-restingConcentration)/τ
+   part:fixedFactorConcentrationModel,fixedFactorConcentrationModelTraub
+ id:166b5f1857389787
+ notes:Decays toward a resting value with a given time constant. The current-driven component of concentration change is scaled by surface area rather than shell volume. The "fixed factor" refers to a scaling factor ρ applied to the surface are.
+inside':ρ*I/surfaceArea-(inside-restingConcentration)/τ
  $metadata
   backend
    lems
-    param=concentration'
-ρ=0(mol/A/s/m)
+    param:concentration'
+ρ:0(mol/A/s/m)
  $metadata
   backend
    lems
-    param=rho
+    param:rho
   param

@@ -1,118 +1,118 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=pinskyRinzelCA3Cell
- id=166b5f1857398e9b
- notes=|
+   part:pinskyRinzelCA3Cell
+ id:166b5f1857398e9b
+ notes:|
    This does not really belong in a set of base models, but is included for compatibility with the NeuroML specification.
    
    Comment from LEMS definition: Reduced CA3 cell model from Pinsky and Rinzel 1994. See https://github.com/OpenSourceBrain/PinskyRinzelModel
-Cad'=(-0.13*ICad/1(uA/cm2)-0.075*Cad)/1ms
-ICad=gCa*sd*sd*(Vd-eCa)
-Iampa=:gAmpa*Wi*(Vd-Vsyn)
-Inmda=:gNmda*Sisat*(Vd-Vsyn)/(1+0.28*exp(-0.062*(Vd/1mV-60)))
-Isyn=:Iampa+Inmda
-Minfs_Vs=:alphams_Vs/(alphams_Vs+betams_Vs)
-Si'=-Si/150
-Sisat=:
- @=Si
- @Si>Smax=Smax
-Smax=125
-V=Vs
-Vd=eL@$init
-Vd'=(iDend/(1-pp)-Isyn/(1-pp)-gLd*(Vd-eL)-ICad-gKahp*qd*(Vd-eK)-gKC*cd*chid*(Vd-eK)+gc*(Vs-Vd)/(1-pp))/cm
-Vs=eL@$init
-Vs'=(-gLs*(Vs-eL)-gNa*Minfs_Vs^2*hs*(Vs-eNa)-gKdr*ns*(Vs-eK)+gc/pp*(Vd-Vs)+iSoma/pp)/cm
-Vsyn=60mV
-Wi'=-Wi/2
-alphac=0
+Cad':(-0.13*ICad/1(uA/cm2)-0.075*Cad)/1ms
+ICad:gCa*sd*sd*(Vd-eCa)
+Iampa::gAmpa*Wi*(Vd-Vsyn)
+Inmda::gNmda*Sisat*(Vd-Vsyn)/(1+0.28*exp(-0.062*(Vd/1mV-60)))
+Isyn::Iampa+Inmda
+Minfs_Vs::alphams_Vs/(alphams_Vs+betams_Vs)
+Si':-Si/150
+Sisat::
+ @:Si
+ @Si>Smax:Smax
+Smax:125
+V:Vs
+Vd:eL@$init
+Vd':(iDend/(1-pp)-Isyn/(1-pp)-gLd*(Vd-eL)-ICad-gKahp*qd*(Vd-eK)-gKC*cd*chid*(Vd-eK)+gc*(Vs-Vd)/(1-pp))/cm
+Vs:eL@$init
+Vs':(-gLs*(Vs-eL)-gNa*Minfs_Vs^2*hs*(Vs-eNa)-gKdr*ns*(Vs-eK)+gc/pp*(Vd-Vs)+iSoma/pp)/cm
+Vsyn:60mV
+Wi':-Wi/2
+alphac:0
  $metadata
   param
-alphacd_Vd=:
- @=2*exp((-53.5-Vd/1mV)/27)
- @Vd<-10mV=exp((Vd/1mV+50)/11-(Vd/1mV+53.5)/27)/18.975
-alphahs_Vs=:0.128*exp((-43-Vs/1mV)/18)
-alphams_Vs=:0.32*(-46.9-Vs/1mV)/(exp((-46.9-Vs/1mV)/4)-1)
-alphans_Vs=:0.016*(-24.9-Vs/1mV)/(exp((-24.9-Vs/1mV)/5)-1)
-alphaqd=:
- @=2e-5*Cad
- @2e-5*Cad>0.01=0.01
-alphasd_Vd=:1.6/(1+exp(-0.072*(Vd/1mV-5)))
-betac=0
+alphacd_Vd::
+ @:2*exp((-53.5-Vd/1mV)/27)
+ @Vd<-10mV:exp((Vd/1mV+50)/11-(Vd/1mV+53.5)/27)/18.975
+alphahs_Vs::0.128*exp((-43-Vs/1mV)/18)
+alphams_Vs::0.32*(-46.9-Vs/1mV)/(exp((-46.9-Vs/1mV)/4)-1)
+alphans_Vs::0.016*(-24.9-Vs/1mV)/(exp((-24.9-Vs/1mV)/5)-1)
+alphaqd::
+ @:2e-5*Cad
+ @2e-5*Cad>0.01:0.01
+alphasd_Vd::1.6/(1+exp(-0.072*(Vd/1mV-5)))
+betac:0
  $metadata
   param
-betacd_Vd=:
- @=0
- @Vd<-10mV=2*exp((-53.5-Vd/1mV)/27)-alphacd_Vd
-betahs_Vs=:4/(1+exp((-20-Vs/1mV)/5))
-betams_Vs=:0.28*(Vs/1mV+19.9)/(exp((Vs/1mV+19.9)/5)-1)
-betans_Vs=:0.25*exp(-1-0.025*Vs/1mV)
-betaqd=0.001
-betasd_Vd=:0.02*(Vd/1mV+8.9)/(exp((Vd/1mV+8.9)/5)-1)
-cd'=(alphacd_Vd-(alphacd_Vd+betacd_Vd)*cd)/1ms
-chid=:
- @=Cad/250
- @Cad/250>1=1
-cm=0(uF/cm2)
+betacd_Vd::
+ @:0
+ @Vd<-10mV:2*exp((-53.5-Vd/1mV)/27)-alphacd_Vd
+betahs_Vs::4/(1+exp((-20-Vs/1mV)/5))
+betams_Vs::0.28*(Vs/1mV+19.9)/(exp((Vs/1mV+19.9)/5)-1)
+betans_Vs::0.25*exp(-1-0.025*Vs/1mV)
+betaqd:0.001
+betasd_Vd::0.02*(Vd/1mV+8.9)/(exp((Vd/1mV+8.9)/5)-1)
+cd':(alphacd_Vd-(alphacd_Vd+betacd_Vd)*cd)/1ms
+chid::
+ @:Cad/250
+ @Cad/250>1:1
+cm:0(uF/cm2)
  $metadata
   param
-eCa=0V
+eCa:0V
  $metadata
   param
-eK=0V
+eK:0V
  $metadata
   param
-eL=0V
+eL:0V
  $metadata
   param
-eNa=0V
+eNa:0V
  $metadata
   param
-gAmpa=0(mS/cm2)
+gAmpa:0(mS/cm2)
  $metadata
   param
-gCa=0(mS/cm2)
+gCa:0(mS/cm2)
  $metadata
   param
-gKC=0(mS/cm2)
+gKC:0(mS/cm2)
  $metadata
   param
-gKahp=0(mS/cm2)
+gKahp:0(mS/cm2)
  $metadata
   param
-gKdr=0(mS/cm2)
+gKdr:0(mS/cm2)
  $metadata
   param
-gLd=0(mS/cm2)
+gLd:0(mS/cm2)
  $metadata
   param
-gLs=0(mS/cm2)
+gLs:0(mS/cm2)
  $metadata
   param
-gNa=0(mS/cm2)
+gNa:0(mS/cm2)
  $metadata
   param
-gNmda=0(mS/cm2)
+gNmda:0(mS/cm2)
  $metadata
   param
-gc=0(mS/cm2)
+gc:0(mS/cm2)
  $metadata
   param
-hs'=(alphahs_Vs-(alphahs_Vs+betahs_Vs)*hs)/1ms
-iDend=0(A/m2)
+hs':(alphahs_Vs-(alphahs_Vs+betahs_Vs)*hs)/1ms
+iDend:0(A/m2)
  $metadata
   param
-iSoma=0(A/m2)
+iSoma:0(A/m2)
  $metadata
   param
-ns'=(alphans_Vs-(alphans_Vs+betans_Vs)*ns)/1ms
-pp=0
+ns':(alphans_Vs-(alphans_Vs+betans_Vs)*ns)/1ms
+pp:0
  $metadata
   param
-qd=qd0@$init
-qd'=(alphaqd-(alphaqd+betaqd)*qd)/1ms
-qd0=0
+qd:qd0@$init
+qd':(alphaqd-(alphaqd+betaqd)*qd)/1ms
+qd0:0
  $metadata
   param
-sd'=(alphasd_Vd-(alphasd_Vd+betasd_Vd)*sd)/1ms
+sd':(alphasd_Vd-(alphasd_Vd+betasd_Vd)*sd)/1ms

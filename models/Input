@@ -1,15 +1,15 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=basePointCurrent,baseVoltageDepPointCurrent,basePointCurrentDL,baseVoltageDepPointCurrentDL
- id=166b5f185734f319
- notes=A connector which injects current into its target.
-B=connect(Compartment)
-B.I=+I
-I=:0pA
+   part:basePointCurrent,baseVoltageDepPointCurrent,basePointCurrentDL,baseVoltageDepPointCurrentDL
+ id:166b5f185734f319
+ notes:A connector which injects current into its target.
+B:connect(Compartment)
+B.I:+I
+I::0pA
  $metadata
   backend
    lems
     DL
-    param=i,I
+    param:i,I

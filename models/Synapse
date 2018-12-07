@@ -1,21 +1,21 @@
-N2A.schema=1
-$inherit=Input
- 0=166b5f185734f319
+N2A.schema=2
+$inherit:Input
+ 0:166b5f185734f319
 $metadata
  backend
   lems
-   part=baseSynapse,baseVoltageDepSynapse,baseCurrentBasedSynapse,baseGradedSynapse
- id=166b5f185734f41a
- notes=An connection which injects current into its target and listens for events from its source.
-A=connect(Spike Source)
-delay=0s
+   part:baseSynapse,baseVoltageDepSynapse,baseCurrentBasedSynapse,baseGradedSynapse
+ id:166b5f185734f41a
+ notes:An connection which injects current into its target and listens for events from its source.
+A:connect(Spike Source)
+delay:0s
  $metadata
   param
-in=:event(A.spike,delay)
+in::event(A.spike,delay)
  $metadata
   backend
    lems
-    port=in
-weight=1
+    port:in
+weight:1
  $metadata
   param

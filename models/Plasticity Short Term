@@ -1,34 +1,34 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
  backend
   lems
-   part=tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
- id=166b5f18573a90b2
- notes=Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
-$up.plasticityFactor=*plasticityFactor
+   part:tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
+ id:166b5f18573a90b2
+ notes:Full Tsodyks-Markram STP model with both depression and facilitation, as in Tsodyks, Pawelzik and Markram 1998.
+$up.plasticityFactor:*plasticityFactor
 R
  $metadata
-  notes=The spike event flag "in" comes from the containing synapse.
- @$init=1
- @in=R*(1-U)
-R'=(1-R)/τRec
+  notes:The spike event flag "in" comes from the containing synapse.
+ @$init:1
+ @in:R*(1-U)
+R':(1-R)/τRec
 U
- @$init=initReleaseProb
- @in&&τFac=U+initReleaseProb*(1-U)
-U'=(initReleaseProb-U)/τFac@τFac
-initReleaseProb=0
+ @$init:initReleaseProb
+ @in&&τFac:U+initReleaseProb*(1-U)
+U':(initReleaseProb-U)/τFac@τFac
+initReleaseProb:0
  $metadata
   param
-plasticityFactor=:R*U
-τFac=0s
+plasticityFactor::R*U
+τFac:0s
  $metadata
   backend
    lems
-    param=tauFac
+    param:tauFac
   param
-τRec=0s
+τRec:0s
  $metadata
   backend
    lems
-    param=tauRec
+    param:tauRec
   param

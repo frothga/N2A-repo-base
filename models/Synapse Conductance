@@ -1,32 +1,32 @@
-N2A.schema=1
-$inherit=Synapse
- 0=166b5f185734f41a
+N2A.schema=2
+$inherit:Synapse
+ 0:166b5f185734f41a
 $metadata
  backend
   lems
-   part=baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
- id=166b015ccdaa5a31
-E=0mV
+   part:baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
+ id:166b015ccdaa5a31
+E:0mV
  $metadata
   backend
    lems
-    param=erev
-  note=Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
+    param:erev
+  note:Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
   param
-G=0@$init
+G:0@$init
  $metadata
   backend
    lems
-    param=g
-Gmax=0uS
+    param:g
+Gmax:0uS
  $metadata
   backend
    lems
-    param=gbase
+    param:gbase
   param
-I=:G*(E-V)
-V=:B.V
+I::G*(E-V)
+V::B.V
  $metadata
   backend
    lems
-    param=v
+    param:v

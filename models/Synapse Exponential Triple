@@ -1,94 +1,94 @@
-N2A.schema=1
-$inherit=Synapse Conductance
- 0=166b015ccdaa5a31
+N2A.schema=2
+$inherit:Synapse Conductance
+ 0:166b015ccdaa5a31
 $metadata
  backend
   lems
-   part=expThreeSynapse
- id=166b5f1857387284
-G=:Gmax*(b-a)+Gmax2*(c-a)
-Gmax=0uS
+   part:expThreeSynapse
+ id:166b5f1857387284
+G::Gmax*(b-a)+Gmax2*(c-a)
+Gmax:0uS
  $metadata
   backend
    lems
-    param=gbase1
-Gmax2=0uS
+    param:gbase1
+Gmax2:0uS
  $metadata
   backend
    lems
-    param=gbase2
+    param:gbase2
   param
-Tpeak1=log(τDecay1/τRise)*(τDecay1*τRise)/(τDecay1-τRise)
+Tpeak1:log(τDecay1/τRise)*(τDecay1*τRise)/(τDecay1-τRise)
  $metadata
   backend
    lems
-    param=peakTime1
-Tpeak2=log(τDecay2/τRise)*(τDecay2*τRise)/(τDecay2-τRise)
+    param:peakTime1
+Tpeak2:log(τDecay2/τRise)*(τDecay2*τRise)/(τDecay2-τRise)
  $metadata
   backend
    lems
-    param=peakTime2
+    param:peakTime2
 a
  $metadata
   backend
    lems
-    param=A
- @$init=0
- @in=a+weight*(Gmax*peak1+Gmax2*peak2)/(Gmax+Gmax2)
-a'=-a/τRise
+    param:A
+ @$init:0
+ @in:a+weight*(Gmax*peak1+Gmax2*peak2)/(Gmax+Gmax2)
+a':-a/τRise
  $metadata
   backend
    lems
-    param=A'
+    param:A'
 b
  $metadata
   backend
    lems
-    param=B
- @$init=0
- @in=b+weight*peak1
-b'=-b/τDecay1
+    param:B
+ @$init:0
+ @in:b+weight*peak1
+b':-b/τDecay1
  $metadata
   backend
    lems
-    param=B'
+    param:B'
 c
  $metadata
   backend
    lems
-    param=C
- @$init=0
- @in=c+weight*peak2
-c'=-c/τDecay2
+    param:C
+ @$init:0
+ @in:c+weight*peak2
+c':-c/τDecay2
  $metadata
   backend
    lems
-    param=C'
-peak1=1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
+    param:C'
+peak1:1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
  $metadata
   backend
    lems
-    param=waveformFactor1
-peak2=1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
+    param:waveformFactor1
+peak2:1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
  $metadata
   backend
    lems
-    param=waveformFactor2
-τDecay1=0s
+    param:waveformFactor2
+τDecay1:0s
  $metadata
   backend
    lems
-    param=tauDecay1
+    param:tauDecay1
   param
-τDecay2=0s
+τDecay2:0s
  $metadata
   backend
    lems
-    param=tauDecay2
+    param:tauDecay2
   param
-τRise=0s
+τRise:0s
  $metadata
   backend
    lems
-    param=tauRise
+    param:tauRise
   param

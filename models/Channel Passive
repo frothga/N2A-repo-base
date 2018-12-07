@@ -1,10 +1,10 @@
-N2A.schema=1
-$inherit=Channel
- 0=166b5f185735013e
+N2A.schema=2
+$inherit:Channel
+ 0:166b5f185735013e
 $metadata
  backend
   lems
-   part=ionChannelPassive
- id=166b5f89512f2b02
-E=-54.4mV
-Gdensity=0.3(mS/cm2)
+   part:ionChannelPassive
+ id:166b5f89512f2b02
+E:-54.4mV
+Gdensity:0.3(mS/cm2)

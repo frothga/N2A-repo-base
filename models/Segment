@@ -1,44 +1,44 @@
-N2A.schema=1
-$inherit=Compartment
- 0=166b5f39bd266700
+N2A.schema=2
+$inherit:Compartment
+ 0:166b5f39bd266700
 $metadata
  backend
   lems
-   part=segment
- id=166b5f185734f92a
- notes=A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
-$xyz=[0;0;0]
+   part:segment
+ id:166b5f185734f92a
+ notes:A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
+$xyz:[0;0;0]
  $metadata
-  notes=The end point of this segment.
-C=Cspecific*surfaceArea
- $metadata
-  backend
-   lems
-    param=totCap
-Cspecific=1(uF/cm2)
+  notes:The end point of this segment.
+C:Cspecific*surfaceArea
  $metadata
   backend
    lems
-    param=totSpecCap
-R=ρ*length/(π*r^2)
-V'=I/C@C
-diameter=1um
- $metadata
-  notes=At the end point of this segment.
-diameter0=diameter
- $metadata
-  notes=At the beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.diameter
-length=:norm($xyz-xyz0,2)
-r=:(diameter+diameter0)/4
-surfaceArea=:
- @=2*π*r*length
- @length==0=4*π*r^2
-xyz0=:$xyz
- $metadata
-  notes=The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz
-ρ=30(Ohm.cm)
+    param:totCap
+Cspecific:1(uF/cm2)
  $metadata
   backend
    lems
-    param=resistivity
-  notes=Axial resistivity. Default value is for giant squid axon.
+    param:totSpecCap
+R:ρ*length/(π*r^2)
+V':I/C@C
+diameter:1um
+ $metadata
+  notes:At the end point of this segment.
+diameter0:diameter
+ $metadata
+  notes:At the beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.diameter
+length::norm($xyz-xyz0,2)
+r::(diameter+diameter0)/4
+surfaceArea::
+ @:2*π*r*length
+ @length==0:4*π*r^2
+xyz0::$xyz
+ $metadata
+  notes:The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz
+ρ:30(Ohm.cm)
+ $metadata
+  backend
+   lems
+    param:resistivity
+  notes:Axial resistivity. Default value is for giant squid axon.

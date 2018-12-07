@@ -1,88 +1,88 @@
-N2A.schema=1
-$inherit=Compartment
- 0=166b5f39bd266700
+N2A.schema=2
+$inherit:Compartment
+ 0:166b5f39bd266700
 $metadata
  backend
   lems
-   part=izhikevichCell,izhikevich2007Cell
+   part:izhikevichCell,izhikevich2007Cell
   xyce
-   device=neuron7
- id=166b5f1857395797
- notes=|
+   device:neuron7
+ id:166b5f1857395797
+ notes:|
    Generalized model from page 273 of "Dynamical Systems in Neuroscience" by Izhikevich. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.
    
    The original Izhikevich model ("Simple Model of Spiking Neurons", 2003) is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
    
    The other core parameters (a, b, c, d) have the default values suggested in "Simple Model of Spiking Neurons".
-C=1pF
+C:1pF
  $metadata
-  notes=Must be 1pF for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.
-I=+140pA
+  notes:Must be 1pF for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.
+I:+140pA
  $metadata
-  notes=Must add 140pA to input current for simple Izhikevich model.
+  notes:Must add 140pA to input current for simple Izhikevich model.
 V
- @$init=V0
- @fire=c
-V'=(k*(V-vr)*(V-vt)-u+I)/C
-V0=c
+ @$init:V0
+ @fire:c
+V':(k*(V-vr)*(V-vt)-u+I)/C
+V0:c
  $metadata
   backend
    lems
-    param=v0
+    param:v0
   param
-Vspike=30mV
+Vspike:30mV
  $metadata
   backend
    lems
-    param=thresh,vpeak
-a=0.02kHz
+    param:thresh,vpeak
+a:0.02kHz
  $metadata
   backend
    lems
     DL
   param
-b=0.2nS
+b:0.2nS
  $metadata
   backend
    lems
     DL
   param
-c=-65mV
+c:-65mV
  $metadata
   backend
    lems
     DL
   param
-d=2pA
+d:2pA
  $metadata
   backend
    lems
     DL
   param
-k=0.04(nS/mV)
+k:0.04(nS/mV)
  $metadata
   backend
    lems
     DL
-  notes=Must be 0.04(nS/mV) for simple Izhikevich model.
+  notes:Must be 0.04(nS/mV) for simple Izhikevich model.
   param
 u
  $metadata
   backend
    lems
-    param=u,U
- @$init=b*V0
- @fire=u+d
-u'=a*(b*(V-vr)-u)
+    param:u,U
+ @$init:b*V0
+ @fire:u+d
+u':a*(b*(V-vr)-u)
  $metadata
   backend
    lems
-    param=u',U'
-vr=0mV
+    param:u',U'
+vr:0mV
  $metadata
-  notes=Must be zero for simple Izhikevich model.
+  notes:Must be zero for simple Izhikevich model.
   param
-vt=-125mV
+vt:-125mV
  $metadata
-  notes=Must be -125mV for simple Izhikevich model.
+  notes:Must be -125mV for simple Izhikevich model.
   param

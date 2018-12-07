@@ -1,42 +1,42 @@
-N2A.schema=1
-$inherit=Compartment
- 0=166b5f39bd266700
+N2A.schema=2
+$inherit:Compartment
+ 0:166b5f39bd266700
 $metadata
  backend
   lems
-   part=iafCell,baseIaf,baseIafCapCell,iafRefCell
+   part:iafCell,baseIaf,baseIafCapCell,iafRefCell
   stpu
-   part=lif
- id=166b015ccda9c699
-E=Vreset
+   part:lif
+ id:166b015ccda9c699
+E:Vreset
  $metadata
   backend
    lems
-    param=leakReversal
+    param:leakReversal
   param
-G=100uS
+G:100uS
  $metadata
   backend
    lems
-    param=leakConductance
+    param:leakConductance
   param
-I=+G*(E-V)
+I:+G*(E-V)
 V
- @$init=E
- @fire=Vreset
+ @$init:E
+ @fire:Vreset
 V'
- @=I/C
- @(fire||$t<refractoryEnd)&&refractoryPeriod=0
-Vreset=0V
+ @:I/C
+ @(fire||$t<refractoryEnd)&&refractoryPeriod:0
+Vreset:0V
  $metadata
   backend
    lems
-    param=reset
+    param:reset
   param
-refractoryEnd=$t+refractoryPeriod@fire
-refractoryPeriod=0s
+refractoryEnd:$t+refractoryPeriod@fire
+refractoryPeriod:0s
  $metadata
   backend
    lems
-    param=refract
+    param:refract
   param

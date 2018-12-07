@@ -1,9 +1,9 @@
-N2A.schema=1
+N2A.schema=2
 $metadata
- id=166b5fb0f08bad00
- notest=Global constants, used by all other models. Variable names here should be unique enough that they are unlikely to conflict with commonly-used names in other models. For example, prefer the use of Greek letters here.
-Faraday=96485.3329(C/mol)
+ id:166b5fb0f08bad00
+ notest:Global constants, used by all other models. Variable names here should be unique enough that they are unlikely to conflict with commonly-used names in other models. For example, prefer the use of Greek letters here.
+Faraday:96485.3329(C/mol)
  $metadata
-  notes=Faraday constant, not to be confused with farad.
-IdealGas=8.3144598(J/K/mol)
-π=3.14159265358979323846
+  notes:Faraday constant, not to be confused with farad.
+IdealGas:8.3144598(J/K/mol)
+π:3.14159265358979323846
