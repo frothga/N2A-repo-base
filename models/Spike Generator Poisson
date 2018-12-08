@@ -1,6 +1,6 @@
 N2A.schema=2
-$inherit:Spike Source
- 0:166b5f185735074b
+$inherit:Spike Generator
+ 0:166b5f18573a45ab
 $metadata
  backend
   lems
@@ -9,13 +9,11 @@ $metadata
   mixin
  id:166b5f18573a49ac
  notes:Generator of spikes with exponentially distributed ISI and scale 1/averageRate
-averageIsi:1/averageRate
 averageRate:0Hz
  $metadata
   param
-isi:-averageIsi*log(1-uniform())@$init||tsince>isi
-spike
- @:0
- @tsince>isi:1
-tsince:0@$init||tsince>isi
-tsince':1
+nextSpikeTime:$t-period*log(1-uniform())@fire
+period:1/averageRate
+ $metadata
+  notes:Scale for spike distribution.
+  param:0

@@ -7,16 +7,15 @@ $metadata
    part:transientPoissonFiringSynapse
  id:166b5f18573a7db1
  notes:Poisson spike generator with delay and duration.
-LONG_TIME:1000000000h
 delay:0s
  $metadata
   param
 duration:0s
  $metadata
   param
-isi
- @$init:nextIsi
- @tsince>isi:nextIsi+H(($t+nextIsi-(delay+duration))/duration)*LONG_TIME
-nextIsi
- @$init:-averageIsi*log(1-uniform())+delay
- @tsince>isi:-averageIsi*log(1-uniform())
+nextSpikeTime
+ $metadata
+  notes:This cuts off within one cycle of the requested duration. Specifically, if a future spike time is set past the end of duration, then in the next cycle it will get bumped to ∞.
+ @$init:$t-period*log(1-uniform())+delay
+ @fire:$t-period*log(1-uniform())
+ @nextSpikeTime>delay+duration:∞

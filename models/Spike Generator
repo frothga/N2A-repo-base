@@ -6,12 +6,10 @@ $metadata
   lems
    part:spikeGenerator
  id:166b5f18573a45ab
+fire::$t>nextSpikeTime
+nextSpikeTime:$t+period@fire
 period:0s
  $metadata
   notes:Time between spikes. First spike will be emitted after this time.
   param
-spike
- @:0
- @tsince>period:1
-tsince:0@$init||tsince>period
-tsince':1
+spike:fire
