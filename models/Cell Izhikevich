@@ -9,11 +9,14 @@ $metadata
    device:neuron7
  id:166b5f1857395797
  notes:|
-   Generalized model from page 273 of "Dynamical Systems in Neuroscience" by Izhikevich. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.
+   Generalized model from [izhikevich2007]. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.
    
-   The original Izhikevich model ("Simple Model of Spiking Neurons", 2003) is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
+   The original model [izhikevich2003] is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
    
-   The other core parameters (a, b, c, d) have the default values suggested in "Simple Model of Spiking Neurons".
+   The other core parameters (a, b, c, d) have the default values suggested in [izhikevich2003].
+$reference
+ Izhikevich2003:Original model
+ Izhikevich2007:page 273 gives more general model
 C:1pF
  $metadata
   notes:Must be 1pF for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.

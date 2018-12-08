@@ -5,7 +5,7 @@ $metadata
    part:baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
    requirement.V:v(V)
  id:166b5f185735064a
- notes:A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism. To use, include as a sub-part of Gate and set the quation $up.X=x. Change X on left-hand side to reference the target variable in the containing Gate model (usually one of α, β, τ or inf).
+ notes:A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism. To use, include as a sub-part of Gate and reference x from some equation in Gate (usually one of α, β, τ or inf).
 a::(V-midpoint)/scale
 midpoint:0mV
  $metadata

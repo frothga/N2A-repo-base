@@ -6,7 +6,8 @@ $metadata
   lems
    part:adExIaFCell
  id:166b5f1857365e6b
- notes:Model based on Brette R and Gerstner W (2005) Adaptive Exponential Integrate-and-Fire Model as an Effective Description of Neuronal Activity. J Neurophysiol 94:3637-3642
+$reference
+ Brette2005
 E:Vreset
  $metadata
   backend

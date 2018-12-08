@@ -6,7 +6,8 @@ $metadata
   lems
    part:gradedSynapse
  id:166b5f185738e492
- notes:Analog synapse based on methods of http://www.nature.com/neuro/journal/v7/n12/abs/nn1352.html
+$reference
+ Prinz2004:Methods are basis for this analog synapse.
 E:0V
  $metadata
   backend
