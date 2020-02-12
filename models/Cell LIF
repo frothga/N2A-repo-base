@@ -14,7 +14,7 @@ E:Vreset
    lems
     param:leakReversal
   param
-G:100uS
+G:3nS
  $metadata
   backend
    lems
@@ -26,7 +26,7 @@ V
  @fire:Vreset
 V'
  @:I/C
- @(fire||$t<refractoryEnd)&&refractoryPeriod:0
+ @fire || ($t<refractoryEnd && refractoryPeriod):0
 Vreset:0V
  $metadata
   backend

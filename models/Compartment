@@ -12,7 +12,7 @@ $metadata
     populations:Channel
    part:baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
  id:166b5f39bd266700
-C:100pF
+C:10pF
  $metadata
   backend
    xyce
@@ -23,7 +23,7 @@ I:+
   backend
    lems
     param:iMemb,iSyn,iChannels
-V:0@$init
+V:0V@$init
  $metadata
   backend
    lems
