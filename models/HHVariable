@@ -4,6 +4,8 @@ $metadata
   lems
    part:baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
    requirement.V:v(V)
+ gui
+  category:Base/Compartment
  id:166b5f185735064a
  notes:A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism. To use, include as a sub-part of Gate and reference x from some equation in Gate (usually one of α, β, τ or inf).
 a::(V-midpoint)/scale

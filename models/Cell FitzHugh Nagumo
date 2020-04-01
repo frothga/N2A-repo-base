@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:fitzHughNagumo1969Cell,fitzHughNagumoCell
+ gui
+  category:Base/Cell
  id:166b5f1857388085
  notes:A two-dimensional simplification of the Hodgkin-Huxley model
 $reference

@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:KSState,openState,closedState
+ gui
+  category:Base/Compartment
  id:166b5f185734fe37
 $up.q:+q
 occupancy:0@$init

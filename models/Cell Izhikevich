@@ -7,6 +7,8 @@ $metadata
    part:izhikevichCell,izhikevich2007Cell
   xyce
    device:neuron7
+ gui:
+  category:Base/Cell
  id:166b5f1857395797
  notes:|
    Generalized model from [izhikevich2007]. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.

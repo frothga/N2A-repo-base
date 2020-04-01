@@ -9,6 +9,8 @@ $metadata
     subGate:Gate Sub
     transitions:Kinetic Transition
    part:gate,baseGate,gateFractional,gateKS,gateHHrates,gateHHInstantaneous,gateHHratesTauInf,gateHHtauInf,gateHHratesTau,gateHHratesInf
+ gui
+  category:Base/Compartment
  id:166b5f185734fa2c
  notes:|
    This is the base model for 3 types of gate:

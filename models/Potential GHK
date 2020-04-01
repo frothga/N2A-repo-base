@@ -1,6 +1,7 @@
 N2A.schema=2
 $metadata
  gui
+  category:Base/Compartment
   mixin
  id:166b5f185737c476
  notes:Set current density based on the Goldman-Hodgkin-Katz equation.

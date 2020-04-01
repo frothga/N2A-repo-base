@@ -5,6 +5,10 @@ $metadata
  backend
   xyce
    device:neuron1
+ gui:
+  bounds
+   parent:0
+  category:Base/Cell
  id:166b015ccda6e28b
  notes:Can function as either a point cell or part of an HH cable.
 K

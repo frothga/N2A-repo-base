@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:q10ExpTemp,baseConductanceScaling,baseQ10Settings,q10Fixed,q10ConductanceScaling
+ gui
+  category:Base/Compartment
  id:166b5f5b9cbabe00
 $up.Q10Scaling:*scaling
  $metadata

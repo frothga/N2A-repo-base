@@ -1,5 +1,7 @@
 N2A.schema=2
 $metadata
+ gui
+  category:Base/Synapse
  id:166b015ccdaafc99
  notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models targeted to the STPU.
 A:connect(Cell LIF)

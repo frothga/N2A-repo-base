@@ -11,6 +11,8 @@ $metadata
     concentrationModels:Concentration
     populations:Channel
    part:baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
+ gui:
+  category:Base/Compartment
  id:166b5f39bd266700
 C:10pF
  $metadata

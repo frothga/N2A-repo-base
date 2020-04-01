@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:voltageConcDepBlockMechanism
+ gui
+  category:Base/Synapse
  id:166b5f18573aa9b6
  notes:Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses
 $up.blockFactor:*blockFactor

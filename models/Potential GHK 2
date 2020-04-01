@@ -1,6 +1,7 @@
 N2A.schema=2
 $metadata
  gui
+  category:Base/Compartment
   mixin
  id:166b5f185737d177
  notes:Comment from LEMS model: Modified version of Jaffe et al. 1994 (used also in Lawrence et al. 2006). See https://github.com/OpenSourceBrain/ghk-nernst.

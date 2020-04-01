@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:silentSynapse
+ gui
+  category:Base/Synapse
  id:166b5f2337372608
  notes:A null part for split synapses.
 I:0

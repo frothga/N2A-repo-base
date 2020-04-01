@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:baseSpikeSource,baseVoltageDepPointCurrentSpiking
+ gui
+  category:Base/Input
  id:166b5f185735074b
 spike:0
  $metadata

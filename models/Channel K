@@ -2,6 +2,9 @@ N2A.schema=2
 $inherit:Channel
  0:166b5f185735013e
 $metadata
+ gui:
+  bounds
+   parent:0
  id:166b5f54a764cf01
  notes:Potassium channel with default values for giant squid axon.
  species:k

@@ -3,6 +3,8 @@ $metadata
  backend
   lems
    part:KSTransition,forwardTransition,reverseTransition,tauInfTransition
+ gui
+  category:Base/Compartment
  id:166b5f185734fe38
  notes:Specifies the rates of transition between two KS states.
 forward::inf/τ@τ

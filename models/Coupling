@@ -1,7 +1,9 @@
 N2A.schema=2
 $metadata
+ gui
+  category:Base/Synapse
  id:166b015ccda56f33
- notes:Enables  current flow between two adjacent compartments, based on voltage difference. Also implements gap junction.
+ notes:Enables current flow between two adjacent compartments, based on voltage difference. Also implements gap junction.
 A:connect(Compartment)
 A.I:+-I
 B:connect(Compartment)

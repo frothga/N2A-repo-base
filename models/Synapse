@@ -5,6 +5,8 @@ $metadata
  backend
   lems
    part:baseSynapse,baseVoltageDepSynapse,baseCurrentBasedSynapse,baseGradedSynapse
+ gui
+  category:Base/Synapse
  id:166b5f185734f41a
  notes:Base part for connections which listen for events from their source and inject current into their target. This part requires further elaboration to be useful. In particular, compute the value of I based on incoming events.
 A:connect(Spike Source)

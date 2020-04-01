@@ -3,6 +3,10 @@ $metadata
  backend
   lems
    part:tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
+ gui
+  bounds
+   parent:1
+  category:Base/Synapse
  id:166b5f18573a90b2
  notes:Full Tsodyks-Markram STP model with both depression and facilitation.
 $reference
