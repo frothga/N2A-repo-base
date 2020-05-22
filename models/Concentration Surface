@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Concentration
- 0:166b5f185734ff3a
+ $metadata
+  id:166b5f185734ff3a
 $metadata
  backend
   lems

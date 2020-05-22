@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:HHVariable
- 0:166b5f185735064a
+ $metadata
+  id:166b5f185735064a
 $metadata
  backend
   lems

@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Compartment
- 0:166b5f39bd266700
+ $metadata
+  id:166b5f39bd266700
 $metadata
  backend
   lems
@@ -11,11 +12,11 @@ $metadata
   category:Base/Cell
  id:166b5f1857395797
  notes:|
-   Generalized model from [izhikevich2007]. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.
-   
-   The original model [izhikevich2003] is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
-   
-   The other core parameters (a, b, c, d) have the default values suggested in [izhikevich2003].
+  Generalized model from [izhikevich2007]. Although the original model is unitless, the book indicates the intended scale for some of the values. These imply units for the remaining parameters. You can enter values from Izhikevich publications directly in this model, as long as you append the units as they currenlty appear.
+  
+  The original model [izhikevich2003] is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
+  
+  The other core parameters (a, b, c, d) have the default values suggested in [izhikevich2003].
 $reference
  Izhikevich2003:Original model
  Izhikevich2007:page 273 gives more general model

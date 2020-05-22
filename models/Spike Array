@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Spike Source
- 0:166b5f185735074b
+ $metadata
+  id:166b5f185735074b
 $metadata
  backend
   lems

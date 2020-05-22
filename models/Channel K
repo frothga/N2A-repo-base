@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Channel
- 0:166b5f185735013e
+ $metadata
+  id:166b5f185735013e
 $metadata
  gui:
   bounds
@@ -14,17 +15,20 @@ Gdensity:36(mS/cm2)
   notes:At 6.3Cel. Need Q10 parameters.
 n
  $inherit:Gate
-  0:166b5f185734fa2c
+  $metadata
+   id:166b5f185734fa2c
  forwardRate
   $inherit:HHVariable Exponential Linear
-   0:166b5f185735c265
+   $metadata
+    id:166b5f185735c265
   midpoint:-55mV
   rate:0.1kHz
   scale:10mV
  instances:4
  reverseRate
   $inherit:HHVariable Exponential
-   0:166b5f185735ca67
+   $metadata
+    id:166b5f185735ca67
   midpoint:-65mV
   rate:0.125kHz
   scale:-80mV

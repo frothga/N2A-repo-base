@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Segment
- 0:166b5f185734f92a
+ $metadata
+  id:166b5f185734f92a
 $metadata
  backend
   xyce
@@ -13,10 +14,13 @@ $metadata
  notes:Can function as either a point cell or part of an HH cable.
 K
  $inherit:Channel K
-  0:166b5f54a764cf01
+  $metadata
+   id:166b5f54a764cf01
 Na
  $inherit:Channel Na
-  0:166b5f54635c5200
+  $metadata
+   id:166b5f54635c5200
 leak
  $inherit:Channel Passive
-  0:166b5f89512f2b02
+  $metadata
+   id:166b5f89512f2b02

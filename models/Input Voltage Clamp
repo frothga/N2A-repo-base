@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Input
- 0:166b5f185734f319
+ $metadata
+  id:166b5f185734f319
 $metadata
  backend
   lems

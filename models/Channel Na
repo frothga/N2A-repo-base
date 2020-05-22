@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Channel
- 0:166b5f185735013e
+ $metadata
+  id:166b5f185735013e
 $metadata
  id:166b5f54635c5200
  notes:Sodium channel with default values for giant squid axon.
@@ -9,17 +10,20 @@ E:50mV
 Gdensity:120(mS/cm2)
 h
  $inherit:Gate
-  0:166b5f185734fa2c
+  $metadata
+   id:166b5f185734fa2c
  forwardRate
   $inherit:HHVariable Exponential
-   0:166b5f185735ca67
+   $metadata
+    id:166b5f185735ca67
   midpoint:-65mV
   rate:0.07kHz
   scale:-20mV
  instances:1
  reverseRate
   $inherit:HHVariable Sigmoid
-   0:166b5f185735ce69
+   $metadata
+    id:166b5f185735ce69
   midpoint:-35mV
   rate:1kHz
   scale:10mV
@@ -27,17 +31,20 @@ h
  β::reverseRate.x
 m
  $inherit:Gate
-  0:166b5f185734fa2c
+  $metadata
+   id:166b5f185734fa2c
  forwardRate
   $inherit:HHVariable Exponential Linear
-   0:166b5f185735c265
+   $metadata
+    id:166b5f185735c265
   midpoint:-40mV
   rate:1kHz
   scale:10mV
  instances:3
  reverseRate
   $inherit:HHVariable Exponential
-   0:166b5f185735ca67
+   $metadata
+    id:166b5f185735ca67
   midpoint:-65mV
   rate:4kHz
   scale:-18mV

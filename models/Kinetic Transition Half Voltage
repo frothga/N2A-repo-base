@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Kinetic Transition
- 0:166b5f185734fe38
+ $metadata
+  id:166b5f185734fe38
 $metadata
  backend
   lems

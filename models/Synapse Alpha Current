@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Synapse Alpha
- 0:166b015ccdaa0f39
+ $metadata
+  id:166b015ccdaa0f39
 $metadata
  backend
   lems

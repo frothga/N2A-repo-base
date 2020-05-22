@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Cell LIF
- 0:166b015ccda9c699
+ $metadata
+  id:166b015ccda9c699
 $metadata
  backend
   lems

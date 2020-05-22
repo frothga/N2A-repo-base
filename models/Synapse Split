@@ -11,13 +11,15 @@ A:connect(Compartment)
 B:connect(Compartment)
 postComponent
  $inherit:Synapse Half
-  0:166b5f2337372608
+  $metadata
+   id:166b5f2337372608
  B.I:+I
  V::B.V
  Vpeer::A.V
 preComponent
  $inherit:Synapse Half
-  0:166b5f2337372608
+  $metadata
+   id:166b5f2337372608
  A.I:+I
  V::A.V
  Vpeer::B.V

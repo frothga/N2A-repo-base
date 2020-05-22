@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Spike Generator Poisson
- 0:166b5f18573a49ac
+ $metadata
+  id:166b5f18573a49ac
 $metadata
  backend
   lems

@@ -1,6 +1,7 @@
 N2A.schema=2
 $inherit:Compartment
- 0:166b5f39bd266700
+ $metadata
+  id:166b5f39bd266700
 $metadata
  backend
   lems
