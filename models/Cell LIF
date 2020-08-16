@@ -29,7 +29,7 @@ V
  @fire:Vreset
 V'
  @:I/C
- @fire || ($t<refractoryEnd && refractoryPeriod):0
+ @fire || ($t<refractoryEnd && refractoryPeriod):0(V/s)
 Vreset:0V
  $metadata
   backend
