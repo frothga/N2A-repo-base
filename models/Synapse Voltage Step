@@ -17,8 +17,8 @@ delay:1
 weight:1
  $metadata
   notes:|
-   Typically in [0,1], expressing a portion of the given voltage scale. You can generally assume the following about the downstream unit:
-   * It's threshold must be a little lower than the applied voltage in order to guarantee subsequent firing. (Implementations of firing threshold are inconsistent across various simulators and devices.)
+   Typically in [0,1], expressing a portion of the downstream neuron's voltage scale. You can generally assume the following about the downstream unit:
+   * An exact match between applied voltage and threshold should produce a spike. Some neuromorphic models and platforms require that the threshold be exceeded rather than merely met, but backends should compensate for this.
    * It has some headroom for activation to exceed threshold.
    * It uses satuarting arithmetic rather than allowing an integer overflow.
   param
