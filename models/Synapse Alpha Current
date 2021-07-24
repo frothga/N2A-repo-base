@@ -8,13 +8,19 @@ $metadata
    part:alphaCurrentSynapse
  id:166b5f207289e400
  notes:This synapse is exactly the same as Alpha, except that it ignores the voltage in the target compartment.
+E:0mV
+ $metadata:
+  param:0
 Gmax:Imax/Vconstant
+ $metadata:
+  param:0
 I::G*Vconstant
 Imax:0A
  $metadata
   backend
    lems
     param:ibase
+  param
 Vconstant:1V
  $metadata
   notes:Instead of using the target compartment voltage, we assume a constant. The value doesn't matter, but must be nonzero.

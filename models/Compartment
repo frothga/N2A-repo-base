@@ -43,9 +43,12 @@ Vspike:30mV
    lems
     param:thresh
   param
-fire::V>Vspike
+fire::V>=Vspike
  $metadata
-  notes:This temporary variable carries the same information as spike, but the condition V>Vspike is often tested in multiple places. Using a temporary saves a cycle and makes the model easier to read.
+  notes:|
+   This temporary variable carries the same information as spike, but some models test the condition V>Vspike in multiple places. Using a temporary makes the model easier to read.
+   
+   This model use ">=" rather than ">" to compare the spike threshold, which makes the behavior slightly different from both NeuroML and some neuromorphic platforms. For neuroscience simulations, this detail is inconsequential. For neuromorphic computing, ">=" is easier to use because it gives an exact threshold without the need to add a "fudge factor" to synaptic weights.
 spike:fire
  $metadata
   backend

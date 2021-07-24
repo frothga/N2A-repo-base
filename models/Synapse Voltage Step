@@ -1,16 +1,24 @@
 N2A.schema=2
 $metadata
  gui
-  category:Base/Synapse
+  category:Base/Neuromorphic
  id:166b015ccdaafc99
- notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models targeted to the STPU.
-A:connect(Cell LIF)
+ notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models of neuromorphic hardware.
+A:connect(Spike Source)
 B:connect(Cell LIF)
-B.V:+Vstep@event(A.spike,0)
-Vstep:10mV
  $metadata
-  backend
-   stpu
-    param:weight
-  notes:The desired change in postsynaptic voltage. This does not account for dynamics of the postsynaptic neuron, such as leakage current and voltage resets due to spiking.
+  gui
+   arrow:arrow
+B.V:+weight*B.scale@event(A.spike,delay*$t',"nonzero")
+delay:1
+ $metadata
+  notes:Delay between spike initiation and arrival, expressed as an integer number of cycles. Usually the spike takes effect before the B part is evaluated in the designated cycle. Negative numbers mean no-care, which allows the most efficient delivery scheme (boolean latching only). 0 means same-cycle delivery, which is impossible for most machines. The Internal and C backends will deliver a zero-delay event immediately after the current cycle completes, without any additional simulated time.
+  param
+weight:1
+ $metadata
+  notes:|
+   Typically in [0,1], expressing a portion of the given voltage scale. You can generally assume the following about the downstream unit:
+   * It's threshold must be a little lower than the applied voltage in order to guarantee subsequent firing. (Implementations of firing threshold are inconsistent across various simulators and devices.)
+   * It has some headroom for activation to exceed threshold.
+   * It uses satuarting arithmetic rather than allowing an integer overflow.
   param
