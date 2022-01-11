@@ -11,7 +11,7 @@ $metadata
     channelDensities:Channel
     concentrationModels:Concentration
     populations:Channel
-   part:baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellCondBased,pointCellCondBased,pointCellCondBasedCa
+   part:pointCellCondBased,baseCellMembPotCap,baseCell,baseSpikingCell,baseCellMembPot,baseCellMembPotDL,baseCellCondBased,pointCellCondBasedCa
  gui:
   category:Base/Compartment
  id:166b5f39bd266700
@@ -26,7 +26,7 @@ I:+
   backend
    lems
     param:iMemb,iSyn,iChannels
-V:0V@$init
+V:Vinit@$init
  $metadata
   backend
    lems
@@ -37,6 +37,12 @@ V':I/C
   backend
    lems
     param:v'
+Vinit:0V
+ $metadata
+  backend
+   lems
+    param:v0,V0
+  param
 Vspike:30mV
  $metadata
   backend
@@ -49,8 +55,3 @@ fire::V>=Vspike
    This temporary variable carries the same information as spike, but some models test the condition V>Vspike in multiple places. Using a temporary makes the model easier to read.
    
    This model use ">=" rather than ">" to compare the spike threshold, which makes the behavior slightly different from both NeuroML and some neuromorphic platforms. For neuroscience simulations, this detail is inconsequential. For neuromorphic computing, ">=" is easier to use because it gives an exact threshold without the need to add a "fudge factor" to synaptic weights.
-spike:fire
- $metadata
-  backend
-   lems
-    port:out

@@ -6,7 +6,7 @@ $metadata
  gui
   category:Base/Synapse
  id:166b5f18573aa9b6
- notes:Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses
+ notes:Synaptic blocking mechanism which varies with membrane potential across the synapse, e.g. in NMDA receptor mediated synapses. To use, drop into a Synapse Exponential Double.
 $up.blockFactor:*blockFactor
 blockConcentration:0(mol/m3)
  $metadata

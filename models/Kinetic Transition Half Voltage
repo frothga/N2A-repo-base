@@ -8,22 +8,25 @@ $metadata
    part:vHalfTransition
  id:166b5f18573a99b4
  notes:This model shows up in the LEMS specification for NeuroML 2, but not in the XSD itself.
-f::exp(z*γ*(v-vHalf)/kte)/τ
+Vhalf:0V
+ $metadata
+  backend
+   lems
+    param:vHalf
+  param
+f::exp(z*γ*(V-Vhalf)/kte)/τ
  $metadata
   backend
    lems
     param:rf0
 forward::1/(1/f+τMin)
 kte:25.3mV
-r::exp(-z*(1-γ)*(v-vHalf)/kte)/τ
+r::exp(-z*(1-γ)*(V-Vhalf)/kte)/τ
  $metadata
   backend
    lems
     param:rr0
 reverse::1/(1/r+τMin)
-vHalf:0V
- $metadata
-  param
 z:0
  $metadata
   param

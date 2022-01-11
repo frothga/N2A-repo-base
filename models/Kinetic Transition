@@ -6,7 +6,7 @@ $metadata
  gui
   category:Base/Compartment
  id:166b5f185734fe38
- notes:Specifies the rates of transition between two KS states.
+ notes:Specifies the rates of transition between two Kinetic State objects. This is a kind of connection. To use, place several Kinetic State objects inside a Gate and connect them with this class.
 forward::inf/τ@τ
  $metadata
   backend

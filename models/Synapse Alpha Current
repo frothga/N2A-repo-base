@@ -7,7 +7,7 @@ $metadata
   lems
    part:alphaCurrentSynapse
  id:166b5f207289e400
- notes:This synapse is exactly the same as Alpha, except that it ignores the voltage in the target compartment.
+ notes:Like Synapse Alpha but ignores voltage in the target compartment. Instead, specify peak current (Imax).
 E:0mV
  $metadata:
   param:0

@@ -5,15 +5,33 @@ $inherit:Spike Generator
 $metadata
  backend
   lems
-   part:spikeGeneratorPoisson,poissonFiringSynapse
- gui
-  mixin
+   part:spikeGeneratorPoisson,spikeGeneratorRefPoisson,poissonFiringSynapse,transientPoissonFiringSynapse
  id:166b5f18573a49ac
- notes:Generator of spikes with exponentially distributed ISI and scale 1/averageRate
+ notes:Exponential distribution with mean 1/averageRate.
 averageRate:0Hz
  $metadata
   param
-nextSpikeTime:$t-period*log(1-uniform())@fire
+delay:0s
+ $metadata
+  notes:Wait before poisson firing starts. There will be on average an additional delay of one period before the first spike is actually generated.
+  param
+duration:∞s
+ $metadata
+  notes:How long poisson firing continues after the initial delay.
+  param
+minISI:0s
+ $metadata
+  backend
+   lems
+    param:minimumISI
+  notes:|
+   Refractory period after a spike before another spike can be generated. Setting this nonzero changes the effect of averageRate. Actual average rate is 1/(1/averageRate - minISI).
+   NeuroML does not support this parameter and delay+duration at the same time, as they generate distinct part types.
+  param
+nextSpikeTime:
+ @$init:nextSpikeTime+minISI-(period-minISI)*log(uniform())+delay
+ @fire:nextSpikeTime+minISI-(period-minISI)*log(uniform())
+ @nextSpikeTime>delay+duration:∞
 period:1/averageRate
  $metadata
   notes:Scale for spike distribution.

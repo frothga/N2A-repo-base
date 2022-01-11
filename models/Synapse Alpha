@@ -7,6 +7,7 @@ $metadata
   lems
    part:alphaSynapse
  id:166b015ccdaa0f39
+ notes:Rise and decay time are both τ.
 G':(exp(1)*a-G)/τ
  $metadata
   backend
@@ -27,6 +28,6 @@ a':-a/τ
 τ:0ms
  $metadata
   backend
-   stpu
-    param:tauRise,tauDecay
+   lems
+    param:tau,tauRise,tauDecay
   param

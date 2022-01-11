@@ -7,6 +7,7 @@ $metadata
   lems
    part:expOneSynapse
  id:166b015ccdaa8211
+ notes:Instantaneous rise followed by exponential decay.
 G
  @$init:0
  @in:G+Gmax*weight

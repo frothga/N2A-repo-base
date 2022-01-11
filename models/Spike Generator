@@ -7,10 +7,10 @@ $metadata
   lems
    part:spikeGenerator
  id:166b5f18573a45ab
-fire::$t>nextSpikeTime
-nextSpikeTime:$t+period@fire
+ notes:Generates spikes evenly spaced at the given interval (period).
+fire::$t>nextSpikeTime-$t'/2
+nextSpikeTime:nextSpikeTime+period@$init || fire
 period:0s
  $metadata
-  notes:Time between spikes. First spike will be emitted after this time.
+  notes:Time between spikes. Also the amount of time until first spike is emitted.
   param
-spike:fire

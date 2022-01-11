@@ -6,8 +6,13 @@ $metadata
  gui
   category:Base/Input
  id:166b5f185735074b
-spike:0
+fire::0
+spike:fire
  $metadata
   backend
    lems
     port:out
+tsince:0@fire
+ $metadata
+  notes:Time since this source last spiked. For compatibility with LEMS.
+tsince':1Hz

@@ -7,7 +7,7 @@ $metadata
   lems
    part:spikeGeneratorRandom
  id:166b5f18573a4dad
- notes:Generates spikes with a random interspike interval of at least minISI and at most maxISI
+ notes:Interspike interval (ISI) is uniformly distributed between minISI and maxISI.
 maxISI:0s
  $metadata
   notes:Maximum interspike interval
@@ -16,5 +16,5 @@ minISI:0s
  $metadata
   notes:Minimum interspike interval
   param
-nextSpikeTime:$t+minISI+uniform(maxISI-minISI)@fire
+nextSpikeTime:nextSpikeTime+minISI+uniform(maxISI-minISI)@fire || $init
 period:$kill

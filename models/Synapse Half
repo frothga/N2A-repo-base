@@ -2,11 +2,11 @@ N2A.schema=2
 $metadata
  backend
   lems
-   part:silentSynapse
+   part:silentSynapse,baseGradedSynapse
  gui
   category:Base/Synapse
  id:166b5f2337372608
- notes:A null part for split synapses.
+ notes:Base part for half of a split synapse. Does nothing. Use a Synapse Split and inherit this part for one or both halves.
 I:0
  $metadata
   backend

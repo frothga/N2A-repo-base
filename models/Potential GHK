@@ -2,10 +2,9 @@ N2A.schema=2
 $metadata
  gui
   category:Base/Compartment
-  mixin
  id:166b5f185737c476
- notes:Set current density based on the Goldman-Hodgkin-Katz equation.
-Gall::
+ notes:Set current density based on the Goldman-Hodgkin-Katz equation. To use, place inside a Channel. Also connect "c" to the relevant Concentration model in the Compartment that contains the Channel.
+$up.Gall
  @:permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
  @c.outside<=0:0
 K::c.z*Faraday/(IdealGas*temperature)

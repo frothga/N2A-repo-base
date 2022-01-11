@@ -7,7 +7,7 @@ $metadata
   lems
    part:segment
  gui:
-  category:Base/Cell
+  category:Base/Compartment
  id:166b5f185734f92a
  notes:A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
 $xyz:[0;0;0]*1um

@@ -10,7 +10,21 @@ $metadata
  notes:Applies a variable current to try to keep parent at targetVoltage.
 I::
  @:0
- @t>=0&&t<duration:(targetVoltage-B.V)/simpleSeriesResistance
+ @t>=0 && t<duration:(V-B.V)/R
+R:0Ohm
+ $metadata
+  backend
+   lems
+    param:simpleSeriesResistance
+  notes:Current will be calculated by the difference in voltage between the target and parent, divided by this value
+  param
+V:0V
+ $metadata
+  backend
+   lems
+    param:targetVoltage
+  notes:Current will be applied to try to get parent to this target voltage
+  param
 delay:0s
  $metadata
   notes:Time until we begin to apply current to target.
@@ -19,12 +33,4 @@ duration:0s
  $metadata
   notes:Only apply current for this long.
   param
-simpleSeriesResistance:0Ohm
- $metadata
-  notes:Current will be calculated by the difference in voltage between the target and parent, divided by this value
-  param
 t::$t-delay
-targetVoltage:0V
- $metadata
-  notes:Current will be applied to try to get parent to this target voltage
-  param

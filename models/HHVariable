@@ -3,7 +3,8 @@ $metadata
  backend
   lems
    part:baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
-   requirement.V:v(V)
+   requirement
+    V:v(V)
  gui
   category:Base/Compartment
  id:166b5f185735064a
@@ -25,6 +26,6 @@ x::rate
     expose
     param:tau,r,t
   notes:|
-    The output value, with dimension determined by rate. Marked temporary so we can supply a value to Gate immediately during init. Strictly speaking, the temporary combiner should be ignored because this is a separate part. However, it will usually get flattened into Gate first.
-    
-    The NeuroML binding tau is for import. The bindings r and t are for export.
+   The output value, with dimension determined by rate. Marked temporary so we can supply a value to Gate immediately during init. Strictly speaking, the temporary combiner should be ignored because this is a separate part. However, it will usually get flattened into Gate first.
+   
+   The NeuroML binding tau is for import. The bindings r and t are for export.

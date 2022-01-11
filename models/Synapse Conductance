@@ -7,6 +7,7 @@ $metadata
   lems
    part:baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
  id:166b015ccdaa5a31
+ notes:Base part for conductance-based synapses. The current injected into the post-synaptic compartment is proportional to post-synaptic voltage. Derived parts should define G' to compute how conductance varies with time and incoming events.
 E:0mV
  $metadata
   backend

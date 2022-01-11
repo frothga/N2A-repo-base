@@ -27,15 +27,10 @@ I:+140pA
  $metadata
   notes:Must add 140pA to input current for simple Izhikevich model.
 V
- @$init:V0
+ @$init:Vinit
  @fire:c
 V':(k*(V-vr)*(V-vt)-u+I)/C
-V0:c
- $metadata
-  backend
-   lems
-    param:v0
-  param
+Vinit:c
 Vspike:30mV
  $metadata
   backend
@@ -77,7 +72,7 @@ u
   backend
    lems
     param:u,U
- @$init:b*V0
+ @$init:b*Vinit
  @fire:u+d
 u':a*(b*(V-vr)-u)
  $metadata

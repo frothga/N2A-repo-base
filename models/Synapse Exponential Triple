@@ -7,6 +7,7 @@ $metadata
   lems
    part:expThreeSynapse
  id:166b5f1857387284
+ notes:Exponential rise plus two separate exponential decays, each with its own max conductance.
 G::Gmax*(b-a)+Gmax2*(c-a)
 Gmax:0uS
  $metadata

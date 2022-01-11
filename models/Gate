@@ -13,10 +13,11 @@ $metadata
   category:Base/Compartment
  id:166b5f185734fa2c
  notes:|
-   This is the base model for 3 types of gate:
-   Hodgkin-Huxley -- Rates expressed in the HH formalism.
-   Kinetic -- A Markov model with state superposition, where each state allows or disallows current to flow.
-   Fractional -- Combines several subgates which each contribute a portion of the total current.
+  The main component of an ion channel. To use, create a Channel and place one or more of these inside it.
+  There are 3 types of Gate:
+  Hodgkin-Huxley -- Rates expressed in the HH formalism. Place HHVariable objects inside this Gate.
+  Kinetic -- A Markov model with state superposition, where each state allows or disallows current to flow. Use Kinetic State and Kinetic Transition.
+  Fractional -- Combines several subgates which each contribute a portion of the total current. Use Gate Sub.
 $up.fopen:*q^instances
 Q10Scaling:*
  $metadata

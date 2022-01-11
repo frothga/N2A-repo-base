@@ -13,6 +13,7 @@ $metadata
 A:connect(Spike Source)
 delay:0s
  $metadata
+  notes:Axonal transmission time in seconds.
   param
 in::event(A.spike,delay)
  $metadata

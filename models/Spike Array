@@ -7,12 +7,11 @@ $metadata
   lems
    part:spikeArray,timedSynapticInput
  id:166b5f7fcf84a900
-fire::index<columns(times) && $t>=times(index)
+fire::index<rows(times) && $t>=times(index)
 index
  @$init:0
  @fire:index+1
-spike:fire
 times:[1;2;3]*$t'
  $metadata
-  notes:Vector of spike times, in strictly ascending order. Use semicolons to separate values inside square brackets. It may be convenient to multiply the entire vector by a timescale. The example here multiplies by $t', which allows you to specify the events as integer cycle numbers.
+  notes:Vector of spike times, in strictly ascending order. Use semicolons to separate values inside square brackets. (Time steps along a single column.) It may be convenient to multiply the entire vector by a timescale. The example here multiplies by $t', which allows you to specify the events as integer cycle numbers.
   param

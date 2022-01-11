@@ -5,10 +5,11 @@ $metadata
    children
     conductanceScaling:Q10,baseConductanceScaling
     gates:Gate
-   part:channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelKS,channelPopulation,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
+   part:channelDensity,baseIonChannel,ionChannel,ionChannelHH,ionChannelVShift,ionChannelKS,channelPopulation,channelDensityVShift,channelDensityNernst,channelDensityGHK,channelDensityGHK2,channelDensityNonUniform,channelDensityNonUniformNernst,channelDensityNonUniformGHK
  gui
   category:Base/Compartment
  id:166b5f185735013e
+ notes:Main class for ion channels. To use, create an instance and populate it with Gate objects.
 $up.I:+I
 E:0mV
  $metadata
@@ -30,7 +31,11 @@ G1:0pS
   param
 Gall::Gdensity*surfaceArea
  $metadata
-  notes:The conductance for an entire ensemble of channels. For population-based value, use: G1*population
+  notes:|
+   The conductance for an entire ensemble of channels.
+   For population-based value, use: G1*population
+   For density-based value, use: Gdensity*surfaceArea
+   In the density case, this ion channel must be embedded in a compartment that provides surfaceArea.
 Gdensity:0(mS/cm2)
  $metadata
   backend
@@ -47,6 +52,12 @@ Q10Scaling:*
   backend
    lems
     param:conductanceScale
+Vshift:0mV
+ $metadata
+  backend
+   lems
+    param:vShift
+  notes:For compatibility with NeuroML 2. Doesn't seem to do anything in the standard yet.
 fopen:*
 population:1
  $metadata

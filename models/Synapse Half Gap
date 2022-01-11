@@ -7,7 +7,7 @@ $metadata
   lems
    part:gapJunction,linearGradedSynapse
  id:166b5f185734fb2e
- notes:Half of a gap junction, for use in split synapse.
+ notes:Half of a gap junction. Use a Synapse Split and inherit this part for one or both halves.
 G:0S
  $metadata
   backend
