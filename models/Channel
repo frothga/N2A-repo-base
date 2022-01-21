@@ -59,6 +59,12 @@ Vshift:0mV
     param:vShift
   notes:For compatibility with NeuroML 2. Doesn't seem to do anything in the standard yet.
 fopen:*
+gDensity::Gdensity*fopen
+ $metadata
+  notes:Only used for debugging output, particularly in models imported from NeuroML.
+iDensity::gDensity*(E-V)
+ $metadata
+  notes:Only used for debugging output, particularly in models imported from NeuroML.
 population:1
  $metadata
   backend

@@ -7,6 +7,10 @@ $metadata
   category:Base/Input
  id:166b5f185735074b
 fire::0
+ $metadata
+  backend
+   lems
+    param:spiking
 spike:fire
  $metadata
   backend
