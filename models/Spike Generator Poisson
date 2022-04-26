@@ -6,10 +6,15 @@ $metadata
  backend
   lems
    part:spikeGeneratorPoisson,spikeGeneratorRefPoisson,poissonFiringSynapse,transientPoissonFiringSynapse
+  stacs
+   part:34
  id:166b5f18573a49ac
  notes:Exponential distribution with mean 1/averageRate.
 averageRate:0Hz
  $metadata
+  backend
+   stacs
+    param:rate
   param
 delay:0s
  $metadata

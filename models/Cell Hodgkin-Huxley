@@ -5,7 +5,7 @@ $inherit:Segment
 $metadata
  backend
   xyce
-   device:neuron1
+   part:neuron1
  gui:
   bounds
    parent:0

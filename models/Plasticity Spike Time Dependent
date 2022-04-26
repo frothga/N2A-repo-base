@@ -1,0 +1,50 @@
+N2A.schema=2
+$metadata
+ gui
+  category:Base/Synapse
+ id:11f17e9952c7ff00
+ notes:STDP model. To use, drop into a Synapse.
+$up.weight':base+activity+max(0, weightMax-weight)
+activity:activity+traceA+traceB@in || bp
+activity':-activity/τActivity
+addA:0.1
+ $metadata
+  notes:Amount added to pre-synaptic trace per spike. Like weight, this is unitless.
+  param
+addB:-0.12
+ $metadata
+  notes:Amount added to post-synaptic trace per spike. Like weight, this is unitless.
+  param
+base:0.01
+ $metadata
+  notes:Activity-independent increase in weight per second. This will not produce unbounded weight increase, because eventually the synapse will fire and produce STDP feedback.
+  param
+bp::event(B.spike)
+traceA:traceA+addA@in
+traceA':
+ @:-traceA/τA
+ @in:-(traceA+addA)/τA
+traceB:traceB+addB@bp
+traceB':
+ @:-traceB/τB
+ @bp:-(traceB+addB)/τB
+weightMax:1
+ $metadata
+  notes:Upper limit on weight value.
+  param
+τA:20ms
+ $metadata
+  backend
+   stacs
+    param:tau
+    unit:ms
+  notes:Time constant for pre-synaptic spike trace.
+  param
+τActivity:10s
+ $metadata
+  notes:Time constant for decay of acitivty-based weight change.
+  param
+τB:τA
+ $metadata
+  notes:Time constant for post-synaptic spike trace.
+  param

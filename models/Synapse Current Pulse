@@ -1,0 +1,23 @@
+N2A.schema=2
+$inherit:Synapse
+ $metadata
+  id:166b5f185734f41a
+$metadata
+ backend:
+  stacs
+   notes:Basic part (no STDP) is 13. If a Plasticity Spike Timing Dependent part is included, then type is 12.
+   part:13,12
+ id:11f17ed6dfafcc01
+ notes:Injects current for a single time step when an event comes in. Useful for low-fidelity (not biologically plausible) models.
+I::Imax*weight
+Imax:0pA
+ $metadata
+  backend
+   stacs
+    keep
+  param
+weight:1@$init
+ $metadata:
+  backend
+   stacs
+    keep

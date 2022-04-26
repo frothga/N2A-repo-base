@@ -5,7 +5,7 @@ $metadata
  id:166b015ccdaafc99
  notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models of neuromorphic hardware.
 A:connect(Spike Source)
-B:connect(Cell LIF)
+B:connect(Compartment)
  $metadata
   gui
    arrow:arrow

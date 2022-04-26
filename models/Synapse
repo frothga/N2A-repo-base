@@ -13,6 +13,9 @@ $metadata
 A:connect(Spike Source)
 delay:0s
  $metadata
+  backend
+   stacs
+    stick
   notes:Axonal transmission time in seconds.
   param
 in::event(A.spike,delay)
@@ -20,6 +23,7 @@ in::event(A.spike,delay)
   backend
    lems
     port:in
-weight:1
+weight:1@$init
  $metadata
+  notes:Amount by which to scale current applied to post-synaptic part. If weight is not dynamic, then condition "@$init" may be omitted.
   param
