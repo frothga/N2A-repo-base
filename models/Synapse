@@ -11,12 +11,12 @@ $metadata
  id:166b5f185734f41a
  notes:Base part for connections which listen for events from their source and inject current into their target. This part requires further elaboration to be useful. In particular, compute the value of I based on incoming events.
 A:connect(Spike Source)
-delay:0s
+delay:$t'
  $metadata
   backend
    stacs
     stick
-  notes:Axonal transmission time in seconds.
+  notes:Time between spike initiation and synaptic action. This can never be zero in practice, so the supplied default is one simulaton cycle.
   param
 in::event(A.spike,delay)
  $metadata
@@ -25,5 +25,8 @@ in::event(A.spike,delay)
     port:in
 weight:1@$init
  $metadata
+  backend
+   stacs
+    keep
   notes:Amount by which to scale current applied to post-synaptic part. If weight is not dynamic, then condition "@$init" may be omitted.
   param

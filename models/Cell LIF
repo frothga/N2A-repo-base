@@ -30,10 +30,10 @@ G:3nS
     param:leakConductance
   param
 I:+G*(E-V)
-V
+V:
  @$init:Vinit
  @fire:Vreset
-V'
+V':
  @:I/C
  @fire || ($t<refractoryEnd && refractoryPeriod):0(V/s)
 Vinit:E

@@ -1,0 +1,13 @@
+N2A.schema=2
+$inherit:Spineuron, Spike Source
+ $metadata
+  id:11f184ed644b9600,166b5f185735074b
+$metadata
+ backend
+  stacs
+   part:100
+ gui:
+  category:Base/Misc
+  mixin:0
+ id:11f184ef4d45ec02
+fire::1

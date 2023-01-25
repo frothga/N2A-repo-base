@@ -5,19 +5,14 @@ $inherit:Synapse
 $metadata
  backend:
   stacs
-   notes:Basic part (no STDP) is 13. If a Plasticity Spike Timing Dependent part is included, then type is 12.
-   part:13,12
+   notes:Basic part (no STDP) is 13. If Plasticity* is included, then type is 12. If inherit from Spinapse, then type is 11.
+   part:13,12,11
  id:11f17ed6dfafcc01
  notes:Injects current for a single time step when an event comes in. Useful for low-fidelity (not biologically plausible) models.
-I::Imax*weight
+I::Imax*weight@in
 Imax:0pA
  $metadata
   backend
    stacs
     keep
   param
-weight:1@$init
- $metadata:
-  backend
-   stacs
-    keep

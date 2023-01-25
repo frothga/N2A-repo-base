@@ -4,12 +4,12 @@ $metadata
   lems
    part:pinskyRinzelCA3Cell
  gui
-  category:Base/Cell
+  category:Base/Misc
  id:166b5f1857398e9b
  notes:|
-   This does not really belong in a set of base models, but is included for compatibility with the NeuroML specification.
-   
-   Comment from LEMS definition: Reduced CA3 cell model from [pinsky1994]. See https://github.com/OpenSourceBrain/PinskyRinzelModel
+  This does not really belong in a set of base models, but is included for compatibility with the NeuroML specification.
+  
+  Comment from LEMS definition: Reduced CA3 cell model from [pinsky1994]. See https://github.com/OpenSourceBrain/PinskyRinzelModel
 $reference
  Pinsky1994
 Cad':(-0.13*ICad/1(uA/cm2)-0.075*Cad)/1ms

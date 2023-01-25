@@ -1,0 +1,17 @@
+N2A.schema=2
+$metadata
+ gui
+  category:Base/Neuromorphic
+  mixin
+ id:11f184ed90d44c01
+ notes:|
+  Delivers a spike only if the source neuron selects our target index. Works together with Spineuron. To use in a syapse, $inherit from this as well as the parent Synapse (multiple inheritance). Should appear ahead of the parent Synapse. The source side (A) must be connected to a Spineuron.
+  
+  By default, this class supports connection to one population. To connect several downstream populations, manually assign each population a range and add an offset to B.$index in the event() function call.
+  
+  If B.$n is unknown or can vary, then you need to assemble the index offsets as variables in A. Assign each target population an ordinal position (0, 1, 2 ...). Call that position # in the following code. In each connection part, add these two lines:
+  A.count#=B.$n
+  A.offset#=A.offset{#-1}+A.count{#-1}
+  Since A.offset0=0, you can omit that variable.
+A.targetCount:+B.$n
+in::event(A.spike && A.targetIndex==B.$index, delay, "nonzero")
