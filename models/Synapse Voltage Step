@@ -1,4 +1,7 @@
 N2A.schema=2
+$inherit:Synapse
+ $metadata
+  id:166b5f185734f41a
 $metadata
  gui
   category:Base/Neuromorphic
@@ -9,11 +12,18 @@ B:connect(Compartment)
  $metadata
   gui
    arrow:arrow
-B.V:+weight*B.scale@event(A.spike,delay*$t',"nonzero")
-delay:1
+B.I:$kill
+B.V:+Vstep@in
+I::Vstep*B.C/$t'
+Vstep::weight*B.scale
+delay:delaySteps*$t'
+ $metadata:
+  param:0
+delaySteps:1
  $metadata
   notes:Delay between spike initiation and arrival, expressed as an integer number of cycles. Usually the spike takes effect before the B part is evaluated in the designated cycle. Negative numbers mean no-care, which allows the most efficient delivery scheme (boolean latching only). 0 means same-cycle delivery, which is impossible for most machines. The Internal and C backends will deliver a zero-delay event immediately after the current cycle completes, without any additional simulated time.
   param
+in::event(A.spike,delay,"nonzero")
 weight:1
  $metadata
   notes:|

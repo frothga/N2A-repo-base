@@ -2,6 +2,7 @@ N2A.schema=2
 $metadata
  gui
   category:Base/Synapse
+  dropin
  id:11f17e9952c7ff00
  notes:STDP model. To use, drop into a Synapse.
 $up.weight':base+activity+max(0, weightMax-weight)

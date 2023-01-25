@@ -2,6 +2,7 @@ N2A.schema=2
 $metadata
  gui
   category:Base/Compartment
+  dropin
  id:166b5f185737d177
  notes:Set current density following Jaffe et al. 1994. To use, place inside a Channel. Also connect "c" to the relevant Concentration model in the Compartment that contains the Channel.
 $reference

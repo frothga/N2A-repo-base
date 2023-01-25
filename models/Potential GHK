@@ -2,6 +2,7 @@ N2A.schema=2
 $metadata
  gui
   category:Base/Compartment
+  dropin
  id:166b5f185737c476
  notes:Set current density based on the Goldman-Hodgkin-Katz equation. To use, place inside a Channel. Also connect "c" to the relevant Concentration model in the Compartment that contains the Channel.
 $up.Gall

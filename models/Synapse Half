@@ -5,8 +5,9 @@ $metadata
    part:silentSynapse,baseGradedSynapse
  gui
   category:Base/Synapse
+  mixin
  id:166b5f2337372608
- notes:Base part for half of a split synapse. Does nothing. Use a Synapse Split and inherit this part for one or both halves.
+ notes:Base part for half of a split synapse. Does nothing. See notes on Synapse Split for how to use parts of this type.
 I:0
  $metadata
   backend

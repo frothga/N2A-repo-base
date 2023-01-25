@@ -7,6 +7,7 @@ $metadata
   bounds
    parent:1
   category:Base/Synapse
+  dropin
  id:166b5f18573a90b2
  notes:Full Tsodyks-Markram STP model with both depression and facilitation. To use, drop into a Synapse Exponential Double.
 $reference
