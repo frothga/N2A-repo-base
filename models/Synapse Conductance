@@ -1,34 +1,34 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse
- $metadata
+ $meta
   id:166b5f185734f41a
-$metadata
+$meta
  backend
   lems
    part:baseConductanceBasedSynapse,baseConductanceBasedSynapseTwo
  id:166b015ccdaa5a31
  notes:Base part for conductance-based synapses. The current injected into the post-synaptic compartment is proportional to post-synaptic voltage. Derived parts should define G' to compute how conductance varies with time and incoming events.
 E:0mV
- $metadata
+ $meta
   backend
    lems
     param:erev
   note:Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
   param
 G:0@$init
- $metadata
+ $meta
   backend
    lems
     param:g
 Gmax:0uS
- $metadata
+ $meta
   backend
    lems
     param:gbase
   param
-I::G*(E-V)
-V::B.V
- $metadata
+I:G*(E-V)
+V:B.V
+ $meta
   backend
    lems
     param:v

@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Synapse
  id:166b015ccda56f33
@@ -8,5 +8,5 @@ A:connect(Compartment)
 A.I:+-I
 B:connect(Compartment)
 B.I:+I
-G::2/(A.R+B.R)
-I::G*(A.V-B.V)
+G:2/(A.R+B.R)
+I:G*(A.V-B.V)

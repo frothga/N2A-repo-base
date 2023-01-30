@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:basePointCurrent,baseVoltageDepPointCurrent,basePointCurrentDL,baseVoltageDepPointCurrentDL
@@ -8,12 +8,12 @@ $metadata
  id:166b5f185734f319
  notes:A connector which injects current into its target.
 B:connect(Compartment)
- $metadata
+ $meta
   gui
    arrow:arrow
 B.I:+I
-I::0pA
- $metadata
+I:0pA
+ $meta
   backend
    lems
     DL

@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:KSState,openState,closedState
@@ -9,8 +9,8 @@ $metadata
  notes:One node in a Markov model of Gate's state. To use, create a Gate, populate with 2 or more Kinetic State objects, then connect them with Kinetic Transition objects.
 $up.q:+q
 occupancy:0@$init
-q::relativeConductance*occupancy
+q:relativeConductance*occupancy
 relativeConductance:0
- $metadata
+ $meta
   notes:Generally this value is 1 for open and 0 for closed.
   param

@@ -1,12 +1,12 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Neuromorphic
   mixin
  id:11f184ed644b9600
  notes:Delivers each spike to only one downstream neuron, chosen at random. Works together with Spinapse. To use, $inherit from this as well as the parent Spike Source (multiple inheritance).
 targetCount:+
- $metadata
+ $meta
   backend
    stacs
     param:rng

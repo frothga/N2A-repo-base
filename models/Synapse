@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Input
- $metadata
+ $meta
   id:166b5f185734f319
-$metadata
+$meta
  backend
   lems
    part:baseSynapse,baseVoltageDepSynapse,baseCurrentBasedSynapse,baseGradedSynapse
@@ -12,19 +12,19 @@ $metadata
  notes:Base part for connections which listen for events from their source and inject current into their target. This part requires further elaboration to be useful. In particular, compute the value of I based on incoming events.
 A:connect(Spike Source)
 delay:$t'
- $metadata
+ $meta
   backend
    stacs
     stick
   notes:Time between spike initiation and synaptic action. This can never be zero in practice, so the supplied default is one simulaton cycle.
   param
-in::event(A.spike,delay)
- $metadata
+in:event(A.spike,delay)
+ $meta
   backend
    lems
     port:in
 weight:1@$init
- $metadata
+ $meta
   backend
    stacs
     keep

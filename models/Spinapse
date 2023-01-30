@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Neuromorphic
   mixin
@@ -14,4 +14,4 @@ $metadata
   A.offset#=A.offset{#-1}+A.count{#-1}
   Since A.offset0=0, you can omit that variable.
 A.targetCount:+B.$n
-in::event(A.spike && A.targetIndex==B.$index, delay, "nonzero")
+in:event(A.spike && A.targetIndex==B.$index, delay, "nonzero")

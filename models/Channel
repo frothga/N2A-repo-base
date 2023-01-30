@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    children
@@ -12,61 +12,61 @@ $metadata
  notes:Main class for ion channels. To use, create an instance and populate it with Gate objects.
 $up.I:+I
 E:0mV
- $metadata
+ $meta
   backend
    lems
     param:erev
   param
-G::Gall*fopen*Q10Scaling
- $metadata
+G:Gall*fopen*Q10Scaling
+ $meta
   backend
    lems
     param:g,geff
 G1:0pS
- $metadata
+ $meta
   backend
    lems
     param:conductance
   notes:The conductance of a single channel instance.
   param
-Gall::Gdensity*surfaceArea
- $metadata
+Gall:Gdensity*surfaceArea
+ $meta
   notes:|
    The conductance for an entire ensemble of channels.
    For population-based value, use: G1*population
    For density-based value, use: Gdensity*surfaceArea
    In the density case, this ion channel must be embedded in a compartment that provides surfaceArea.
 Gdensity:0(mS/cm2)
- $metadata
+ $meta
   backend
    lems
     param:condDensity
   param
-I::G*(E-V)
- $metadata
+I:G*(E-V)
+ $meta
   backend
    lems
     param:i
 Q10Scaling:*
- $metadata
+ $meta
   backend
    lems
     param:conductanceScale
 Vshift:0mV
- $metadata
+ $meta
   backend
    lems
     param:vShift
   notes:For compatibility with NeuroML 2. Doesn't seem to do anything in the standard yet.
 fopen:*
-gDensity::Gdensity*fopen
- $metadata
+gDensity:Gdensity*fopen
+ $meta
   notes:Only used for debugging output, particularly in models imported from NeuroML.
-iDensity::gDensity*(E-V)
- $metadata
+iDensity:gDensity*(E-V)
+ $meta
   notes:Only used for debugging output, particularly in models imported from NeuroML.
 population:1
- $metadata
+ $meta
   backend
    lems
     param:number

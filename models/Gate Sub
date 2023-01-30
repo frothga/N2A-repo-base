@@ -1,16 +1,17 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Gate
- $metadata
+ $meta
   id:166b5f185734fa2c
-$metadata
+$meta
  backend
   lems
    part:subGate
  id:166b5f1857350240
  notes:Contributes fractional conductance to containing gate.
-$up.fopen:$kill
+$up.fopen
+ $kill:
 $up.q:+qfrac
 fractionalConductance:0
- $metadata
+ $meta
   param
-qfrac::q*fractionalConductance
+qfrac:q*fractionalConductance

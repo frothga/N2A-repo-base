@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:concentrationModel,species
@@ -8,41 +8,41 @@ $metadata
  id:166b5f185734ff3a
  notes:Concentrations of a given ion, inside and outside of a compartment. These can vary over time.
 inside
- $metadata
+ $meta
   backend
    lems
     param:concentration
  @$init:inside0
  @inside<0:0
 inside0:0(mol/m3)
- $metadata
+ $meta
   backend
    lems
     param:initialConcentration
   param
 outside:outside0@$init
- $metadata
+ $meta
   backend
    lems
     param:extConcentration
 outside0:0(mol/m3)
- $metadata
+ $meta
   backend
    lems
     param:initialExtConcentration
   param
 restingConcentration:0(mol/m3)
- $metadata
+ $meta
   backend
    lems
     param:restingConc
   param
 z:1
- $metadata
+ $meta
   notes:Charge per ion, expressed as an integer number of protons (positive) or electrons (negative).
   param
 τ:0s
- $metadata
+ $meta
   backend
    lems
     param:decayConstant

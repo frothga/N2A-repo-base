@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Compartment
- $metadata
+ $meta
   id:166b5f39bd266700
-$metadata
+$meta
  backend
   lems
    part:segment
@@ -11,36 +11,36 @@ $metadata
  id:166b5f185734f92a
  notes:A segment is a compartment with specific shape and location in space. For example, it could be a soma, dendrite or axon, and may be part of network of compartment representing cell morphology. A segment can form a unary connection to a parent object, and attach to it somewhere besides the endpoint.
 $xyz:[0;0;0]*1um
- $metadata
+ $meta
   notes:The end point of this segment.
 C:Cspecific*surfaceArea
- $metadata
+ $meta
   backend
    lems
     param:totCap
 Cspecific:1(uF/cm2)
- $metadata
+ $meta
   backend
    lems
     param:totSpecCap
 R:ρ*length/(π*r^2)
 V':I/C@C
 diameter:1um
- $metadata
+ $meta
   notes:At the end point of this segment.
 diameter0:diameter
- $metadata
+ $meta
   notes:At the beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.diameter
-length::norm($xyz-xyz0,2)
-r::(diameter+diameter0)/4
-surfaceArea::
+length:norm($xyz-xyz0,2)
+r:(diameter+diameter0)/4
+surfaceArea:
  @:2*π*r*length
  @length==0:4*π*r^2
-xyz0::$xyz
- $metadata
+xyz0:$xyz
+ $meta
   notes:The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz
 ρ:30(Ohm.cm)
- $metadata
+ $meta
   backend
    lems
     param:resistivity

@@ -1,16 +1,16 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Spike Source
- $metadata
+ $meta
   id:166b5f185735074b
-$metadata
+$meta
  backend
   lems
    part:spikeGenerator
  id:166b5f18573a45ab
  notes:Generates spikes evenly spaced at the given interval (period).
-fire::$t>nextSpikeTime-$t'/2
+fire:$t>nextSpikeTime-$t'/2
 nextSpikeTime:nextSpikeTime+period@$init || fire
 period:0s
- $metadata
+ $meta
   notes:Time between spikes. Also the amount of time until first spike is emitted.
   param

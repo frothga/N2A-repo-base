@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Compartment
   dropin
@@ -8,9 +8,9 @@ $metadata
 $up.Gall
  @:permeability*c.z*Faraday*K*(c.inside-c.outside*expKV)/(1-expKV)
  @c.outside<=0:0
-K::c.z*Faraday/(IdealGas*temperature)
+K:c.z*Faraday/(IdealGas*temperature)
 c:connect(Concentration)
-expKV::exp(-K*V)
+expKV:exp(-K*V)
 permeability:0(m/s)
- $metadata
+ $meta
   param

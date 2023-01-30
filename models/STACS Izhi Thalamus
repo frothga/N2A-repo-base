@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Spineuron, Spike Source
- $metadata
+ $meta
   id:11f184ed644b9600,166b5f185735074b
-$metadata
+$meta
  backend
   stacs
    part:100
@@ -10,4 +10,4 @@ $metadata
   category:Base/Misc
   mixin:0
  id:11f184ef4d45ec02
-fire::1
+fire:1

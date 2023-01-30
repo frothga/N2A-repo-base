@@ -1,49 +1,49 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Kinetic Transition
- $metadata
+ $meta
   id:166b5f185734fe38
-$metadata
+$meta
  backend
   lems
    part:vHalfTransition
  id:166b5f18573a99b4
  notes:This model shows up in the LEMS specification for NeuroML 2, but not in the XSD itself.
 Vhalf:0V
- $metadata
+ $meta
   backend
    lems
     param:vHalf
   param
-f::exp(z*γ*(V-Vhalf)/kte)/τ
- $metadata
+f:exp(z*γ*(V-Vhalf)/kte)/τ
+ $meta
   backend
    lems
     param:rf0
-forward::1/(1/f+τMin)
+forward:1/(1/f+τMin)
 kte:25.3mV
-r::exp(-z*(1-γ)*(V-Vhalf)/kte)/τ
- $metadata
+r:exp(-z*(1-γ)*(V-Vhalf)/kte)/τ
+ $meta
   backend
    lems
     param:rr0
-reverse::1/(1/r+τMin)
+reverse:1/(1/r+τMin)
 z:0
- $metadata
+ $meta
   param
 γ:0
- $metadata
+ $meta
   backend
    lems
     param:gamma
   param
 τ:0s
- $metadata
+ $meta
   backend
    lems
     param:tau
   param
 τMin:0s
- $metadata
+ $meta
   backend
    lems
     param:tauMin

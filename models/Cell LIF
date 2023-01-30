@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Compartment
- $metadata
+ $meta
   id:166b5f39bd266700
-$metadata
+$meta
  backend
   lems
    part:iafCell,baseIaf,baseIafCapCell,iafRefCell
@@ -18,13 +18,13 @@ $metadata
   
   This means, in particular, that each descendant model that adds new parameters should provide expressions that compute reasonable values for parameters in the parent part. It is preferrable to implement new behavior via the parent's parameters. If that is not possible, then it is OK to override parent dynamics. The ideal outcome is that the parent's dynamics combined with its overridden parameters produce the closest approximation of child behavior that the parent can achieve.
 E:Vreset
- $metadata
+ $meta
   backend
    lems
     param:leakReversal
   param
 G:3nS
- $metadata
+ $meta
   backend
    lems
     param:leakConductance
@@ -37,22 +37,22 @@ V':
  @:I/C
  @fire || ($t<refractoryEnd && refractoryPeriod):0(V/s)
 Vinit:E
- $metadata
+ $meta
   notes:Starting value of V, applied when instance is created. Default is to start at equilibrium.
   param
 Vreset:0V
- $metadata
+ $meta
   backend
    lems
     param:reset
   param
 refractoryEnd:$t+refractoryPeriod@fire
 refractoryPeriod:0s
- $metadata
+ $meta
   backend
    lems
     param:refract
   param
 scale:30mV
- $metadata
+ $meta
   notes:Used by neuromorphic parts to map normalized units (in the range [0,1]) to physiological voltage range. This allows neuromorphic and biophysical models to work together. This value will usually be similar to spike threshold. Ignored by base LIF model.

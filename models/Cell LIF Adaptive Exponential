@@ -1,41 +1,41 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Cell LIF
- $metadata
+ $meta
   id:166b015ccda9c699
-$metadata
+$meta
  backend
   lems
    part:adExIaFCell
  id:166b5f1857365e6b
-$reference
+$ref
  Brette2005
 E:Vreset
- $metadata
+ $meta
   backend
    lems
     param:EL
 G:100uS
- $metadata
+ $meta
   backend
    lems
     param:gL
 I:+G*(delT*exp((V-VT)/delT)-(V-E))-w
 VT:0V
- $metadata
+ $meta
   param
 a:0S
- $metadata
+ $meta
   param
 b:0A
- $metadata
+ $meta
   param
 delT:0V
- $metadata
+ $meta
   param
 w:w+b@fire
 w':(a*(V-E)-w)/τw
 τw:0s
- $metadata
+ $meta
   backend
    lems
     param:tauw

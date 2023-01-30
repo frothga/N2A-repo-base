@@ -1,22 +1,22 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:baseSpikeSource,baseVoltageDepPointCurrentSpiking
  gui
   category:Base/Input
  id:166b5f185735074b
-fire::0
- $metadata
+fire:0
+ $meta
   backend
    lems
     param:spiking
 spike:fire
- $metadata
+ $meta
   backend
    lems
     port:out
 tsince:0@fire
- $metadata
+ $meta
   notes:Time since this source last spiked. For compatibility with LEMS.
 tsince':1Hz

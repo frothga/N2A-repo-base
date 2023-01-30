@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:baseVoltageDepRate,baseVoltageConcDepRate,baseHHRate,baseVoltageDepVariable,baseVoltageConcDepVariable,baseHHVariable,baseVoltageDepTime,baseVoltageConcDepTime,fixedTimeCourse
@@ -9,18 +9,18 @@ $metadata
   category:Base/Compartment
  id:166b5f185735064a
  notes:A value (of any dimension) which follows the typical form for rate equations in the standard HH formalism. To use, include as a sub-part of Gate and reference x from some equation in Gate (usually one of α, β, τ or inf).
-a::(V-midpoint)/scale
+a:(V-midpoint)/scale
 midpoint:0mV
- $metadata
+ $meta
   param
 rate:0
- $metadata
+ $meta
   param
 scale:100mV
- $metadata
+ $meta
   param
-x::rate
- $metadata
+x:rate
+ $meta
   backend
    lems
     expose

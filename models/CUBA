@@ -1,22 +1,22 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Synapse
   mixin
  id:11f18513c7d8f900
  notes:Converts any conductance-based (COBA) synapse into a current-based synapse. To use, inherit from both this part and the synapse part (multiple inheritance), placing this part first on the $inherit line.
 E:0mV
- $metadata
+ $meta
   param:0
 Gmax:Imax/(E-V)
- $metadata
+ $meta
   param:0
 Imax:0A
- $metadata
+ $meta
   backend
    lems
     param:ibase
   param
 V:-70mV
- $metadata
+ $meta
   notes:Instead of using the target compartment voltage, we assume a constant. The value doesn't matter, but must not be equal to E.

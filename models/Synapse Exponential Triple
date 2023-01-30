@@ -1,95 +1,95 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse Conductance
- $metadata
+ $meta
   id:166b015ccdaa5a31
-$metadata
+$meta
  backend
   lems
    part:expThreeSynapse
  id:166b5f1857387284
  notes:Exponential rise plus two separate exponential decays, each with its own max conductance.
-G::Gmax*(b-a)+Gmax2*(c-a)
+G:Gmax*(b-a)+Gmax2*(c-a)
 Gmax:0uS
- $metadata
+ $meta
   backend
    lems
     param:gbase1
 Gmax2:0uS
- $metadata
+ $meta
   backend
    lems
     param:gbase2
   param
 Tpeak1:log(τDecay1/τRise)*(τDecay1*τRise)/(τDecay1-τRise)
- $metadata
+ $meta
   backend
    lems
     param:peakTime1
 Tpeak2:log(τDecay2/τRise)*(τDecay2*τRise)/(τDecay2-τRise)
- $metadata
+ $meta
   backend
    lems
     param:peakTime2
 a
- $metadata
+ $meta
   backend
    lems
     param:A
  @$init:0
  @in:a+weight*(Gmax*peak1+Gmax2*peak2)/(Gmax+Gmax2)
 a':-a/τRise
- $metadata
+ $meta
   backend
    lems
     param:A'
 b
- $metadata
+ $meta
   backend
    lems
     param:B
  @$init:0
  @in:b+weight*peak1
 b':-b/τDecay1
- $metadata
+ $meta
   backend
    lems
     param:B'
 c
- $metadata
+ $meta
   backend
    lems
     param:C
  @$init:0
  @in:c+weight*peak2
 c':-c/τDecay2
- $metadata
+ $meta
   backend
    lems
     param:C'
 peak1:1/(exp(-Tpeak1/τDecay1)-exp(-Tpeak1/τRise))
- $metadata
+ $meta
   backend
    lems
     param:waveformFactor1
 peak2:1/(exp(-Tpeak2/τDecay2)-exp(-Tpeak2/τRise))
- $metadata
+ $meta
   backend
    lems
     param:waveformFactor2
 τDecay1:0s
- $metadata
+ $meta
   backend
    lems
     param:tauDecay1
   param
 τDecay2:0s
- $metadata
+ $meta
   backend
    lems
     param:tauDecay2
   param
 τRise:0s
- $metadata
+ $meta
   backend
    lems
     param:tauRise

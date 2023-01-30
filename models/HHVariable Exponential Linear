@@ -1,13 +1,13 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:HHVariable
- $metadata
+ $meta
   id:166b5f185735064a
-$metadata
+$meta
  backend
   lems
    part:HHExpLinearRate,HHExpLinearVariable
  id:166b5f185735c265
  notes:Linear for large positive V. Exponentially decays for large negative V.
-x::
+x:
  @:rate
  @a:rate*a/(1-exp(-a,"median=1"))

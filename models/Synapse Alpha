@@ -1,32 +1,32 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse Conductance
- $metadata
+ $meta
   id:166b015ccdaa5a31
-$metadata
+$meta
  backend
   lems
    part:alphaSynapse
  id:166b015ccdaa0f39
  notes:Rise and decay time are both τ.
 G':(exp(1)*a-G)/τ
- $metadata
+ $meta
   backend
    lems
     param:g'
 a
- $metadata
+ $meta
   backend
    lems
     param:A
  @$init:0
  @in:a+Gmax*weight
 a':-a/τ
- $metadata
+ $meta
   backend
    lems
     param:A'
 τ:0ms
- $metadata
+ $meta
   backend
    lems
     param:tau,tauRise,tauDecay

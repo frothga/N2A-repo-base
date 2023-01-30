@@ -1,63 +1,66 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Input
- $metadata
+ $meta
   id:166b5f185734f319
-$metadata
+$meta
  backend
   lems
    part:rampGenerator,pulseGenerator,rampGeneratorDL,pulseGeneratorDL
  id:166b5f185739f3a4
  notes:A generalization of ramp and pulse functions from several different simulation languages. Generates a piecewise-linear waveform with four segments. Each segment is specified by an injection current value and the duration until the start of the next segment. There is also an overall time offset and a repeat period. Details about the effects of these values are documented on the individual parameters.
-I::
+I:
+ $meta
+  notes:The default case (I=0) is never triggered, because the other conditions cover the entire space of t. It is only here to enable this to be a temporary variable.
+ @:0
  @t<0||t>=t3:low
  @t>=0&&t<t1&&rise:low+(high1-low)*t/rise
  @t>=t1&&t<t2&&width:high1+(high2-high1)*(t-t1)/width
  @t>=t2&&t<t3&&fall:high2+(low-high2)*(t-t2)/fall
 delay:0s
- $metadata
+ $meta
   notes:Offset relative to start of simulation. A positive number makes the waveform start later. A negative number makes it start earlier, but any portion of the waveform that occurs before the start of simulation will be cut off.
   param
 fall:0s
- $metadata
+ $meta
   notes:Time to go from high2 to low. Used to create sawtooth or triangle waveforms.
   param
 high1:0pA
- $metadata
+ $meta
   backend
    lems
     DL
     param:startAmplitude,amplitude
   param
 high2:high1
- $metadata
+ $meta
   backend
    lems
     DL:pA
     param:finishAmplitude
   param
 low:0pA
- $metadata
+ $meta
   backend
    lems
     DL
     param:baselineAmplitude
   param
 period:0s
- $metadata
+ $meta
   notes:Repeat time. If zero, then waveform does not repeat.
   param
 rise:0s
- $metadata
+ $meta
   notes:Time to go from low to high1. Used to create sawtooth or triangle waveforms.
   param
-t::
+t:
  @:$t-delay
  @period:($t-delay)%period
-t1::rise
-t2::rise+width
-t3::rise+width+fall
+t1:rise
+t2:rise+width
+t3:rise+width+fall
 width:0s
- $metadata
+ $meta
   backend
    lems
     param:duration

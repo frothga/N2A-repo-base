@@ -1,31 +1,32 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse
- $metadata
+ $meta
   id:166b5f185734f41a
-$metadata
+$meta
  gui
   category:Base/Neuromorphic
  id:166b015ccdaafc99
  notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models of neuromorphic hardware.
 A:connect(Spike Source)
 B:connect(Compartment)
- $metadata
+ $meta
   gui
    arrow:arrow
-B.I:$kill
+B.I
+ $kill:
 B.V:+Vstep@in
-I::Vstep*B.C/$t'
-Vstep::weight*B.scale
+I:Vstep*B.C/$t'
+Vstep:weight*B.scale
 delay:delaySteps*$t'
- $metadata:
+ $meta:
   param:0
 delaySteps:1
- $metadata
+ $meta
   notes:Delay between spike initiation and arrival, expressed as an integer number of cycles. Usually the spike takes effect before the B part is evaluated in the designated cycle. Negative numbers mean no-care, which allows the most efficient delivery scheme (boolean latching only). 0 means same-cycle delivery, which is impossible for most machines. The Internal and C backends will deliver a zero-delay event immediately after the current cycle completes, without any additional simulated time.
   param
-in::event(A.spike,delay,"nonzero")
+in:event(A.spike,delay,"nonzero")
 weight:1
- $metadata
+ $meta
   notes:|
    Typically in [0,1], expressing a portion of the downstream neuron's voltage scale. You can generally assume the following about the downstream unit:
    * An exact match between applied voltage and threshold should produce a spike. Some neuromorphic models and platforms require that the threshold be exceeded rather than merely met, but backends should compensate for this.

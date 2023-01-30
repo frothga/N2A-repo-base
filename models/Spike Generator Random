@@ -1,20 +1,21 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Spike Generator
- $metadata
+ $meta
   id:166b5f18573a45ab
-$metadata
+$meta
  backend
   lems
    part:spikeGeneratorRandom
  id:166b5f18573a4dad
  notes:Interspike interval (ISI) is uniformly distributed between minISI and maxISI.
 maxISI:0s
- $metadata
+ $meta
   notes:Maximum interspike interval
   param
 minISI:0s
- $metadata
+ $meta
   notes:Minimum interspike interval
   param
 nextSpikeTime:nextSpikeTime+minISI+uniform(maxISI-minISI)@fire || $init
-period:$kill
+period
+ $kill:

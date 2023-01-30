@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:KSTransition,forwardTransition,reverseTransition,tauInfTransition
@@ -7,23 +7,23 @@ $metadata
   category:Base/Compartment
  id:166b5f185734fe38
  notes:Specifies the rates of transition between two Kinetic State objects. This is a kind of connection. To use, place several Kinetic State objects inside a Gate and connect them with this class.
-forward::inf/τ@τ
- $metadata
+forward:inf/τ@τ
+ $meta
   backend
    lems
     param:rf
 from:connect(Kinetic State)
 from.occupancy':+-reverse
-inf::0
-reverse::(1-inf)/τ@τ
- $metadata
+inf:0
+reverse:(1-inf)/τ@τ
+ $meta
   backend
    lems
     param:rr
 to:connect(Kinetic State)
 to.occupancy':+forward
-τ::0s
- $metadata
+τ:0s
+ $meta
   backend
    lems
     param:tau

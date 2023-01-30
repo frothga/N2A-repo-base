@@ -1,36 +1,36 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Input
- $metadata
+ $meta
   id:166b5f185734f319
-$metadata
+$meta
  backend
   lems
    part:voltageClamp
  id:166b5f18573a9eb5
  notes:Applies a variable current to try to keep parent at targetVoltage.
-I::
+I:
  @:0
  @t>=0 && t<duration:(V-B.V)/R
 R:0Ohm
- $metadata
+ $meta
   backend
    lems
     param:simpleSeriesResistance
   notes:Current will be calculated by the difference in voltage between the target and parent, divided by this value
   param
 V:0V
- $metadata
+ $meta
   backend
    lems
     param:targetVoltage
   notes:Current will be applied to try to get parent to this target voltage
   param
 delay:0s
- $metadata
+ $meta
   notes:Time until we begin to apply current to target.
   param
 duration:0s
- $metadata
+ $meta
   notes:Only apply current for this long.
   param
-t::$t-delay
+t:$t-delay

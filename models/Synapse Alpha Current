@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:CUBA, Synapse Alpha
- $metadata
+ $meta
   id:11f18513c7d8f900,166b015ccdaa0f39
-$metadata
+$meta
  backend
   lems
    part:alphaCurrentSynapse

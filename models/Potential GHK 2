@@ -1,17 +1,17 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  gui
   category:Base/Compartment
   dropin
  id:166b5f185737d177
  notes:Set current density following Jaffe et al. 1994. To use, place inside a Channel. Also connect "c" to the relevant Concentration model in the Compartment that contains the Channel.
-$reference
+$ref
  Jaffe1994
 $up.Gall
  @:Gdensity*pOpen
  @c.outside<=0:0
 c:connect(Concentration)
-pOpen::
+pOpen:
  @:tmp*0.001*(1-c.inside/c.outside*exp(tmp))*(tmp/(exp(tmp)-1))
  @tmp==0:tmp*0.001*(1-c.inside/c.outside)
-tmp::(V/1mV)/(25*temperature/(293.15*2))
+tmp:(V/1mV)/(25*temperature/(293.15*2))

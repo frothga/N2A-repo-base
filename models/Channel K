@@ -1,25 +1,23 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Channel
- $metadata
+ $meta
   id:166b5f185735013e
-$metadata
+$meta
  gui:
-  bounds
-   parent:0
  id:166b5f54a764cf01
  notes:Potassium channel with default values for giant squid axon.
  species:k
 E:-77mV
 Gdensity:36(mS/cm2)
- $metadata
+ $meta
   notes:At 6.3Cel. Need Q10 parameters.
 n
  $inherit:Gate
-  $metadata
+  $meta
    id:166b5f185734fa2c
  forwardRate
   $inherit:HHVariable Exponential Linear
-   $metadata
+   $meta
     id:166b5f185735c265
   midpoint:-55mV
   rate:0.1kHz
@@ -27,10 +25,10 @@ n
  instances:4
  reverseRate
   $inherit:HHVariable Exponential
-   $metadata
+   $meta
     id:166b5f185735ca67
   midpoint:-65mV
   rate:0.125kHz
   scale:-80mV
- α::forwardRate.x
- β::reverseRate.x
+ α:forwardRate.x
+ β:reverseRate.x

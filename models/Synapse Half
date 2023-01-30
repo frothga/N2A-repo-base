@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:silentSynapse,baseGradedSynapse
@@ -9,17 +9,17 @@ $metadata
  id:166b5f2337372608
  notes:Base part for half of a split synapse. Does nothing. See notes on Synapse Split for how to use parts of this type.
 I:0
- $metadata
+ $meta
   backend
    lems
     param:i
-V::0V
- $metadata
+V:0V
+ $meta
   backend
    lems
     param:v
-Vpeer::0V
- $metadata
+Vpeer:0V
+ $meta
   backend
    lems
     param:vpeer

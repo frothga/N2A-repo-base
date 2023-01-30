@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:fitzHughNagumo1969Cell,fitzHughNagumoCell
@@ -7,38 +7,38 @@ $metadata
   category:Base/Cell
  id:166b5f1857388085
  notes:A two-dimensional simplification of the Hodgkin-Huxley model
-$reference
+$ref
  FitzHugh1961:System first suggested
  FitzHugh1969:Version used here
  Nagumo1962:Equivalent circuit
 C:100pF
- $metadata
+ $meta
   notes:While not technically part of the model, this allows currents (in Amps) to be injected. Effectively, V and W become Volt values, even though they are not scaled in a way that is compatible with other parts. (The alternate approach, taken by NeuroML, is to create an extra set of parts that are dimensionless.)
 I:0
- $metadata
+ $meta
   notes:plays the role of an external injected current
   param
 TS:1ms
 V:V0@$init
- $metadata
+ $meta
   notes:V plays the role of the membrane potential
 V':(V-V^3/3-W)/TS+I/C
 V0:0
- $metadata
+ $meta
   param
 W:W0@$init
- $metadata
+ $meta
   notes:W plays the role of a recovery variable
 W':phi*(V+a-b*W)/TS
 W0:0
- $metadata
+ $meta
   param
 a:0.7
- $metadata
+ $meta
   param
 b:0.8
- $metadata
+ $meta
   param
 phi:0.08
- $metadata
+ $meta
   param

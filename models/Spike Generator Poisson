@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Spike Generator
- $metadata
+ $meta
   id:166b5f18573a45ab
-$metadata
+$meta
  backend
   lems
    part:spikeGeneratorPoisson,spikeGeneratorRefPoisson,poissonFiringSynapse,transientPoissonFiringSynapse
@@ -11,21 +11,21 @@ $metadata
  id:166b5f18573a49ac
  notes:Exponential distribution with mean 1/averageRate.
 averageRate:0Hz
- $metadata
+ $meta
   backend
    stacs
     param:rate
   param
 delay:0s
- $metadata
+ $meta
   notes:Wait before poisson firing starts. There will be on average an additional delay of one period before the first spike is actually generated.
   param
 duration:∞s
- $metadata
+ $meta
   notes:How long poisson firing continues after the initial delay.
   param
 minISI:0s
- $metadata
+ $meta
   backend
    lems
     param:minimumISI
@@ -38,6 +38,6 @@ nextSpikeTime:
  @fire:nextSpikeTime+minISI-(period-minISI)*log(uniform())
  @nextSpikeTime>delay+duration:∞
 period:1/averageRate
- $metadata
+ $meta
   notes:Scale for spike distribution.
   param:0

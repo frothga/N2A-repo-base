@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Spike Source
- $metadata
+ $meta
   id:166b5f185735074b
-$metadata
+$meta
  backend
   lems
    attachments
@@ -16,41 +16,41 @@ $metadata
   category:Base/Compartment
  id:166b5f39bd266700
 C:10pF
- $metadata
+ $meta
   backend
    xyce
     param:cMem
   param
 I:+
- $metadata
+ $meta
   backend
    lems
     param:iMemb,iSyn,iChannels
 V:Vinit@$init
- $metadata
+ $meta
   backend
    lems
     param:v
   median:50mV
 V':I/C
- $metadata
+ $meta
   backend
    lems
     param:v'
 Vinit:0V
- $metadata
+ $meta
   backend
    lems
     param:v0,V0
   param
 Vspike:30mV
- $metadata
+ $meta
   backend
    lems
     param:thresh
   param
-fire::V>=Vspike
- $metadata
+fire:V>=Vspike
+ $meta
   notes:|
    This temporary variable carries the same information as spike, but some models test the condition V>Vspike in multiple places. Using a temporary makes the model easier to read.
    

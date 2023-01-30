@@ -1,10 +1,10 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:HHVariable
- $metadata
+ $meta
   id:166b5f185735064a
-$metadata
+$meta
  backend
   lems
    part:HHExpRate,HHExpVariable
  id:166b5f185735ca67
-x::rate*exp(a,"median=1")
+x:rate*exp(a,"median=1")

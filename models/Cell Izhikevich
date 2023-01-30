@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Compartment
- $metadata
+ $meta
   id:166b5f39bd266700
-$metadata
+$meta
  backend
   lems
    part:izhikevichCell,izhikevich2007Cell
@@ -19,21 +19,21 @@ $metadata
   The original model [izhikevich2003] is not offered as a separate class. Instead, this more general model has default values for C, k, vr and vt which make it function as the original model. When exporting to NeuroML, the appropriate class will be chosen based on whether these parameters have been modified. For Internal and C backends, there is no added cost for using the more general model, as the compiler will optimize away any unneeded terms.
   
   The other core parameters (a, b, c, d) have the default values suggested in [izhikevich2003].
-$reference
+$ref
  Izhikevich2003:Original model
  Izhikevich2007:page 273 gives more general model
 C:1pF
- $metadata
+ $meta
   notes:Must be 1pF for simple Izhikevich model. Values of b, d and k must be rescaled by the same order of magnitude as C. For example, if C were increased to 100pF, then the other values become: b=20nS, d=200pA, k=4(nS/mV). Alternately, rewrite V' so I/C is separate from the rest of the expression.
 I:+140pA
- $metadata
+ $meta
   backend:
    stacs
     notes:State I_app=value-140pA. If a separate value is conditioned by $init, then state I=(value@$init)-value.
     state:I_app
   notes:Must add 140pA to input current for simple Izhikevich model.
-V
- $metadata:
+V:
+ $meta:
   backend:
    stacs
     state:v
@@ -43,12 +43,12 @@ V
 V':(k*(V-vr)*(V-vt)-u+I)/C
 Vinit:c
 Vspike:30mV
- $metadata
+ $meta
   backend
    lems
     param:thresh,vpeak
 a:0.02kHz
- $metadata
+ $meta
   backend
    lems
     DL
@@ -56,7 +56,7 @@ a:0.02kHz
     param
   param
 b:0.2nS
- $metadata
+ $meta
   backend
    lems
     DL
@@ -64,7 +64,7 @@ b:0.2nS
     param
   param
 c:-65mV
- $metadata
+ $meta
   backend
    lems
     DL
@@ -73,7 +73,7 @@ c:-65mV
     unit:mV
   param
 d:2pA
- $metadata
+ $meta
   backend
    lems
     DL
@@ -81,14 +81,14 @@ d:2pA
     param
   param
 k:0.04(nS/mV)
- $metadata
+ $meta
   backend
    lems
     DL
   notes:Must be 0.04(nS/mV) for simple Izhikevich model.
   param
 u
- $metadata
+ $meta
   backend
    lems
     param:u,U
@@ -98,15 +98,15 @@ u
  @$init:b*Vinit
  @fire:u+d
 u':a*(b*(V-vr)-u)
- $metadata
+ $meta
   backend
    lems
     param:u',U'
 vr:0mV
- $metadata
+ $meta
   notes:Must be zero for simple Izhikevich model.
   param
 vt:-125mV
- $metadata
+ $meta
   notes:Must be -125mV for simple Izhikevich model.
   param

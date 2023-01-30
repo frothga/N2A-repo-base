@@ -1,24 +1,24 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse Half Gap
- $metadata
+ $meta
   id:166b5f185734fb2e
-$metadata
+$meta
  backend
   lems
    part:gradedSynapse
  id:166b5f185738e492
-$reference
+$ref
  Prinz2004:Methods are basis for this analog synapse.
 E:0V
- $metadata
+ $meta
   backend
    lems
     param:erev
   notes:The reversal potential of the synapse
   param
-I::G*s*(E-V)
+I:G*s*(E-V)
 Vhalf:0V
- $metadata
+ $meta
   backend
    lems
     param:Vth
@@ -26,7 +26,7 @@ Vhalf:0V
   param
 inf:1/(1+exp((Vhalf-Vpeer)/δ))
 k:0Hz
- $metadata
+ $meta
   notes:Rate constant for transmitter-receptor dissociation rate
   param
 s:inf@1-inf<1e-4
@@ -34,14 +34,14 @@ s'
  @:0
  @1-inf>1e-4:(inf-s)/τ
 δ:0V
- $metadata
+ $meta
   backend
    lems
     param:delta
   notes:Slope of the activation curve
   param
 τ:(1-inf)/k
- $metadata
+ $meta
   backend
    lems
     param:tau

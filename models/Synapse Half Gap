@@ -1,17 +1,17 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse Half
- $metadata
+ $meta
   id:166b5f2337372608
-$metadata
+$meta
  backend
   lems
    part:gapJunction,linearGradedSynapse
  id:166b5f185734fb2e
  notes:Half of a gap junction. Use a Synapse Split and inherit this part for one or both halves.
 G:0S
- $metadata
+ $meta
   backend
    lems
     param:conductance
   param
-I::G*(Vpeer-V)
+I:G*(Vpeer-V)

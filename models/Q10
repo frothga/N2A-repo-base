@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:q10ExpTemp,baseConductanceScaling,baseQ10Settings,q10Fixed,q10ConductanceScaling
@@ -7,23 +7,23 @@ $metadata
   category:Base/Compartment
  id:166b5f5b9cbabe00
 $up.Q10Scaling:*scaling
- $metadata
+ $meta
   backend
    lems
     param:fixedQ10
 coefficient:1
- $metadata
+ $meta
   backend
    lems
     param:q10Factor
   param
-scaling::coefficient^((temperature-temperature0)/10K)
- $metadata
+scaling:coefficient^((temperature-temperature0)/10K)
+ $meta
   backend
    lems
     param:factor
 temperature0:20Cel
- $metadata
+ $meta
   backend
    lems
     param:experimentalTemp

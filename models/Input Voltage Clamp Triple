@@ -1,58 +1,58 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Input
- $metadata
+ $meta
   id:166b5f185734f319
-$metadata
+$meta
  backend
   lems
    part:voltageClampTriple
  id:11f17da6777f3a00
-I::weight*(V-B.V)/R@active
+I:weight*(V-B.V)/R@active
 R:0Ohm
- $metadata
+ $meta
   backend
    lems
     param:simpleSeriesResistance
   notes:Current will be calculated by the difference in voltage between the target and parent, divided by this value
   param
-V::
+V:
  @:Vduring
  @$t<delay:Vbefore
  @$t>delay+duration:Vafter
 Vafter:0V
- $metadata
+ $meta
   backend
    lems
     param:returnVoltage
   notes:Target voltage after duration completes.
   param
 Vbefore:0V
- $metadata
+ $meta
   backend
    lems
     param:conditioningVoltage
   notes:Target voltage before start time (delay).
   param
 Vduring:0V
- $metadata
+ $meta
   backend
    lems
     param:testingVoltage
   notes:Target voltage after delay time until duration is complete.
   param
 active:1
- $metadata
+ $meta
   notes:Enables or disables this input.
   param
 delay:0s
- $metadata
+ $meta
   notes:Time until we begin to apply current to target.
   param
 duration:0s
- $metadata
+ $meta
   notes:Only apply current for this long.
   param
-t::$t-delay
+t:$t-delay
 weight:1
- $metadata
+ $meta
   param

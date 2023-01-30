@@ -1,21 +1,21 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Concentration
- $metadata
+ $meta
   id:166b5f185734ff3a
-$metadata
+$meta
  backend
   lems
    part:decayingPoolConcentrationModel
  id:166b5f1857385682
  notes:Tends toward a given resting value at a given rate. The ion occupies a shell inside the membrane of a given thickness.
-effectiveRadius::sqrt(surfaceArea/(4*π))
-innerRadius::effectiveRadius-shellThickness
+effectiveRadius:sqrt(surfaceArea/(4*π))
+innerRadius:effectiveRadius-shellThickness
 inside':I/(2*Faraday*shellVolume)-(inside-restingConcentration)/τ
- $metadata
+ $meta
   backend
    lems
     param:concentration'
 shellThickness:0m
- $metadata
+ $meta
   param
-shellVolume::(effectiveRadius^3-innerRadius^3)*4*π/3
+shellVolume:(effectiveRadius^3-innerRadius^3)*4*π/3

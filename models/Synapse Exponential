@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Synapse Conductance
- $metadata
+ $meta
   id:166b015ccdaa5a31
-$metadata
+$meta
  backend
   lems
    part:expOneSynapse
@@ -12,12 +12,12 @@ G
  @$init:0
  @in:G+Gmax*weight
 G':-G/τDecay
- $metadata
+ $meta
   backend
    lems
     param:g'
 τDecay:0ms
- $metadata
+ $meta
   backend
    lems
     param:tauDecay

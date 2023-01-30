@@ -1,8 +1,8 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Channel
- $metadata
+ $meta
   id:166b5f185735013e
-$metadata
+$meta
  backend
   lems
    part:ionChannelPassive

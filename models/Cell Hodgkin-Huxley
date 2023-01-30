@@ -1,26 +1,24 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Segment
- $metadata
+ $meta
   id:166b5f185734f92a
-$metadata
+$meta
  backend
   xyce
    part:neuron1
  gui:
-  bounds
-   parent:0
   category:Base/Cell
  id:166b015ccda6e28b
  notes:Can function as either a point cell or part of an HH cable.
 K
  $inherit:Channel K
-  $metadata
+  $meta
    id:166b5f54a764cf01
 Na
  $inherit:Channel Na
-  $metadata
+  $meta
    id:166b5f54635c5200
 leak
  $inherit:Channel Passive
-  $metadata
+  $meta
    id:166b5f89512f2b02

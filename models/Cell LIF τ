@@ -1,21 +1,23 @@
-N2A.schema=2
+N2A.schema=3
 $inherit:Cell LIF
- $metadata
+ $meta
   id:166b015ccda9c699
-$metadata
+$meta
  backend
   lems
    part:iafTauCell,iafTauRefCell
+ gui
+  category:Base/Misc
  id:166b5f1857391494
  notes:Please use "Cell LIF" instead. This model exists only for compatibility with NeuroML. Since τ=C/G, neither conductance G nor capacitance C is specified by NeuroML. Without C, it is impossible to compute the contribution of current to voltage. Thus, this simple model is not able to process inputs. To overcome this, we assume the default value C from the base model and incorporate τ via G=C/τ.
 C:10pF
- $metadata:
+ $meta:
   param:0
 G:C/τ
- $metadata:
+ $meta:
   param:0
 τ:0s
- $metadata
+ $meta
   backend
    lems
     param:tau

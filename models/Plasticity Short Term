@@ -1,5 +1,5 @@
-N2A.schema=2
-$metadata
+N2A.schema=3
+$meta
  backend
   lems
    part:tsodyksMarkramDepFacMechanism,tsodyksMarkramDepMechanism
@@ -10,11 +10,11 @@ $metadata
   dropin
  id:166b5f18573a90b2
  notes:Full Tsodyks-Markram STP model with both depression and facilitation. To use, drop into a Synapse Exponential Double.
-$reference
+$ref
  Tsodyks1998
 $up.plasticityFactor:*plasticityFactor
 R
- $metadata
+ $meta
   notes:The spike event flag "in" comes from the containing synapse.
  @$init:1
  @in:R*(1-U)
@@ -24,17 +24,17 @@ U
  @in&&τFac:U+initReleaseProb*(1-U)
 U':(initReleaseProb-U)/τFac@τFac
 initReleaseProb:0
- $metadata
+ $meta
   param
-plasticityFactor::R*U
+plasticityFactor:R*U
 τFac:0s
- $metadata
+ $meta
   backend
    lems
     param:tauFac
   param
 τRec:0s
- $metadata
+ $meta
   backend
    lems
     param:tauRec
