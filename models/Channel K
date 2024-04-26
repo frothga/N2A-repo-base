@@ -8,9 +8,11 @@ $meta
  notes:Potassium channel with default values for giant squid axon.
  species:k
 E:-77mV
-Gdensity:36(mS/cm2)
+G1:20pS
+Gdensity
  $meta
   notes:At 6.3Cel. Need Q10 parameters.
+density:18(/um2)
 n
  $inherit:Gate
   $meta

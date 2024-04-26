@@ -6,7 +6,7 @@ $meta
  gui
   category:Base/Synapse
  id:166b5f23219cec07
- notes:A synapse consisting of separate pre- and a post-synaptic parts. The parts are directly coupled by voltage. To use it, set preComponent and postComponent to inherit the appropriate parts. Our local equations under each of these will modify the inherited parts to make the necessary connections.
+ notes:A synapse consisting of separate pre- and a post-synaptic parts. The parts are directly coupled by voltage. To use it, set preComponent and postComponent to inherit from some subclass of Synapse Half. Our local equations under each of these will modify the inherited parts to make the necessary connections. Because Synapse Half is a mixin, you can drag-and-drop the appropriate part onto postComponent and preComponent to set $inherit.
 A:connect(Compartment)
 B:connect(Compartment)
 postComponent

@@ -5,7 +5,9 @@ $meta
    part:q10ExpTemp,baseConductanceScaling,baseQ10Settings,q10Fixed,q10ConductanceScaling
  gui
   category:Base/Compartment
+  dropin:
  id:166b5f5b9cbabe00
+ notes:Adds temperature scaling to a part.
 $up.Q10Scaling:*scaling
  $meta
   backend

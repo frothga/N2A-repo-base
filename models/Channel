@@ -29,18 +29,21 @@ G1:0pS
     param:conductance
   notes:The conductance of a single channel instance.
   param
-Gall:Gdensity*surfaceArea
+Gall:
  $meta
   notes:|
    The conductance for an entire ensemble of channels.
    For population-based value, use: G1*population
    For density-based value, use: Gdensity*surfaceArea
    In the density case, this ion channel must be embedded in a compartment that provides surfaceArea.
-Gdensity:0(mS/cm2)
+ @:Gdensity*surfaceArea
+ @population>0:G1*population
+Gdensity:G1*density
  $meta
   backend
    lems
     param:condDensity
+  notes:Conductance per unit area. This can be set directly, or it can be calculated from G1 and channel density.
   param
 I:G*(E-V)
  $meta
@@ -58,16 +61,23 @@ Vshift:0mV
    lems
     param:vShift
   notes:For compatibility with NeuroML 2. Doesn't seem to do anything in the standard yet.
+density:0(/um2)
+ $meta
+  notes:Number of channels per unit area.
+  param:
 fopen:*
 gDensity:Gdensity*fopen
  $meta
   notes:Only used for debugging output, particularly in models imported from NeuroML.
+  param:watch
 iDensity:gDensity*(E-V)
  $meta
   notes:Only used for debugging output, particularly in models imported from NeuroML.
-population:1
+  param:watch
+population:0
  $meta
   backend
    lems
     param:number
+  notes:Quantity of channel instances. If greater than zero, then Gall is based on population rather than conductance density.
   param

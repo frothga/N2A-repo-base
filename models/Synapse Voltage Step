@@ -6,7 +6,7 @@ $meta
  gui
   category:Base/Neuromorphic
  id:166b015ccdaafc99
- notes:This synapse directly changes the postsynaptic voltage by a specific increment. Primarily for use in models of neuromorphic hardware.
+ notes:Directly changes the postsynaptic voltage by a specific increment. Primarily for use in models of neuromorphic hardware. The post-synaptic neuron must take into account the fact that V is now a reduction, so it is set to 0 each cycle unless the neuron model sets an explicit value (such as copying V forward).
 A:connect(Spike Source)
 B:connect(Compartment)
  $meta

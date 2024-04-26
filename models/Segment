@@ -39,7 +39,7 @@ surfaceArea:
 xyz0:$xyz
  $meta
   notes:The beginning point of this segment. Defaults to sphere. When part of a cable, set by referencing parent.$xyz
-ρ:30(Ohm.cm)
+ρ:35.4(Ohm.cm)
  $meta
   backend
    lems

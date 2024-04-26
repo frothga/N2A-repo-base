@@ -8,7 +8,8 @@ $meta
    part:expOneSynapse
  id:166b015ccdaa8211
  notes:Instantaneous rise followed by exponential decay.
-G
+A:connect(Spike Source,Compartment)
+G:
  @$init:0
  @in:G+Gmax*weight
 G':-G/τDecay
@@ -16,7 +17,7 @@ G':-G/τDecay
   backend
    lems
     param:g'
-τDecay:0ms
+τDecay:2ms
  $meta
   backend
    lems

@@ -4,8 +4,8 @@ $meta
   category:Base/Neuromorphic
   mixin
  id:11f184ed644b9600
- notes:Delivers each spike to only one downstream neuron, chosen at random. Works together with Spinapse. To use, $inherit from this as well as the parent Spike Source (multiple inheritance).
-targetCount:+
+ notes:Delivers each spike to only one downstream neuron, chosen at random. Works together with Spinapse. To use, inherit from this and then from a descendant of Spike Source (multiple inheritance).
+targetCount:@
  $meta
   backend
    stacs

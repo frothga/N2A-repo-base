@@ -20,6 +20,7 @@ C:10pF
   backend
    xyce
     param:cMem
+  notes:Roughly the total capacitance for a ~10um radius sphere with 1(uF/cm2) specific capacitance.
   param
 I:+
  $meta
@@ -37,13 +38,14 @@ V':I/C
   backend
    lems
     param:v'
-Vinit:0V
+Vinit:-70mV
  $meta
   backend
    lems
     param:v0,V0
+  notes:Starting value of V, applied when instance is created.
   param
-Vspike:30mV
+Vspike:-50mV
  $meta
   backend
    lems
@@ -52,6 +54,9 @@ Vspike:30mV
 fire:V>=Vspike
  $meta
   notes:|
-   This temporary variable carries the same information as spike, but some models test the condition V>Vspike in multiple places. Using a temporary makes the model easier to read.
+   This temporary variable carries the same information as spike, but some models test the condition V>=Vspike in multiple places. Using a temporary makes the model easier to read.
    
-   This model use ">=" rather than ">" to compare the spike threshold, which makes the behavior slightly different from both NeuroML and some neuromorphic platforms. For neuroscience simulations, this detail is inconsequential. For neuromorphic computing, ">=" is easier to use because it gives an exact threshold without the need to add a "fudge factor" to synaptic weights.
+   Th use of ">=" rather than ">" makes our behavior slightly different from both NeuroML and some neuromorphic platforms. For neuroscience simulations, this detail is inconsequential. For neuromorphic computing, ">=" is easier to use because it gives an exact threshold without the need to add a "fudge factor" to synaptic weights. Unfortunately, a small fudge factor may still be necessary to overcome numerical error.
+scale:20mV
+ $meta
+  notes:Used by neuromorphic parts to map normalized units in [0,1] to a physiological voltage range. This allows neuromorphic and biophysical models to work together. Ignored by base model. The value should generally be the range from Vinit (or Vreset in child models) to Vspike.

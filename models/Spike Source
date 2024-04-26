@@ -19,4 +19,4 @@ spike:fire
 tsince:0@fire
  $meta
   notes:Time since this source last spiked. For compatibility with LEMS.
-tsince':1Hz
+tsince':1

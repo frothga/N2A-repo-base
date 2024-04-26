@@ -13,7 +13,7 @@ E:0mV
   backend
    lems
     param:erev
-  note:Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near Vrest.
+  note:Reversal potential. Excitatory synapses have values near 0. Inhibitory synapses have values near the target neuron's leak current reversal potential (E).
   param
 G:0@$init
  $meta

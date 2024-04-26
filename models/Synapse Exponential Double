@@ -47,13 +47,13 @@ peak:1/(exp(-peakTime/τDecay)-exp(-peakTime/τRise))
 peakTime:log(τDecay/τRise)*(τDecay*τRise)/(τDecay-τRise)
 plasticityFactor:*
 spikeValue:weight*plasticityFactor*peak
-τDecay:0ms
+τDecay:2ms
  $meta
   backend
    lems
     param:tauDecay
   param
-τRise:0ms
+τRise:1ms
  $meta
   backend
    lems

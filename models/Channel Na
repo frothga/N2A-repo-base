@@ -7,7 +7,8 @@ $meta
  notes:Sodium channel with default values for giant squid axon.
  species:na
 E:50mV
-Gdensity:120(mS/cm2)
+G1:14pS
+density:85(/um2)
 h
  $inherit:Gate
   $meta
